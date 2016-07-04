@@ -1,0 +1,10 @@
+setup.py
+synehr/__init__.py
+synehr/functions.py
+synehr/synehr.py
+synehr.egg-info/PKG-INFO
+synehr.egg-info/SOURCES.txt
+synehr.egg-info/dependency_links.txt
+synehr.egg-info/not-zip-safe
+synehr.egg-info/requires.txt
+synehr.egg-info/top_level.txt

@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: synehr
+Version: 0.1
+Summary: Package to generate synthetic identified EHR data
+Home-page: http://github.com/storborg/funniest
+Author: Shraddha Lanka, Tennyson Lee
+Author-email: slanka@dons.usfca.edu, talee@dons.usfca.edu
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
