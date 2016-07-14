@@ -34,17 +34,17 @@ def data_gen(first_names_data,last_names_data,size,race_ratio,male_gender):
     female_gender=1-male_gender
 
     asian_size = int(size * race_ratio['asian'])
-    print asian_size
+    #print asian_size
     spanish_size = int(size * race_ratio['spanish'])
-    print spanish_size
+    #print spanish_size
     afr_amer_size = int(size * race_ratio['afr_amer'])
-    print afr_amer_size
+    #print afr_amer_size
     caucasian_size = int(size * race_ratio['caucasian'])
-    print caucasian_size
+    #print caucasian_size
     native_amer_alaskan_size = int(size * race_ratio['native_amer_alaskan'])
-    print native_amer_alaskan_size
+    #print native_amer_alaskan_size
     mixed_size = int(size * race_ratio['mixed'])
-    print mixed_size
+    #print mixed_size
 
     sum_sizes=asian_size+spanish_size+afr_amer_size+caucasian_size+native_amer_alaskan_size+mixed_size
     sizes={'asian':asian_size,'spanish':spanish_size,'afr_amer':afr_amer_size,'caucasian':caucasian_size,
@@ -58,6 +58,8 @@ def data_gen(first_names_data,last_names_data,size,race_ratio,male_gender):
         rem=size-sum_sizes
         elem=random.choice(sizes.keys())
         sizes[elem]+=rem
+    print "sum of all sizes: ",sum(sizes.values())
+    print sizes
 
 
 
@@ -96,9 +98,6 @@ def data_gen(first_names_data,last_names_data,size,race_ratio,male_gender):
     spanish_dataset_ln = last_names_data[last_names_data['race'] == 'Spanish']
     afr_amer_dataset_ln = last_names_data[last_names_data['race'] == 'African_American']
     caucasian_dataset_ln = last_names_data[last_names_data['race'] == 'Caucasian']
-
-    #print caucasian_dataset_ln
-
     native_amer_alaskan_dataset_ln = last_names_data[last_names_data['race'] == 'Native_American_Alaskan']
     mixed_dataset_ln = last_names_data[last_names_data['race'] == 'Mixed']
 
@@ -109,16 +108,18 @@ def data_gen(first_names_data,last_names_data,size,race_ratio,male_gender):
     asian_male_data=asian_male_fn.sample(n=asian_male_size,replace=True)
     asian_female_fn=first_names_data.loc[(first_names_data['race']=='Asian')& (first_names_data['gender']=='F'),]
     asian_female_data=asian_male_fn.sample(n=asian_female_size,replace=True)
-    asian_data_fn=pd.concat([asian_male_fn,asian_female_fn])
+    asian_data_fn=pd.concat([asian_male_data,asian_female_data])
     #print "Asian First Names Data: ",asian_data_fn.tail()
+    #print asian_data_fn.isnull().any(axis=0)
+
     asian_dataset_ln = last_names_data[last_names_data['race'] == 'Asian']
     #print asian_dataset_ln.head()
+    #print asian_dataset_ln.isnull().any(axis=0)
 
     #Exract all chinese rows from data
     asian_chinese_fn=asian_data_fn.loc[(asian_data_fn['detailed_race']=='Chinese')]
     #Check how many records are there
-    chinese_rows=len(asian_chinese_fn)
-    #print "no of rows: ",chinese_rows
+    chinese_rows = len(asian_chinese_fn)
     #Extract Chinese Last Names
     asian_chinese_ln=asian_dataset_ln.loc[(asian_dataset_ln['detailed_race']=='Chinese')]
     #Select as many Last names randomly as you need
@@ -128,13 +129,18 @@ def data_gen(first_names_data,last_names_data,size,race_ratio,male_gender):
     #print asian_chinese_fn.head()
     asian_chinese_fn.insert(1,'last',last_names['last'].tolist())
     #print "Chinese Data Head: ",asian_chinese_fn.head()
+    #print asian_chinese_fn.isnull().head()
+    chinese_rows = len(asian_chinese_fn)
+    print "no of chinese rows: ", chinese_rows
+
+
 
     # Exract all Indian rows from data
     asian_indian_fn = asian_data_fn.loc[(asian_data_fn['detailed_race'] == 'Indian')]
     # Check how many records are there
     indian_rows = len(asian_indian_fn)
     #print "no of rows: ",indian_rows
-    # Extract Chinese Last Names
+    # Extract Indian Last Names
     asian_indian_ln = asian_dataset_ln.loc[(asian_dataset_ln['detailed_race'] == 'Indian')]
     # Select as many Last names randomly as you need
     last_names = asian_indian_ln.sample(n= indian_rows, replace=True)
@@ -143,6 +149,8 @@ def data_gen(first_names_data,last_names_data,size,race_ratio,male_gender):
     # print asian_chinese_fn.head()
     asian_indian_fn.insert(1, 'last', last_names['last'].tolist())
     #print "Indian Data Head: ",asian_indian_fn.head()
+
+    print "No. of Indian rows: ",len(asian_indian_fn)
     asian_data_fn=pd.concat([asian_indian_fn,asian_chinese_fn])
     #print "Asian_data head: ", asian_data_fn.head()
 
@@ -159,8 +167,10 @@ def data_gen(first_names_data,last_names_data,size,race_ratio,male_gender):
 
     spanish_ln=spanish_dataset_ln.sample(n=(spanish_male_size+spanish_female_size), replace=True)
     #print len(spanish_ln)
-    #print "spanish_data_fn: ",len(spanish_data_fn)
+    #
     spanish_data_fn.insert(1,'last',spanish_ln['last'].tolist())
+    print "spanish_data_fn: ", len(spanish_data_fn)
+    print spanish_data_fn.isnull().any(axis=0)
     #print "Spanish Data Head: ",spanish_data_fn.head()
 
 

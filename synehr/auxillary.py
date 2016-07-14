@@ -52,6 +52,22 @@ def constrained_sum_sample_pos(num_terms, total):
     Each such list is equally likely to occur."""
 
     num=np.random.dirichlet(np.ones(num_terms), size=1)
+    num=num[0]
     num/=num.sum()
     num*=total
-    return num[0]
+    #print "sum before rounding and correction: ",num.sum()
+
+    for item in num:
+        item=round(item,2)
+    sum=num.sum()
+    if(sum!=total):
+        k = random.choice(range(0, num_terms))
+        if sum>total:
+            rem=sum-total
+            num[k]-=rem
+        else:
+            rem=total-sum
+            num[k]+=sum
+
+    #print "After correction: ",num.sum()
+    return num
