@@ -56,8 +56,8 @@ def data_gen(first_names_data,last_names_data,size,race_ratio,male_gender):
     #to a race
     if sum_sizes!=size:
         rem=size-sum_sizes
-    elem=random.choice(sizes.keys())
-    sizes[elem]+=rem
+        elem=random.choice(sizes.keys())
+        sizes[elem]+=rem
 
 
 
@@ -66,23 +66,29 @@ def data_gen(first_names_data,last_names_data,size,race_ratio,male_gender):
 
     ### sizes for each race by gender
 
-    asian_male_size = int(asian_size * male_gender)
-    asian_female_size = int(asian_size * female_gender)
-    spanish_male_size = int(spanish_size * male_gender)
-    #print spanish_male_size
-    spanish_female_size = int(spanish_size * female_gender)
-    afr_amer_male_size = int(afr_amer_size * male_gender)
-    #print "afr_amer_male_size: ",afr_amer_male_size
-    afr_amer_female_size = int(afr_amer_size * female_gender)
-    #print "afr_amer_female_size: ",afr_amer_female_size
-    caucasian_male_size = int(caucasian_size * male_gender)
-    caucasian_female_size = int(caucasian_size * female_gender)
-    #print caucasian_male_size
-    native_amer_male_size = int(native_amer_alaskan_size * male_gender)
-    native_amer_female_size = int(native_amer_alaskan_size * female_gender)
-    #print native_amer_female_size
-    mixed_male_size = int(mixed_size * male_gender)
-    mixed_female_size = int(mixed_size * female_gender)
+    asian_male_size = int(sizes['asian'] * male_gender)
+    asian_female_size = sizes['asian']-asian_male_size
+
+
+
+    spanish_male_size = int(sizes['spanish'] * male_gender)
+    spanish_female_size = sizes['spanish']=spanish_male_size
+
+
+    afr_amer_male_size = int(sizes['afr_amer'] * male_gender)
+    afr_amer_female_size = sizes['afr_amer']-afr_amer_male_size
+
+
+    caucasian_male_size = int(sizes['caucasian'] * male_gender)
+    caucasian_female_size = sizes['caucasian']-caucasian_male_size
+
+
+    native_amer_male_size = int(sizes['native_amer_alaskan'] * male_gender)
+    native_amer_female_size = sizes['native_amer_alaskan']-native_amer_male_size
+
+    mixed_male_size = int(sizes['mixed'] * male_gender)
+    mixed_female_size = sizes['mixed']-mixed_male_size
+
 
     #Collecting last names of different races and putting them in tables
 
