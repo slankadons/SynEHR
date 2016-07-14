@@ -1,6 +1,7 @@
 from auxillary import genDOB
 from auxillary import genMPI
 from auxillary import fake_factory
+from errors import gen_errors
 import numpy as np
 import pandas as pd
 import numpy.random as npr
@@ -278,10 +279,13 @@ def mk_data(first_names_data, last_names_data, min_date, max_date, size,male_gen
     data_err=data.iloc[error_index]
 
 
-    data_err=gen_typo(data_err)
+    #data_err=gen_typo(data_err)
 
-    data=pd.concat([data,data_err],axis=0,ignore_index=True)
+    #data=pd.concat([data,data_err],axis=0,ignore_index=True)
 
+    data_err=gen_errors(error_rate,data_err)
+
+    data = pd.concat([data, data_err], axis=0, ignore_index=True)
 
 
     return data

@@ -4,6 +4,7 @@ import datetime
 import numpy as np
 import random
 import pandas as pd
+import numpy.random as npr
 
 def readCSV():
     """Read in master files for first name and last name"""
@@ -51,23 +52,29 @@ def sum_num_terms_equals_total(num_terms, total):
     """Return a randomly chosen list of n positive integers summing to total.
     Each such list is equally likely to occur."""
 
-    num=np.random.dirichlet(np.ones(num_terms), size=1)
-    num=num[0]
-    num/=num.sum()
-    num*=total
+    num = []
+    #suml = 0
+
+    for i in range(num_terms):
+        k = npr.random()
+        k = round(k, 2)
+        num+=[k]
+    suml=sum(num)
+    for i in range(num_terms):
+        num[i] = (num[i] / suml)
+        num[i] *= total
+        num[i] = round(num[i], 2)
+
     #print "sum before rounding and correction: ",num.sum()
 
-    for item in num:
-        item=round(item,2)
-    sum=num.sum()
-    if(sum!=total):
+    if(suml!=total):
         k = random.choice(range(0, num_terms))
-        if sum>total:
-            rem=sum-total
+        if suml>total:
+            rem=suml-total
             num[k]-=rem
         else:
-            rem=total-sum
-            num[k]+=sum
+            rem=total-suml
+            num[k]+=suml
 
     #print "After correction: ",num.sum()
     return num
