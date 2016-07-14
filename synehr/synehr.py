@@ -6,6 +6,10 @@ import pandas as pd
 import faker
 import random
 
+from datetime import datetime
+
+from datetime import timedelta
+
 def readCSV():
     """Read in master files for first name and last name"""
     f_name = os.path.join(
@@ -28,6 +32,25 @@ def fake_factory(size):
         address = fake.address()
         addresses.append(address)
     return addresses
+
+def genDOB(size):
+    dob=[]
+    # How many seconds between [date] and [01/03/2014]? That will be maxSeconds
+    minDate=datetime.strptime("1916/01/01","%Y/%m/%d")
+    #refDate = datetime.strptime(DateOfBirth.ToString(), "%d/%m/%Y %H:%M:%S")
+    # In above, be careful that your locale is returning dates in a matching format
+    maxDate = datetime.strptime("01/03/2014", "%d/%m/%Y")
+    # Calculate the difference between the starting date and the maximum date
+    timeDifference = maxDate - minDate
+    maxSeconds = timeDifference.total_seconds()
+    for _ in range(0,size):
+
+        # Choose a random number between 1 and secondsMax
+        randSeconds = random.randrange(0, maxSeconds)
+        # Add the random number of seconds to the original date
+        retDate = minDate + timedelta(seconds=randSeconds)
+        dob.append(retDate)
+    return dob
 
 def data_gen(first_names_data,last_names_data,size,race_ratio,male_gender):
     ### sizes for each race
@@ -221,9 +244,13 @@ def mk_data(first_names_data, last_names_data, size, male_gender,race_ratio={}):
     #frames = [random_generator, race_generator]
     data = race_generator
     data['address'] = pd.DataFrame(addresses)
-    #print data
+    print data.head()
+
+    dates=genDOB(size)
     #f_name = os.path.join(os.path.dirname(__file__), 'test1.csv')
     #data.to_csv(f_name)
+    data['DOB']=pd.DataFrame(dates)
+    print data.head()
     return data
 
 
