@@ -1,7 +1,7 @@
 ,First_Name,Gender,Race,Race_Detail
 0,Aiguo,M,Asian,Chinese
 1,An,M,Asian,Chinese
-2,AngÃºo,M,Asian,Chinese
+2,Ang√∫o,M,Asian,Chinese
 3,Bai,M,Asian,Chinese
 4,Bingwen,M,Asian,Chinese
 5,Bo,M,Asian,Chinese
@@ -23,9 +23,9 @@
 21,Chonglin,M,Asian,Chinese
 22,Chuanli,M,Asian,Chinese
 23,Chung,M,Asian,Chinese
-24,DÃ©lÃ¬,M,Asian,Chinese
-25,DÃ©shÃ¬,M,Asian,Chinese
-26,DÃ©wei,M,Asian,Chinese
+24,D√©l√¨,M,Asian,Chinese
+25,D√©sh√¨,M,Asian,Chinese
+26,D√©wei,M,Asian,Chinese
 27,Da,M,Asian,Chinese
 28,Dai,M,Asian,Chinese
 29,Delun,M,Asian,Chinese
@@ -86,7 +86,7 @@
 84,Kang,M,Asian,Chinese
 85,Keung,M,Asian,Chinese
 86,Kong,M,Asian,Chinese
-87,LÃ¬,M,Asian,Chinese
+87,L√¨,M,Asian,Chinese
 88,Lei,M,Asian,Chinese
 89,Li,M,Asian,Chinese
 90,Liang,M,Asian,Chinese
@@ -98,7 +98,7 @@
 96,Lok,M,Asian,Chinese
 97,Longwei,M,Asian,Chinese
 98,Manchu,M,Asian,Chinese
-99,Ming-hÃºa,M,Asian,Chinese
+99,Ming-h√∫a,M,Asian,Chinese
 100,Mingli,M,Asian,Chinese
 101,Ming-tun,M,Asian,Chinese
 102,Minsheng,M,Asian,Chinese
@@ -121,8 +121,8 @@
 119,Renshu,M,Asian,Chinese
 120,Rong,M,Asian,Chinese
 121,Ru,M,Asian,Chinese
-122,ShÃ oqiÃ¡ng,M,Asian,Chinese
-123,ShÃ¬lÃ_n,M,Asian,Chinese
+122,Sh√†oqi√°ng,M,Asian,Chinese
+123,Sh√¨l√≠n,M,Asian,Chinese
 124,Shan,M,Asian,Chinese
 125,Shanyuan,M,Asian,Chinese
 126,Shen,M,Asian,Chinese
@@ -136,12 +136,12 @@
 134,Shunyuan,M,Asian,Chinese
 135,Shu-sai-chong,M,Asian,Chinese
 136,Siyu,M,Asian,Chinese
-137,Sueh-yÃ©n,M,Asian,Chinese
+137,Sueh-y√©n,M,Asian,Chinese
 138,Sying,M,Asian,Chinese
 139,Tao,M,Asian,Chinese
 140,Tengfei,M,Asian,Chinese
 141,Tingzhe,M,Asian,Chinese
-142,Tsun-chÃ_ng,M,Asian,Chinese
+142,Tsun-ch√πng,M,Asian,Chinese
 143,Tung,M,Asian,Chinese
 144,Wang,M,Asian,Chinese
 145,Wei,M,Asian,Chinese
@@ -188,12 +188,12 @@
 186,Zedong,M,Asian,Chinese
 187,Zemin,M,Asian,Chinese
 188,Zenguang,M,Asian,Chinese
-189,ZhÃ¬xin,M,Asian,Chinese
-190,ZhÃ¬yuan,M,Asian,Chinese
+189,Zh√¨xin,M,Asian,Chinese
+190,Zh√¨yuan,M,Asian,Chinese
 191,Zhen,M,Asian,Chinese
 192,Zhengzhong,M,Asian,Chinese
 193,Zhensheng,M,Asian,Chinese
-194,ZhihuÃ¡n,M,Asian,Chinese
+194,Zhihu√°n,M,Asian,Chinese
 195,Zhiqiang,M,Asian,Chinese
 196,Zhong,M,Asian,Chinese
 197,Zian,M,Asian,Chinese
@@ -225,14 +225,14 @@
 223,Dandan,F,Asian,Chinese
 224,Da-Xia,F,Asian,Chinese
 225,Dongmei,F,Asian,Chinese
-226,Eu-fÃ_nh,F,Asian,Chinese
+226,Eu-f√πnh,F,Asian,Chinese
 227,Eu-meh,F,Asian,Chinese
 228,Fang,F,Asian,Chinese
 229,Far,F,Asian,Chinese
 230,Fenfang,F,Asian,Chinese
 231,Fung,F,Asian,Chinese
 232,Guan-yin,F,Asian,Chinese
-233,HÃ_ifang,F,Asian,Chinese
+233,H√πifang,F,Asian,Chinese
 234,Howin,F,Asian,Chinese
 235,Hu,F,Asian,Chinese
 236,Hua,F,Asian,Chinese
@@ -261,8 +261,8 @@
 259,Kuai hua,F,Asian,Chinese
 260,Kue ching,F,Asian,Chinese
 261,Kwong,F,Asian,Chinese
-262,LÃ¬ hÃºa,F,Asian,Chinese
-263,LÃ¬xÃºe,F,Asian,Chinese
+262,L√¨ h√∫a,F,Asian,Chinese
+263,L√¨x√∫e,F,Asian,Chinese
 264,Lan,F,Asian,Chinese
 265,Lanfen,F,Asian,Chinese
 266,Lanying,F,Asian,Chinese
@@ -284,8 +284,8 @@
 282,Liqiu,F,Asian,Chinese
 283,Liu,F,Asian,Chinese
 284,Luli,F,Asian,Chinese
-285,MÃ©h-Ã¨,F,Asian,Chinese
-286,MÃ©h-fÃ_nh,F,Asian,Chinese
+285,M√©h-√®,F,Asian,Chinese
+286,M√©h-f√πnh,F,Asian,Chinese
 287,Mei,F,Asian,Chinese
 288,Mei,F,Asian,Chinese
 289,Meifen,F,Asian,Chinese
@@ -298,7 +298,7 @@
 296,Meixiu,F,Asian,Chinese
 297,Meiying,F,Asian,Chinese
 298,Meizhen,F,Asian,Chinese
-299,Ming-huÃ¡:,F,Asian,Chinese
+299,Ming-hu√°:,F,Asian,Chinese
 300,Mingxia,F,Asian,Chinese
 301,Mingyu,F,Asian,Chinese
 302,Mingzhu,F,Asian,Chinese
@@ -312,7 +312,7 @@
 310,Peijing,F,Asian,Chinese
 311,Peizhi,F,Asian,Chinese
 312,Ping,F,Asian,Chinese
-313,QiÃ nrÃº,F,Asian,Chinese
+313,Qi√†nr√∫,F,Asian,Chinese
 314,Qiao,F,Asian,Chinese
 315,Qiaohui,F,Asian,Chinese
 316,Qiaolian,F,Asian,Chinese
@@ -322,7 +322,7 @@
 320,Qingzhao,F,Asian,Chinese
 321,Qiu,F,Asian,Chinese
 322,Qiuyue,F,Asian,Chinese
-323,RÃ_fen,F,Asian,Chinese
+323,R√πfen,F,Asian,Chinese
 324,Renxiang,F,Asian,Chinese
 325,Rong,F,Asian,Chinese
 326,Rou,F,Asian,Chinese
@@ -330,7 +330,7 @@
 328,Ruolan,F,Asian,Chinese
 329,Ruomei,F,Asian,Chinese
 330,Shaoqing,F,Asian,Chinese
-331,Sheu-fÃ_h,F,Asian,Chinese
+331,Sheu-f√πh,F,Asian,Chinese
 332,Shihong,F,Asian,Chinese
 333,Shu,F,Asian,Chinese
 334,Shuang,F,Asian,Chinese
@@ -338,9 +338,9 @@
 336,Shun,F,Asian,Chinese
 337,Song,F,Asian,Chinese
 338,Suyin,F,Asian,Chinese
-339,SyÃ ,F,Asian,Chinese
+339,Sy√†,F,Asian,Chinese
 340,Sying,F,Asian,Chinese
-341,TÃ¨,F,Asian,Chinese
+341,T√®,F,Asian,Chinese
 342,Tao,F,Asian,Chinese
 343,Ting,F,Asian,Chinese
 344,Tu,F,Asian,Chinese
@@ -369,10 +369,10 @@
 367,Xiurong,F,Asian,Chinese
 368,Xiuying,F,Asian,Chinese
 369,Xueman,F,Asian,Chinese
-370,YÃ¡ng,F,Asian,Chinese
-371,YÃ_n,F,Asian,Chinese
-372,YÃ_ying,F,Asian,Chinese
-373,YÃ_zhen,F,Asian,Chinese
+370,Y√°ng,F,Asian,Chinese
+371,Y√≠n,F,Asian,Chinese
+372,Y√ºying,F,Asian,Chinese
+373,Y√ºzhen,F,Asian,Chinese
 374,Ya,F,Asian,Chinese
 375,Yan,F,Asian,Chinese
 376,Yanmei,F,Asian,Chinese
@@ -382,8 +382,8 @@
 380,Yingtai,F,Asian,Chinese
 381,Yow,F,Asian,Chinese
 382,Yu,F,Asian,Chinese
-383,YuÃ¨hai,F,Asian,Chinese
-384,YuÃ¨qÃ_n,F,Asian,Chinese
+383,Yu√®hai,F,Asian,Chinese
+384,Yu√®q√≠n,F,Asian,Chinese
 385,Yuan,F,Asian,Chinese
 386,Yubi,F,Asian,Chinese
 387,Yue,F,Asian,Chinese
@@ -1279,7 +1279,7 @@
 136,MIKEL,M,Spanish,None
 137,CARMELO,M,Spanish,None
 138,PASCUAL,M,Spanish,None
-139,IÃ‘IGO,M,Spanish,None
+139,I√ëIGO,M,Spanish,None
 140,FEDERICO,M,Spanish,None
 141,ASIER,M,Spanish,None
 142,ANTONIO MANUEL,M,Spanish,None
@@ -1309,7 +1309,7 @@
 166,LLUIS,M,Spanish,None
 167,JOSEP MARIA,M,Spanish,None
 168,EUSEBIO,M,Spanish,None
-169,IÃ‘AKI,M,Spanish,None
+169,I√ëAKI,M,Spanish,None
 170,ANTONI,M,Spanish,None
 171,JACINTO,M,Spanish,None
 172,POL,M,Spanish,None
@@ -1669,7 +1669,7 @@
 526,NOUREDDINE,M,Spanish,None
 527,ENRIQUE JOSE,M,Spanish,None
 528,DELFIN,M,Spanish,None
-529,BEÃ‘AT,M,Spanish,None
+529,BE√ëAT,M,Spanish,None
 530,MIMOUN,M,Spanish,None
 531,JOSE RAUL,M,Spanish,None
 532,ALEJANDRO JOSE,M,Spanish,None
@@ -1756,7 +1756,7 @@
 613,MARIN,M,Spanish,None
 614,YASSIN,M,Spanish,None
 615,AXEL,M,Spanish,None
-616,LLORENÃ‡,M,Spanish,None
+616,LLOREN√á,M,Spanish,None
 617,MAX,M,Spanish,None
 618,VLADIMIR,M,Spanish,None
 619,ALESSANDRO,M,Spanish,None
@@ -1765,7 +1765,7 @@
 622,ABDERRAHMAN,M,Spanish,None
 623,ANGEL JESUS,M,Spanish,None
 624,VOLODYMYR,M,Spanish,None
-625,VICENÃ‡,M,Spanish,None
+625,VICEN√á,M,Spanish,None
 626,LUIS IGNACIO,M,Spanish,None
 627,ARTUR,M,Spanish,None
 628,YOUNES,M,Spanish,None
@@ -2155,7 +2155,7 @@
 1012,JOAQUIN JOSE,M,Spanish,None
 1013,WILSON,M,Spanish,None
 1014,MIHAIL,M,Spanish,None
-1015,MARÃ‡AL,M,Spanish,None
+1015,MAR√áAL,M,Spanish,None
 1016,MANUEL MIGUEL,M,Spanish,None
 1017,ILYAS,M,Spanish,None
 1018,JOSE MARCOS,M,Spanish,None
@@ -2569,7 +2569,7 @@
 1426,FRANCIS,M,Spanish,None
 1427,DOMINGO JESUS,M,Spanish,None
 1428,JOAN MARC,M,Spanish,None
-1429,JOSEBA IÃ‘AKI,M,Spanish,None
+1429,JOSEBA I√ëAKI,M,Spanish,None
 1430,ANGEL CUSTODIO,M,Spanish,None
 1431,MAREK,M,Spanish,None
 1432,ARMAND,M,Spanish,None
@@ -2826,7 +2826,7 @@
 1683,SHAHID,M,Spanish,None
 1684,ASTERIO,M,Spanish,None
 1685,LUIS PABLO,M,Spanish,None
-1686,EÃ‘AUT,M,Spanish,None
+1686,E√ëAUT,M,Spanish,None
 1687,IVAN MANUEL,M,Spanish,None
 1688,LIONEL,M,Spanish,None
 1689,TXOMIN,M,Spanish,None
@@ -2969,7 +2969,7 @@
 1826,ALVARO ANTONIO,M,Spanish,None
 1827,CRISPIN,M,Spanish,None
 1828,FABRIZIO,M,Spanish,None
-1829,FRANÃ‡OIS,M,Spanish,None
+1829,FRAN√áOIS,M,Spanish,None
 1830,HABIB,M,Spanish,None
 1831,MIGUEL ALBERTO,M,Spanish,None
 1832,RIDA,M,Spanish,None
@@ -3093,7 +3093,7 @@
 1950,SATURIO,M,Spanish,None
 1951,STEPHANE,M,Spanish,None
 1952,ANDRES JAVIER,M,Spanish,None
-1953,JON IÃ‘AKI,M,Spanish,None
+1953,JON I√ëAKI,M,Spanish,None
 1954,JOSE AMADOR,M,Spanish,None
 1955,ANTONIO ALFONSO,M,Spanish,None
 1956,JAVIER ANDRES,M,Spanish,None
@@ -3685,7 +3685,7 @@
 2542,YOUSSOUF,M,Spanish,None
 2543,DAVID WILLIAM,M,Spanish,None
 2544,FERNANDO ANDRES,M,Spanish,None
-2545,JEAN FRANÃ‡OIS,M,Spanish,None
+2545,JEAN FRAN√áOIS,M,Spanish,None
 2546,JIAN,M,Spanish,None
 2547,PAPA,M,Spanish,None
 2548,CRISTIANO,M,Spanish,None
@@ -4661,7 +4661,7 @@
 3518,JOSE JUSTO,M,Spanish,None
 3519,JUAN ANTON,M,Spanish,None
 3520,JUAN GERARDO,M,Spanish,None
-3521,NUÃ‘O,M,Spanish,None
+3521,NU√ëO,M,Spanish,None
 3522,OWEN,M,Spanish,None
 3523,SAIKOU,M,Spanish,None
 3524,WILDER,M,Spanish,None
@@ -5490,7 +5490,7 @@
 4347,JELLOUL,M,Spanish,None
 4348,JOSE AQUILINO,M,Spanish,None
 4349,MAATI,M,Spanish,None
-4350,MARTIÃ‘O,M,Spanish,None
+4350,MARTI√ëO,M,Spanish,None
 4351,MIGUEL OSCAR,M,Spanish,None
 4352,OSMAN,M,Spanish,None
 4353,SOLOMON,M,Spanish,None
@@ -6555,7 +6555,7 @@
 5412,EL KBIR,M,Spanish,None
 5413,ENRIQUE JOAQUIN,M,Spanish,None
 5414,IANCU,M,Spanish,None
-5415,IÃ‘IGO MARIA,M,Spanish,None
+5415,I√ëIGO MARIA,M,Spanish,None
 5416,IONUT COSMIN,M,Spanish,None
 5417,JABER,M,Spanish,None
 5418,JUAN MODESTO,M,Spanish,None
@@ -6792,7 +6792,7 @@
 5649,FELIPE ALEJANDRO,M,Spanish,None
 5650,FELIX DANIEL,M,Spanish,None
 5651,GAGIK,M,Spanish,None
-5652,IÃ‘AQUI,M,Spanish,None
+5652,I√ëAQUI,M,Spanish,None
 5653,IOAN SORIN,M,Spanish,None
 5654,IRINEL,M,Spanish,None
 5655,JAIRO ALBERTO,M,Spanish,None
@@ -7039,7 +7039,7 @@
 5896,EUFEMIANO,M,Spanish,None
 5897,EUGENIO MIGUEL,M,Spanish,None
 5898,HERMINDO,M,Spanish,None
-5899,IÃ‘IGO JAVIER,M,Spanish,None
+5899,I√ëIGO JAVIER,M,Spanish,None
 5900,JAVIER OSCAR,M,Spanish,None
 5901,JIANGUO,M,Spanish,None
 5902,JOAQUIN SANTIAGO,M,Spanish,None
@@ -7428,7 +7428,7 @@
 6285,FLORICA,M,Spanish,None
 6286,GHENADIE,M,Spanish,None
 6287,HUGO CESAR,M,Spanish,None
-6288,IÃ‘IGO LOYOLA,M,Spanish,None
+6288,I√ëIGO LOYOLA,M,Spanish,None
 6289,ISAAC ANTONIO,M,Spanish,None
 6290,JAMES PATRICK,M,Spanish,None
 6291,JORDI XAVIER,M,Spanish,None
@@ -7814,7 +7814,7 @@
 6671,FERNANDO SALVADOR,M,Spanish,None
 6672,GABRIEL IGNACIO,M,Spanish,None
 6673,GERARDO ANDRES,M,Spanish,None
-6674,GONÃ‡AL,M,Spanish,None
+6674,GON√áAL,M,Spanish,None
 6675,GONZALO DANIEL,M,Spanish,None
 6676,GRAU,M,Spanish,None
 6677,GUILLERMO RAMON,M,Spanish,None
@@ -8818,7 +8818,7 @@
 7675,HMIDA,M,Spanish,None
 7676,HSSAIN,M,Spanish,None
 7677,HUGO FRANCISCO,M,Spanish,None
-7678,IÃ‘IGO JOSE,M,Spanish,None
+7678,I√ëIGO JOSE,M,Spanish,None
 7679,IONUT MADALIN,M,Spanish,None
 7680,JESUS DARIO,M,Spanish,None
 7681,JORDY,M,Spanish,None
@@ -9123,7 +9123,7 @@
 7980,IAN MICHAEL,M,Spanish,None
 7981,IBRAHIN,M,Spanish,None
 7982,IKER JOSE,M,Spanish,None
-7983,IÃ‘AKI XABIER,M,Spanish,None
+7983,I√ëAKI XABIER,M,Spanish,None
 7984,ISIDOR,M,Spanish,None
 7985,JASWANT,M,Spanish,None
 7986,JESUS AMABLE,M,Spanish,None
@@ -9762,7 +9762,7 @@
 8619,HUGO ARMANDO,M,Spanish,None
 8620,HUMBERTO JESUS,M,Spanish,None
 8621,ILYASSE,M,Spanish,None
-8622,IÃ‘AKI MIRENA,M,Spanish,None
+8622,I√ëAKI MIRENA,M,Spanish,None
 8623,ISAAC FRANCISCO,M,Spanish,None
 8624,JACINTO MIGUEL,M,Spanish,None
 8625,JAVIER ADOLFO,M,Spanish,None
@@ -10060,7 +10060,7 @@
 8917,ESTEBAN CARLOS,M,Spanish,None
 8918,FELIZ,M,Spanish,None
 8919,GERMAN CARLOS,M,Spanish,None
-8920,GONÃ‡ALO,M,Spanish,None
+8920,GON√áALO,M,Spanish,None
 8921,GONZALO ANGEL,M,Spanish,None
 8922,HALIM,M,Spanish,None
 8923,HAMADOU,M,Spanish,None
@@ -10510,7 +10510,7 @@
 9367,FRANCISCO EZEQUIEL,M,Spanish,None
 9368,FRANCISCO FABIAN,M,Spanish,None
 9369,FRANCISCO LEON,M,Spanish,None
-9370,FRANÃ‡OIS XAVIER,M,Spanish,None
+9370,FRAN√áOIS XAVIER,M,Spanish,None
 9371,FREDERICK JOHN,M,Spanish,None
 9372,GERMA,M,Spanish,None
 9373,GHALI,M,Spanish,None
@@ -11177,7 +11177,7 @@
 10034,JOSE CASIMIRO,M,Spanish,None
 10035,JOSE NOE,M,Spanish,None
 10036,JOSE PERFECTO,M,Spanish,None
-10037,JOSU IÃ‘AKI,M,Spanish,None
+10037,JOSU I√ëAKI,M,Spanish,None
 10038,JUDE,M,Spanish,None
 10039,KWADWO,M,Spanish,None
 10040,LENNY,M,Spanish,None
@@ -11489,7 +11489,7 @@
 10346,PABLO JAIME,M,Spanish,None
 10347,PAU JOSEP,M,Spanish,None
 10348,PETER ALEXANDER,M,Spanish,None
-10349,PONÃ‡,M,Spanish,None
+10349,PON√á,M,Spanish,None
 10350,RAFAEL PASCUAL,M,Spanish,None
 10351,RAJU,M,Spanish,None
 10352,RAMON LORENZO,M,Spanish,None
@@ -12233,7 +12233,7 @@
 11090,IKER ALEXANDER,M,Spanish,None
 11091,IOAN DANUT,M,Spanish,None
 11092,IOKIN,M,Spanish,None
-11093,ION IÃ‘AKI,M,Spanish,None
+11093,ION I√ëAKI,M,Spanish,None
 11094,IONUT VIOREL,M,Spanish,None
 11095,ISAAK,M,Spanish,None
 11096,ISIDRO ANGEL,M,Spanish,None
@@ -14430,7 +14430,7 @@
 13287,HILARIO JAVIER,M,Spanish,None
 13288,HUSNAIN,M,Spanish,None
 13289,IANOS,M,Spanish,None
-13290,IÃ‘IGO MANUEL,M,Spanish,None
+13290,I√ëIGO MANUEL,M,Spanish,None
 13291,IOSIF DANIEL,M,Spanish,None
 13292,IOURI,M,Spanish,None
 13293,IRU,M,Spanish,None
@@ -14444,14 +14444,14 @@
 13301,JHONATAN ALEXANDER,M,Spanish,None
 13302,JIANBO,M,Spanish,None
 13303,JOAN JOSE,M,Spanish,None
-13304,JOAN VICENÃ‡,M,Spanish,None
+13304,JOAN VICEN√á,M,Spanish,None
 13305,JOEL JOAN,M,Spanish,None
 13306,JON IKER,M,Spanish,None
 13307,JORDI FRANCESC,M,Spanish,None
 13308,JORGE WILSON,M,Spanish,None
 13309,JOSE ABDON,M,Spanish,None
 13310,JOSE EDISON,M,Spanish,None
-13311,JOSE IÃ‘IGO,M,Spanish,None
+13311,JOSE I√ëIGO,M,Spanish,None
 13312,JOSE LUIS FRANCISCO,M,Spanish,None
 13313,JOSE MARIA FRANCISCO,M,Spanish,None
 13314,JOSEP JAUME,M,Spanish,None
@@ -15192,7 +15192,7 @@
 14049,HOUDAIFA,M,Spanish,None
 14050,HUGO NICOLAS,M,Spanish,None
 14051,ILIE MARIUS,M,Spanish,None
-14052,IÃ‘AKY,M,Spanish,None
+14052,I√ëAKY,M,Spanish,None
 14053,IVAN SALVADOR,M,Spanish,None
 14054,IVAN SERGIO,M,Spanish,None
 14055,JAIME MAURICIO,M,Spanish,None
@@ -15740,7 +15740,7 @@
 14597,IAN PAUL,M,Spanish,None
 14598,IDILIO,M,Spanish,None
 14599,IKER JESUS,M,Spanish,None
-14600,IÃ‘IGO LUIS,M,Spanish,None
+14600,I√ëIGO LUIS,M,Spanish,None
 14601,ION ANDONI,M,Spanish,None
 14602,ION BOGDAN,M,Spanish,None
 14603,ION DANUT,M,Spanish,None
@@ -16299,7 +16299,7 @@
 15156,FABIO ENRIQUE,M,Spanish,None
 15157,FADY,M,Spanish,None
 15158,FATTAH,M,Spanish,None
-15159,FAYÃ‡AL,M,Spanish,None
+15159,FAY√áAL,M,Spanish,None
 15160,FEDERICO EDUARDO,M,Spanish,None
 15161,FEDERICO PABLO,M,Spanish,None
 15162,FEKRI,M,Spanish,None
@@ -16691,7 +16691,7 @@
 15548,HRISTIAN,M,Spanish,None
 15549,IKER ANDRES,M,Spanish,None
 15550,ILDEFONSO JAVIER,M,Spanish,None
-15551,IÃ‘IGO JESUS,M,Spanish,None
+15551,I√ëIGO JESUS,M,Spanish,None
 15552,IOAR,M,Spanish,None
 15553,IONEL CATALIN,M,Spanish,None
 15554,ISAAC ANDRES,M,Spanish,None
@@ -17413,7 +17413,7 @@
 16270,IAN STUART,M,Spanish,None
 16271,IKHLEF,M,Spanish,None
 16272,IMADE,M,Spanish,None
-16273,IÃ‘AKI JOSEBA,M,Spanish,None
+16273,I√ëAKI JOSEBA,M,Spanish,None
 16274,IOAN ILIE,M,Spanish,None
 16275,ION CIPRIAN,M,Spanish,None
 16276,IONEL DANUT,M,Spanish,None
@@ -17459,7 +17459,7 @@
 16316,JOSE PAUL,M,Spanish,None
 16317,JOSE RICHARD,M,Spanish,None
 16318,JOSEP EDUARD,M,Spanish,None
-16319,JOSEP VICENÃ‡,M,Spanish,None
+16319,JOSEP VICEN√á,M,Spanish,None
 16320,JOSEPH EDWARD,M,Spanish,None
 16321,JUAN CESAREO,M,Spanish,None
 16322,JUAN COSME,M,Spanish,None
@@ -18264,7 +18264,7 @@
 17121,JOSE FLORIAN,M,Spanish,None
 17122,JOSE GEOVANNY,M,Spanish,None
 17123,JOSE JACOB,M,Spanish,None
-17124,JOSE PEÃ‘A,M,Spanish,None
+17124,JOSE PE√ëA,M,Spanish,None
 17125,JOSE SEVERIANO,M,Spanish,None
 17126,JOSE SILVINO,M,Spanish,None
 17127,JOSEP MIGUEL,M,Spanish,None
@@ -18642,7 +18642,7 @@
 17499,IGNACIO JAIME,M,Spanish,None
 17500,IGNACIO MARIANO,M,Spanish,None
 17501,IKER MIGUEL,M,Spanish,None
-17502,IÃ‘IGO XABIER,M,Spanish,None
+17502,I√ëIGO XABIER,M,Spanish,None
 17503,IONUT STEFAN,M,Spanish,None
 17504,ISAAC RAMON,M,Spanish,None
 17505,ISIDRO MARIA,M,Spanish,None
@@ -20175,7 +20175,7 @@
 19032,JHONATAN JAVIER,M,Spanish,None
 19033,JIAXIN,M,Spanish,None
 19034,JINSHENG,M,Spanish,None
-19035,JOAN LLORENÃ‡,M,Spanish,None
+19035,JOAN LLOREN√á,M,Spanish,None
 19036,JOAO ALEXANDRE,M,Spanish,None
 19037,JOAO DEUS,M,Spanish,None
 19038,JOHAN ALEJANDRO,M,Spanish,None
@@ -20333,7 +20333,7 @@
 19190,PETRU COSMIN,M,Spanish,None
 19191,PETRU MIHAI,M,Spanish,None
 19192,PHILLIP JOHN,M,Spanish,None
-19193,PIERRE FRANÃ‡OIS,M,Spanish,None
+19193,PIERRE FRAN√áOIS,M,Spanish,None
 19194,POMPEU,M,Spanish,None
 19195,PREBEN,M,Spanish,None
 19196,QASIR,M,Spanish,None
@@ -21150,7 +21150,7 @@
 20007,CARLOS CHRISTIAN,M,Spanish,None
 20008,CARLOS HENRY,M,Spanish,None
 20009,CARLOS HOLMES,M,Spanish,None
-20010,CARLOS IÃ‘IGO,M,Spanish,None
+20010,CARLOS I√ëIGO,M,Spanish,None
 20011,CARLOS MICHAEL,M,Spanish,None
 20012,CARLOS VENTURA,M,Spanish,None
 20013,CATALIN BOGDAN,M,Spanish,None
@@ -21329,7 +21329,7 @@
 20186,ILYAN,M,Spanish,None
 20187,INDALECIO JOSE,M,Spanish,None
 20188,INDAR,M,Spanish,None
-20189,IÃ‘IGO ANTONIO,M,Spanish,None
+20189,I√ëIGO ANTONIO,M,Spanish,None
 20190,IOAN LAURENTIU,M,Spanish,None
 20191,ION MIHAI,M,Spanish,None
 20192,IONEL CRISTINEL,M,Spanish,None
@@ -22556,7 +22556,7 @@
 21413,FRANCISCO SATURNINO,M,Spanish,None
 21414,FRANCO EMANUEL,M,Spanish,None
 21415,FRANCO SEBASTIAN,M,Spanish,None
-21416,FRANÃ‡OIS JEAN,M,Spanish,None
+21416,FRAN√áOIS JEAN,M,Spanish,None
 21417,FRANK ROBERT,M,Spanish,None
 21418,FREDDY FRANCISCO,M,Spanish,None
 21419,FREDY JAVIER,M,Spanish,None
@@ -22610,7 +22610,7 @@
 21467,IGNACIO FERMIN,M,Spanish,None
 21468,IKER XABIER,M,Spanish,None
 21469,ILDEFONSO MARIA,M,Spanish,None
-21470,IÃ‘IGO JUAN,M,Spanish,None
+21470,I√ëIGO JUAN,M,Spanish,None
 21471,IOAN RAZVAN,M,Spanish,None
 21472,ION GURUTZ,M,Spanish,None
 21473,ION LIVIU,M,Spanish,None
@@ -22810,7 +22810,7 @@
 21667,MIHAI DORIN,M,Spanish,None
 21668,MIHAIL DANIEL,M,Spanish,None
 21669,MIJAEL,M,Spanish,None
-21670,MIKEL IÃ‘AKI,M,Spanish,None
+21670,MIKEL I√ëAKI,M,Spanish,None
 21671,MILAD,M,Spanish,None
 21672,MILTON ALFREDO,M,Spanish,None
 21673,MINGMING,M,Spanish,None
@@ -23295,7 +23295,7 @@
 22152,GIGA,M,Spanish,None
 22153,GILVAN,M,Spanish,None
 22154,GINES ALBERTO,M,Spanish,None
-22155,GONÃ‡ALO NUNO,M,Spanish,None
+22155,GON√áALO NUNO,M,Spanish,None
 22156,GONZALO JAIME,M,Spanish,None
 22157,GONZALO SALVADOR,M,Spanish,None
 22158,GRAHAM RICHARD,M,Spanish,None
@@ -23343,7 +23343,7 @@
 22200,ILIE IOAN,M,Spanish,None
 22201,ILIYAS,M,Spanish,None
 22202,INAKI,M,Spanish,None
-22203,IÃ‘IGO FERNANDO,M,Spanish,None
+22203,I√ëIGO FERNANDO,M,Spanish,None
 22204,IOAN ROBERT,M,Spanish,None
 22205,IOAN VICTOR,M,Spanish,None
 22206,IONEL CIPRIAN,M,Spanish,None
@@ -23849,7 +23849,7 @@
 22706,ANTONIO PLACIDO,M,Spanish,None
 22707,ANTONIO ROSENDO,M,Spanish,None
 22708,ANTONIO ZACARIAS,M,Spanish,None
-22709,AÃ‘ATERVE,M,Spanish,None
+22709,A√ëATERVE,M,Spanish,None
 22710,APARECIDO,M,Spanish,None
 22711,AQUILINO MANUEL,M,Spanish,None
 22712,ARAI,M,Spanish,None
@@ -24138,7 +24138,7 @@
 22995,IKER SANTIAGO,M,Spanish,None
 22996,ILIE CATALIN,M,Spanish,None
 22997,IMERIO,M,Spanish,None
-22998,IÃ‘IGO FRANCISCO,M,Spanish,None
+22998,I√ëIGO FRANCISCO,M,Spanish,None
 22999,IOAN GRIGORE,M,Spanish,None
 23000,IOAN RAUL,M,Spanish,None
 23001,IOAN SIMION,M,Spanish,None
@@ -24205,7 +24205,7 @@
 23062,JOHN LAWRENCE,M,Spanish,None
 23063,JOHN MAURICIO,M,Spanish,None
 23064,JOHN SIDNEY,M,Spanish,None
-23065,JON IÃ‘IGO,M,Spanish,None
+23065,JON I√ëIGO,M,Spanish,None
 23066,JONAH,M,Spanish,None
 23067,JONATAN FRANCISCO,M,Spanish,None
 23068,JONATHAN ISAAC,M,Spanish,None
@@ -24949,7 +24949,7 @@
 23806,FRANCISCO P,M,Spanish,None
 23807,FRANCISCO TADEO,M,Spanish,None
 23808,FRANCISCO VENANCIO,M,Spanish,None
-23809,FRANÃ‡OIS JOSEPH,M,Spanish,None
+23809,FRAN√áOIS JOSEPH,M,Spanish,None
 23810,FREDDY GUSTAVO,M,Spanish,None
 23811,FREDY PATRICIO,M,Spanish,None
 23812,FRIEDRICH KARL,M,Spanish,None
@@ -25163,7 +25163,7 @@
 24020,KHEIREDDINE,M,Spanish,None
 24021,KIRO,M,Spanish,None
 24022,KLEBER FERNANDO,M,Spanish,None
-24023,KOLDO IÃ‘AKI,M,Spanish,None
+24023,KOLDO I√ëAKI,M,Spanish,None
 24024,LAI,M,Spanish,None
 24025,LAMBERTUS,M,Spanish,None
 24026,LAMKADEM,M,Spanish,None
@@ -26353,7 +26353,7 @@
 25210,PETRU IULIAN,M,Spanish,None
 25211,PHILIP HENRY,M,Spanish,None
 25212,PHILIPE,M,Spanish,None
-25213,PHILIPPE FRANÃ‡OIS,M,Spanish,None
+25213,PHILIPPE FRAN√áOIS,M,Spanish,None
 25214,PIERGIORGIO,M,Spanish,None
 25215,PIO MANUEL,M,Spanish,None
 25216,PIOTR GRZEGORZ,M,Spanish,None
@@ -26691,7 +26691,7 @@
 25548,CLARA,F,Spanish,None
 25549,ANNA,F,Spanish,None
 25550,MAGDALENA,F,Spanish,None
-25551,BEGOÃ‘A,F,Spanish,None
+25551,BEGO√ëA,F,Spanish,None
 25552,VICENTA,F,Spanish,None
 25553,ASUNCION,F,Spanish,None
 25554,MATILDE,F,Spanish,None
@@ -26706,7 +26706,7 @@
 25563,MARIA ASUNCION,F,Spanish,None
 25564,MARIA PAZ,F,Spanish,None
 25565,ELVIRA,F,Spanish,None
-25566,MARIA BEGOÃ‘A,F,Spanish,None
+25566,MARIA BEGO√ëA,F,Spanish,None
 25567,SOLEDAD,F,Spanish,None
 25568,NATIVIDAD,F,Spanish,None
 25569,GEMA,F,Spanish,None
@@ -27347,7 +27347,7 @@
 26204,DEBORAH,F,Spanish,None
 26205,HABIBA,F,Spanish,None
 26206,ANGELS,F,Spanish,None
-26207,ZURIÃ‘E,F,Spanish,None
+26207,ZURI√ëE,F,Spanish,None
 26208,ALBINA,F,Spanish,None
 26209,RAIMUNDA,F,Spanish,None
 26210,IONELA,F,Spanish,None
@@ -27499,7 +27499,7 @@
 26356,LIBRADA,F,Spanish,None
 26357,AINTZANE,F,Spanish,None
 26358,JOANNA,F,Spanish,None
-26359,GARBIÃ‘E,F,Spanish,None
+26359,GARBI√ëE,F,Spanish,None
 26360,MARIA ROSER,F,Spanish,None
 26361,DARIA,F,Spanish,None
 26362,MARIA PETRA,F,Spanish,None
@@ -27735,7 +27735,7 @@
 26592,AGATA,F,Spanish,None
 26593,BELLA,F,Spanish,None
 26594,MIREN JOSUNE,F,Spanish,None
-26595,MARIA MONTAÃ‘A,F,Spanish,None
+26595,MARIA MONTA√ëA,F,Spanish,None
 26596,MARIA CASTILLO,F,Spanish,None
 26597,JUANA ROSA,F,Spanish,None
 26598,JOAQUIMA,F,Spanish,None
@@ -27772,7 +27772,7 @@
 26629,NADIYA,F,Spanish,None
 26630,LUDIVINA,F,Spanish,None
 26631,MARTHA LUCIA,F,Spanish,None
-26632,MARIA SEÃ‘OR,F,Spanish,None
+26632,MARIA SE√ëOR,F,Spanish,None
 26633,LILIAN,F,Spanish,None
 26634,IVETTE,F,Spanish,None
 26635,NADINE,F,Spanish,None
@@ -27997,7 +27997,7 @@
 26854,CAROL,F,Spanish,None
 26855,MARIA LIDON,F,Spanish,None
 26856,ARES,F,Spanish,None
-26857,MARIA PEÃ‘A,F,Spanish,None
+26857,MARIA PE√ëA,F,Spanish,None
 26858,YULIA,F,Spanish,None
 26859,ELODIA,F,Spanish,None
 26860,VALENTYNA,F,Spanish,None
@@ -28182,7 +28182,7 @@
 27039,MARIA AMERICA,F,Spanish,None
 27040,MANOLI,F,Spanish,None
 27041,HADDA,F,Spanish,None
-27042,MARIA CONCEIÃ‡AO,F,Spanish,None
+27042,MARIA CONCEI√áAO,F,Spanish,None
 27043,ARGELIA,F,Spanish,None
 27044,LUANA,F,Spanish,None
 27045,LEA,F,Spanish,None
@@ -28459,7 +28459,7 @@
 27316,MARIA AMADA,F,Spanish,None
 27317,YOHANA,F,Spanish,None
 27318,AINHARA,F,Spanish,None
-27319,BEGOÃ‘A MARIA,F,Spanish,None
+27319,BEGO√ëA MARIA,F,Spanish,None
 27320,LLUCIA,F,Spanish,None
 27321,MARILUZ,F,Spanish,None
 27322,RIANSARES,F,Spanish,None
@@ -28496,7 +28496,7 @@
 27353,SOPHIA,F,Spanish,None
 27354,EVA GLORIA,F,Spanish,None
 27355,IVANNA,F,Spanish,None
-27356,MIREN BEGOÃ‘A,F,Spanish,None
+27356,MIREN BEGO√ëA,F,Spanish,None
 27357,CELINE,F,Spanish,None
 27358,LIBIA,F,Spanish,None
 27359,ANA RITA,F,Spanish,None
@@ -28513,8 +28513,8 @@
 27370,JOSEFA LUISA,F,Spanish,None
 27371,LIERNI,F,Spanish,None
 27372,NORAH,F,Spanish,None
-27373,MIREN GARBIÃ‘E,F,Spanish,None
-27374,MONTAÃ‘A,F,Spanish,None
+27373,MIREN GARBI√ëE,F,Spanish,None
+27374,MONTA√ëA,F,Spanish,None
 27375,OMAYMA,F,Spanish,None
 27376,KIMBERLY,F,Spanish,None
 27377,MARIA OLIVIA,F,Spanish,None
@@ -28546,7 +28546,7 @@
 27403,GENMA,F,Spanish,None
 27404,ORFELINA,F,Spanish,None
 27405,ELIA MARIA,F,Spanish,None
-27406,ESPERANÃ‡A,F,Spanish,None
+27406,ESPERAN√áA,F,Spanish,None
 27407,MARAVILLA,F,Spanish,None
 27408,ANA ELISA,F,Spanish,None
 27409,GADOR,F,Spanish,None
@@ -28629,7 +28629,7 @@
 27486,MARIA CANDELA,F,Spanish,None
 27487,MARIA PALMA,F,Spanish,None
 27488,MAXIMILIANA,F,Spanish,None
-27489,FRANÃ‡OISE,F,Spanish,None
+27489,FRAN√áOISE,F,Spanish,None
 27490,JOANNE,F,Spanish,None
 27491,MELODI,F,Spanish,None
 27492,MARLEN,F,Spanish,None
@@ -28706,7 +28706,7 @@
 27563,MARY CARMEN,F,Spanish,None
 27564,NADYA,F,Spanish,None
 27565,HERMITAS,F,Spanish,None
-27566,MARIÃ‘A,F,Spanish,None
+27566,MARI√ëA,F,Spanish,None
 27567,VINYET,F,Spanish,None
 27568,ANA SILVIA,F,Spanish,None
 27569,LAZARA,F,Spanish,None
@@ -28827,7 +28827,7 @@
 27684,ZALOA,F,Spanish,None
 27685,CLAUDIA LORENA,F,Spanish,None
 27686,LOUIZA,F,Spanish,None
-27687,ANA BEGOÃ‘A,F,Spanish,None
+27687,ANA BEGO√ëA,F,Spanish,None
 27688,BLANDINA,F,Spanish,None
 27689,DOUAE,F,Spanish,None
 27690,KARINE,F,Spanish,None
@@ -29281,7 +29281,7 @@
 28138,MATILDE MARIA,F,Spanish,None
 28139,PATRICIA PILAR,F,Spanish,None
 28140,ALICIA BEATRIZ,F,Spanish,None
-28141,ALOÃ‘A,F,Spanish,None
+28141,ALO√ëA,F,Spanish,None
 28142,CARMEN LOURDES,F,Spanish,None
 28143,EUNATE,F,Spanish,None
 28144,FRANCISCA TERESA,F,Spanish,None
@@ -29570,7 +29570,7 @@
 28427,RITA CARMEN,F,Spanish,None
 28428,ZAIDA MARIA,F,Spanish,None
 28429,ANDREA PILAR,F,Spanish,None
-28430,ARGIÃ‘E,F,Spanish,None
+28430,ARGI√ëE,F,Spanish,None
 28431,CHENOA,F,Spanish,None
 28432,ELAIA,F,Spanish,None
 28433,FATUMATA,F,Spanish,None
@@ -29707,7 +29707,7 @@
 28564,CINTA ROCIO,F,Spanish,None
 28565,CLAUDIA BEATRIZ,F,Spanish,None
 28566,DENISA MARIA,F,Spanish,None
-28567,EGUZKIÃ‘E,F,Spanish,None
+28567,EGUZKI√ëE,F,Spanish,None
 28568,GHIZLAN,F,Spanish,None
 28569,MAIRA ALEJANDRA,F,Spanish,None
 28570,MARIA ERUNDINA,F,Spanish,None
@@ -30104,7 +30104,7 @@
 28961,LAURA MARCELA,F,Spanish,None
 28962,MANUELA JOSEFA,F,Spanish,None
 28963,MAYKA,F,Spanish,None
-28964,PEÃ‘A,F,Spanish,None
+28964,PE√ëA,F,Spanish,None
 28965,ROSA JULIA,F,Spanish,None
 28966,ZITA,F,Spanish,None
 28967,CAMILLA,F,Spanish,None
@@ -30221,7 +30221,7 @@
 29078,PETRONA,F,Spanish,None
 29079,RASA,F,Spanish,None
 29080,SORKUNDE,F,Spanish,None
-29081,TERESITA NIÃ‘O JESUS,F,Spanish,None
+29081,TERESITA NI√ëO JESUS,F,Spanish,None
 29082,AGUSTINA MARIA,F,Spanish,None
 29083,ANDREA VERONICA,F,Spanish,None
 29084,ANKE,F,Spanish,None
@@ -30616,7 +30616,7 @@
 29473,FLORENTA,F,Spanish,None
 29474,FRANCINE,F,Spanish,None
 29475,LUCIENE,F,Spanish,None
-29476,MARIA CASTAÃ‘AR,F,Spanish,None
+29476,MARIA CASTA√ëAR,F,Spanish,None
 29477,MARIA STELLA,F,Spanish,None
 29478,MARIA YESICA,F,Spanish,None
 29479,MARZENA,F,Spanish,None
@@ -30644,7 +30644,7 @@
 29501,MADRONA,F,Spanish,None
 29502,MARIA CARMEN PILAR,F,Spanish,None
 29503,MARIA COROMOTO,F,Spanish,None
-29504,MARIA VIÃ‘AS,F,Spanish,None
+29504,MARIA VI√ëAS,F,Spanish,None
 29505,MIMUNT,F,Spanish,None
 29506,NELY,F,Spanish,None
 29507,PAULA PILAR,F,Spanish,None
@@ -30716,7 +30716,7 @@
 29573,LAMIAA,F,Spanish,None
 29574,MARIA SIRA,F,Spanish,None
 29575,MILKA,F,Spanish,None
-29576,MIREN BEGOÃ‘E,F,Spanish,None
+29576,MIREN BEGO√ëE,F,Spanish,None
 29577,RABEA,F,Spanish,None
 29578,SAFIRA,F,Spanish,None
 29579,SUELI,F,Spanish,None
@@ -31065,7 +31065,7 @@
 29922,AMAYA MARIA,F,Spanish,None
 29923,ANA AMALIA,F,Spanish,None
 29924,ARLENE,F,Spanish,None
-29925,CAÃ‘OS SANTOS,F,Spanish,None
+29925,CA√ëOS SANTOS,F,Spanish,None
 29926,CARLA LORENA,F,Spanish,None
 29927,ESCLAVITUD,F,Spanish,None
 29928,JOSETTE,F,Spanish,None
@@ -31103,7 +31103,7 @@
 29960,CELSA MARIA,F,Spanish,None
 29961,DOMINIKA,F,Spanish,None
 29962,DONIA,F,Spanish,None
-29963,EKHIÃ‘E,F,Spanish,None
+29963,EKHI√ëE,F,Spanish,None
 29964,ELENA LILIANA,F,Spanish,None
 29965,ESTRELLA CARMEN,F,Spanish,None
 29966,HUMBELINA,F,Spanish,None
@@ -31218,7 +31218,7 @@
 30075,CAROLYN,F,Spanish,None
 30076,CLAUDIA GABRIELA,F,Spanish,None
 30077,EDILMA,F,Spanish,None
-30078,EKIÃ‘E,F,Spanish,None
+30078,EKI√ëE,F,Spanish,None
 30079,ETNA,F,Spanish,None
 30080,EVELINE,F,Spanish,None
 30081,GINEBRA,F,Spanish,None
@@ -31255,7 +31255,7 @@
 30112,LUSINE,F,Spanish,None
 30113,MARIA EDURNE,F,Spanish,None
 30114,MIHAELA DANIELA,F,Spanish,None
-30115,MIREN ZURIÃ‘E,F,Spanish,None
+30115,MIREN ZURI√ëE,F,Spanish,None
 30116,NASIRA,F,Spanish,None
 30117,PATRYCJA,F,Spanish,None
 30118,PURA CONCEPCION,F,Spanish,None
@@ -31530,7 +31530,7 @@
 30387,AMALIA CARMEN,F,Spanish,None
 30388,ANDREA GABRIELA,F,Spanish,None
 30389,AOUICHA,F,Spanish,None
-30390,CARMEN BEGOÃ‘A,F,Spanish,None
+30390,CARMEN BEGO√ëA,F,Spanish,None
 30391,CLAUDIA INES,F,Spanish,None
 30392,CORINNA,F,Spanish,None
 30393,ESTHER CARMEN,F,Spanish,None
@@ -31879,7 +31879,7 @@
 30736,ROSA MARIA CARMEN,F,Spanish,None
 30737,SAMAR,F,Spanish,None
 30738,SILVIA CAROLINA,F,Spanish,None
-30739,TERESA NIÃ‘O JESUS,F,Spanish,None
+30739,TERESA NI√ëO JESUS,F,Spanish,None
 30740,VICENTA PILAR,F,Spanish,None
 30741,ZHORA,F,Spanish,None
 30742,ANDREEA MADALINA,F,Spanish,None
@@ -31970,7 +31970,7 @@
 30827,LUDOVICA,F,Spanish,None
 30828,LUZ ANDREA,F,Spanish,None
 30829,MARIA EMPAR,F,Spanish,None
-30830,MARIA ESPERANÃ‡A,F,Spanish,None
+30830,MARIA ESPERAN√áA,F,Spanish,None
 30831,MARIA JACOBA,F,Spanish,None
 30832,MARICRUZ,F,Spanish,None
 30833,MARTA ALEJANDRA,F,Spanish,None
@@ -32246,7 +32246,7 @@
 31103,ALEXANDRA ISABEL,F,Spanish,None
 31104,ALICIA SUSANA,F,Spanish,None
 31105,ALINA IONELA,F,Spanish,None
-31106,BEGOÃ‘A PILAR,F,Spanish,None
+31106,BEGO√ëA PILAR,F,Spanish,None
 31107,BLANCA CARMEN,F,Spanish,None
 31108,CARMEN LETICIA,F,Spanish,None
 31109,CECILIA PILAR,F,Spanish,None
@@ -32716,7 +32716,7 @@
 31573,MARIA COLOMA,F,Spanish,None
 31574,MARIA IVONNE,F,Spanish,None
 31575,MARIA LUCERO,F,Spanish,None
-31576,MARIA MONTAÃ‘AS,F,Spanish,None
+31576,MARIA MONTA√ëAS,F,Spanish,None
 31577,MARIA NORA,F,Spanish,None
 31578,MARIA ONELIA,F,Spanish,None
 31579,MARIA PERPETUA,F,Spanish,None
@@ -33109,7 +33109,7 @@
 31966,MELANIA MARIA,F,Spanish,None
 31967,MIHAELA ANDREEA,F,Spanish,None
 31968,MIHAELA RAMONA,F,Spanish,None
-31969,MIREN ARGIÃ‘E,F,Spanish,None
+31969,MIREN ARGI√ëE,F,Spanish,None
 31970,NANCY CECILIA,F,Spanish,None
 31971,NATALIA ELENA,F,Spanish,None
 31972,NERINA,F,Spanish,None
@@ -33292,7 +33292,7 @@
 32149,MARIA NUBIA,F,Spanish,None
 32150,MARIA PERFECTA,F,Spanish,None
 32151,MARIA YOANA,F,Spanish,None
-32152,MERÃ‡E,F,Spanish,None
+32152,MER√áE,F,Spanish,None
 32153,OANA ANDREEA,F,Spanish,None
 32154,PASCASIA,F,Spanish,None
 32155,PILAR JOSEFA,F,Spanish,None
@@ -33373,7 +33373,7 @@
 32230,ANDREEA DIANA,F,Spanish,None
 32231,ANIKA,F,Spanish,None
 32232,BASSMA,F,Spanish,None
-32233,BEGOÃ‘A CARMEN,F,Spanish,None
+32233,BEGO√ëA CARMEN,F,Spanish,None
 32234,CALINA,F,Spanish,None
 32235,CARMEN ARACELI,F,Spanish,None
 32236,CARMEN CLARA,F,Spanish,None
@@ -33550,7 +33550,7 @@
 32407,MARTA ANA,F,Spanish,None
 32408,MEIHUA,F,Spanish,None
 32409,MEILING,F,Spanish,None
-32410,MIREN EGUZKIÃ‘E,F,Spanish,None
+32410,MIREN EGUZKI√ëE,F,Spanish,None
 32411,MIRIAM MARIA,F,Spanish,None
 32412,MIRIAM PATRICIA,F,Spanish,None
 32413,MIRIAM TERESA,F,Spanish,None
@@ -33839,7 +33839,7 @@
 32696,ARIADNA CARMEN,F,Spanish,None
 32697,ASUN,F,Spanish,None
 32698,BEATRIZ MERCEDES,F,Spanish,None
-32699,BEGOÃ‘A ISABEL,F,Spanish,None
+32699,BEGO√ëA ISABEL,F,Spanish,None
 32700,BIRUTE,F,Spanish,None
 32701,CARMEN ANGELICA,F,Spanish,None
 32702,CATALINA THOMAS,F,Spanish,None
@@ -33848,7 +33848,7 @@
 32705,CORNELIA MARIA,F,Spanish,None
 32706,CRISPULA,F,Spanish,None
 32707,DAOUIA,F,Spanish,None
-32708,EGUSKIÃ‘E,F,Spanish,None
+32708,EGUSKI√ëE,F,Spanish,None
 32709,ERENA,F,Spanish,None
 32710,ESTELVINA,F,Spanish,None
 32711,EUDOXIA,F,Spanish,None
@@ -33935,7 +33935,7 @@
 32792,MARIA CHANTAL,F,Spanish,None
 32793,MARIA ISABELLA,F,Spanish,None
 32794,MARIA SARAI,F,Spanish,None
-32795,MARIE FRANÃ‡OISE,F,Spanish,None
+32795,MARIE FRAN√áOISE,F,Spanish,None
 32796,MARITZA ALEXANDRA,F,Spanish,None
 32797,MAUD,F,Spanish,None
 32798,MIRENTXU,F,Spanish,None
@@ -34346,7 +34346,7 @@
 33203,MARIA LUCELLY,F,Spanish,None
 33204,MARIA RODICA,F,Spanish,None
 33205,MARINA JESUS,F,Spanish,None
-33206,MARTA BEGOÃ‘A,F,Spanish,None
+33206,MARTA BEGO√ëA,F,Spanish,None
 33207,MATY,F,Spanish,None
 33208,MERCEDES TERESA,F,Spanish,None
 33209,MIHAELA IONELA,F,Spanish,None
@@ -34491,7 +34491,7 @@
 33348,DANIELA VALENTINA,F,Spanish,None
 33349,DIANA TERESA,F,Spanish,None
 33350,DIEYNABA,F,Spanish,None
-33351,DOLÃ‡A,F,Spanish,None
+33351,DOL√áA,F,Spanish,None
 33352,DOLORES GLORIA,F,Spanish,None
 33353,ELEAZAR,F,Spanish,None
 33354,ELISABETE MARIA,F,Spanish,None
@@ -35583,7 +35583,7 @@
 34440,MARIA BETANIA,F,Spanish,None
 34441,MARIA CARMEN LUISA,F,Spanish,None
 34442,MARIA DELICIAS,F,Spanish,None
-34443,MARIA ESPAÃ‘A,F,Spanish,None
+34443,MARIA ESPA√ëA,F,Spanish,None
 34444,MARIA ESTELITA,F,Spanish,None
 34445,MARIA JESUS CARMEN,F,Spanish,None
 34446,MARIA VILMA,F,Spanish,None
@@ -35840,7 +35840,7 @@
 34697,MARIA DOLLY,F,Spanish,None
 34698,MARIA ELIDIA,F,Spanish,None
 34699,MARIA FUENTE,F,Spanish,None
-34700,MARIA GRAÃ‡A,F,Spanish,None
+34700,MARIA GRA√áA,F,Spanish,None
 34701,MARIA LIS,F,Spanish,None
 34702,MARIA LUISE,F,Spanish,None
 34703,MARIA NILA,F,Spanish,None
@@ -36048,7 +36048,7 @@
 34905,BEATRIZ INMACULADA,F,Spanish,None
 34906,BRENDA MARY,F,Spanish,None
 34907,CLAUDIA RAMONA,F,Spanish,None
-34908,CONCEIÃ‡AO,F,Spanish,None
+34908,CONCEI√áAO,F,Spanish,None
 34909,CONCEPCION ANTONIA,F,Spanish,None
 34910,CORAYMA,F,Spanish,None
 34911,CRISTINA JESUS,F,Spanish,None
@@ -36110,7 +36110,7 @@
 34967,MARIA RICARDA,F,Spanish,None
 34968,MARIA SALETA,F,Spanish,None
 34969,MARIA SALIENTE,F,Spanish,None
-34970,MARIA SOTERRAÃ‘O,F,Spanish,None
+34970,MARIA SOTERRA√ëO,F,Spanish,None
 34971,MARIE ANGE,F,Spanish,None
 34972,MARIELLE,F,Spanish,None
 34973,MARILDA,F,Spanish,None
@@ -36893,7 +36893,7 @@
 35750,AMETSA,F,Spanish,None
 35751,AMPARO SOCORRO,F,Spanish,None
 35752,ANA LIZ,F,Spanish,None
-35753,ANA MARIA BEGOÃ‘A,F,Spanish,None
+35753,ANA MARIA BEGO√ëA,F,Spanish,None
 35754,ANA PINO,F,Spanish,None
 35755,ANA YSABEL,F,Spanish,None
 35756,ANABELLE,F,Spanish,None
@@ -36993,7 +36993,7 @@
 35850,MARIA MERIDA,F,Spanish,None
 35851,MARIA NAYARA,F,Spanish,None
 35852,MARIA ODILIA,F,Spanish,None
-35853,MARIA PEÃ‘ITAS,F,Spanish,None
+35853,MARIA PE√ëITAS,F,Spanish,None
 35854,MARIA TARSILA,F,Spanish,None
 35855,MARIE CARMEN,F,Spanish,None
 35856,MARIE PAULE,F,Spanish,None
@@ -37800,7 +37800,7 @@
 36657,CARMEN OLIVIA,F,Spanish,None
 36658,CARMEN REGINA,F,Spanish,None
 36659,CARMINIA,F,Spanish,None
-36660,CARMIÃ‘A,F,Spanish,None
+36660,CARMI√ëA,F,Spanish,None
 36661,CAROLINA PINO,F,Spanish,None
 36662,CHABELI,F,Spanish,None
 36663,CHARLOTTE ELIZABETH,F,Spanish,None
@@ -37876,7 +37876,7 @@
 36733,MALGORZATA EWA,F,Spanish,None
 36734,MALICA,F,Spanish,None
 36735,MARIA AZUZENA,F,Spanish,None
-36736,MARIA BAÃ‘OS,F,Spanish,None
+36736,MARIA BA√ëOS,F,Spanish,None
 36737,MARIA BERNARDITA,F,Spanish,None
 36738,MARIA BRAULIA,F,Spanish,None
 36739,MARIA CARRASCA,F,Spanish,None
@@ -38111,7 +38111,7 @@
 36968,MARIA ESTEBAN,F,Spanish,None
 36969,MARIA OFIR,F,Spanish,None
 36970,MARIA SIXTA,F,Spanish,None
-36971,MARIA SOTERRAÃ‘A,F,Spanish,None
+36971,MARIA SOTERRA√ëA,F,Spanish,None
 36972,MARIA TRINITAT,F,Spanish,None
 36973,MARIANA SIMONA,F,Spanish,None
 36974,MARIE JOSEE,F,Spanish,None
@@ -38369,7 +38369,7 @@
 37226,RAZAN,F,Spanish,None
 37227,REBECA ELENA,F,Spanish,None
 37228,RIME,F,Spanish,None
-37229,ROSA BEGOÃ‘A,F,Spanish,None
+37229,ROSA BEGO√ëA,F,Spanish,None
 37230,ROSA CARME,F,Spanish,None
 37231,ROSA CRUZ,F,Spanish,None
 37232,ROSA ESTRELLA,F,Spanish,None
@@ -38446,7 +38446,7 @@
 37303,BELLA PILAR,F,Spanish,None
 37304,BILJANA,F,Spanish,None
 37305,BJORG,F,Spanish,None
-37306,CAÃ‘OSANTOS,F,Spanish,None
+37306,CA√ëOSANTOS,F,Spanish,None
 37307,CAROLINA ANGELES,F,Spanish,None
 37308,CAROLINA SOFIA,F,Spanish,None
 37309,CHERYL ANN,F,Spanish,None
@@ -38564,7 +38564,7 @@
 37421,PATRICIA YOLANDA,F,Spanish,None
 37422,PAULA CAMILA,F,Spanish,None
 37423,PAULA ROSARIO,F,Spanish,None
-37424,PEÃ‘ARROYA,F,Spanish,None
+37424,PE√ëARROYA,F,Spanish,None
 37425,PILAR MILAGROS,F,Spanish,None
 37426,PRINCESS,F,Spanish,None
 37427,PURIFICACION ISABEL,F,Spanish,None
@@ -38713,7 +38713,7 @@
 37570,IMMACULADA CONCEPCIO,F,Spanish,None
 37571,INTISAR,F,Spanish,None
 37572,IRENE MARGARET,F,Spanish,None
-37573,ISABEL BEGOÃ‘A,F,Spanish,None
+37573,ISABEL BEGO√ëA,F,Spanish,None
 37574,ISABEL CRUZ,F,Spanish,None
 37575,ISABEL NATALIA,F,Spanish,None
 37576,ISABEL OLGA,F,Spanish,None
@@ -39014,7 +39014,7 @@
 37871,MARIA TEODOSIA,F,Spanish,None
 37872,MARIANA ADRIANA,F,Spanish,None
 37873,MARIELA ALEXANDRA,F,Spanish,None
-37874,MARIÃ‘E,F,Spanish,None
+37874,MARI√ëE,F,Spanish,None
 37875,MARLENE ROCIO,F,Spanish,None
 37876,MARTA GUADALUPE,F,Spanish,None
 37877,MARTHA ROSARIO,F,Spanish,None
@@ -39501,7 +39501,7 @@
 38358,MARIA GERONIMA,F,Spanish,None
 38359,MARIA HERLINDA,F,Spanish,None
 38360,MARIA ISABEL CARMEN,F,Spanish,None
-38361,MARIA PILAR BEGOÃ‘A,F,Spanish,None
+38361,MARIA PILAR BEGO√ëA,F,Spanish,None
 38362,MARIA RONDA,F,Spanish,None
 38363,MARIA SERVANDA,F,Spanish,None
 38364,MARIA VALDEFUENTES,F,Spanish,None
@@ -39541,7 +39541,7 @@
 38398,PARASCOVIA,F,Spanish,None
 38399,PAULA RAQUEL,F,Spanish,None
 38400,PAULINA ISABEL,F,Spanish,None
-38401,PILAR BEGOÃ‘A,F,Spanish,None
+38401,PILAR BEGO√ëA,F,Spanish,None
 38402,PILAR JUANA,F,Spanish,None
 38403,PINO DOLORES,F,Spanish,None
 38404,PLACIDA MARIA,F,Spanish,None
@@ -40018,7 +40018,7 @@
 38875,MARGARITA ALICIA,F,Spanish,None
 38876,MARIA ADINA,F,Spanish,None
 38877,MARIA CARMEN ANTONIA,F,Spanish,None
-38878,MARIA CARMEN BEGOÃ‘A,F,Spanish,None
+38878,MARIA CARMEN BEGO√ëA,F,Spanish,None
 38879,MARIA CARMEN FATIMA,F,Spanish,None
 38880,MARIA COSMINA,F,Spanish,None
 38881,MARIA DULZURA,F,Spanish,None
@@ -40244,7 +40244,7 @@
 39101,DONACIANA,F,Spanish,None
 39102,DORY,F,Spanish,None
 39103,EDITH ELIZABETH,F,Spanish,None
-39104,ELENA BEGOÃ‘A,F,Spanish,None
+39104,ELENA BEGO√ëA,F,Spanish,None
 39105,ELENA ELIZABETH,F,Spanish,None
 39106,ELENA JUANA,F,Spanish,None
 39107,ELIA CARMEN,F,Spanish,None
@@ -40672,7 +40672,7 @@
 39529,KELTSE,F,Spanish,None
 39530,KNARIK,F,Spanish,None
 39531,LAURA ANN,F,Spanish,None
-39532,LAURA BEGOÃ‘A,F,Spanish,None
+39532,LAURA BEGO√ëA,F,Spanish,None
 39533,LAVINIA ANDREEA,F,Spanish,None
 39534,LAVINIA MIHAELA,F,Spanish,None
 39535,LEYDA,F,Spanish,None
@@ -40701,7 +40701,7 @@
 39558,MARIA EDEN,F,Spanish,None
 39559,MARIA FREDESVINDA,F,Spanish,None
 39560,MARIA GILMA,F,Spanish,None
-39561,MARIA GRAÃ‡AS,F,Spanish,None
+39561,MARIA GRA√áAS,F,Spanish,None
 39562,MARIA ILEANA,F,Spanish,None
 39563,MARIA LEIDA,F,Spanish,None
 39564,MARIA LOUISA,F,Spanish,None
@@ -40954,7 +40954,7 @@
 39811,FLORENTINA ELENA,F,Spanish,None
 39812,FLORINDA MARIA,F,Spanish,None
 39813,FRANCES ELIZABETH,F,Spanish,None
-39814,FRANCISCA BEGOÃ‘A,F,Spanish,None
+39814,FRANCISCA BEGO√ëA,F,Spanish,None
 39815,FRANCISCA LUZ,F,Spanish,None
 39816,GABRIELA CLAUDIA,F,Spanish,None
 39817,GABRIELA LOREDANA,F,Spanish,None
@@ -41154,7 +41154,7 @@
 40011,TAISIA,F,Spanish,None
 40012,TERESA SOFIA,F,Spanish,None
 40013,TIANA,F,Spanish,None
-40014,TOÃ‘I,F,Spanish,None
+40014,TO√ëI,F,Spanish,None
 40015,TRACY ANNE,F,Spanish,None
 40016,TRINE,F,Spanish,None
 40017,VENICIA,F,Spanish,None
@@ -41231,7 +41231,7 @@
 40088,BARBARA ELENA,F,Spanish,None
 40089,BARBARA ELISABETH,F,Spanish,None
 40090,BEATRIZ MARINA,F,Spanish,None
-40091,BEGOÃ‘A ROSARIO,F,Spanish,None
+40091,BEGO√ëA ROSARIO,F,Spanish,None
 40092,BERTA PILAR,F,Spanish,None
 40093,BERTHA ALICIA,F,Spanish,None
 40094,BERTHA ISABEL,F,Spanish,None
@@ -41384,7 +41384,7 @@
 40241,LORENA FERNANDA,F,Spanish,None
 40242,LORENA INES,F,Spanish,None
 40243,LORENA ROSARIO,F,Spanish,None
-40244,LUCIA BEGOÃ‘A,F,Spanish,None
+40244,LUCIA BEGO√ëA,F,Spanish,None
 40245,LUCIA PAOLA,F,Spanish,None
 40246,LUDIVINE,F,Spanish,None
 40247,LUISA CARLOTA,F,Spanish,None
@@ -41618,7 +41618,7 @@
 40475,AYSEL,F,Spanish,None
 40476,AYTANA,F,Spanish,None
 40477,BARBARA ALEXANDRA,F,Spanish,None
-40478,BEGOÃ‘A ESTHER,F,Spanish,None
+40478,BEGO√ëA ESTHER,F,Spanish,None
 40479,BEGUM,F,Spanish,None
 40480,BELMIRA,F,Spanish,None
 40481,BENERANDA,F,Spanish,None
@@ -41805,7 +41805,7 @@
 40662,MARIA LASTENIA,F,Spanish,None
 40663,MARIA MARISA,F,Spanish,None
 40664,MARIA MELBA,F,Spanish,None
-40665,MARIA MERÃ‡E,F,Spanish,None
+40665,MARIA MER√áE,F,Spanish,None
 40666,MARIA MUELA,F,Spanish,None
 40667,MARIA MYRIAM,F,Spanish,None
 40668,MARIA NELSY,F,Spanish,None
@@ -42013,7 +42013,7 @@
 40870,BEATRIZ ELISA,F,Spanish,None
 40871,BEATRIZ JOSEFA,F,Spanish,None
 40872,BEATRIZ MAGDALENA,F,Spanish,None
-40873,BEGOÃ‘A PINO,F,Spanish,None
+40873,BEGO√ëA PINO,F,Spanish,None
 40874,BENARDINA,F,Spanish,None
 40875,BENVINGUDA,F,Spanish,None
 40876,BHARTI,F,Spanish,None
@@ -42024,7 +42024,7 @@
 40881,BRIGIDA CARMEN,F,Spanish,None
 40882,CAIPING,F,Spanish,None
 40883,CAMILA NICOLE,F,Spanish,None
-40884,CAÃ‘OSANTO,F,Spanish,None
+40884,CA√ëOSANTO,F,Spanish,None
 40885,CARITAT,F,Spanish,None
 40886,CARLA NATALIA,F,Spanish,None
 40887,CARMEN AGUSTINA,F,Spanish,None
@@ -42051,7 +42051,7 @@
 40908,CONSAGRACION,F,Spanish,None
 40909,CORAIMA CARMEN,F,Spanish,None
 40910,CORNELIA ELENA,F,Spanish,None
-40911,CRISTINA BEGOÃ‘A,F,Spanish,None
+40911,CRISTINA BEGO√ëA,F,Spanish,None
 40912,CRISTINA RALUCA,F,Spanish,None
 40913,CRISTINA VIRGINIA,F,Spanish,None
 40914,CYNTHIA PAOLA,F,Spanish,None
@@ -42412,7 +42412,7 @@
 41269,BARBARA FRANCISCA,F,Spanish,None
 41270,BEATRIZ PALOMA,F,Spanish,None
 41271,BEATRIZ SOLEDAD,F,Spanish,None
-41272,BEGOÃ‘A INMACULADA,F,Spanish,None
+41272,BEGO√ëA INMACULADA,F,Spanish,None
 41273,BEREZI,F,Spanish,None
 41274,BIRTHE,F,Spanish,None
 41275,BLANCA ALEJANDRA,F,Spanish,None
@@ -42445,7 +42445,7 @@
 41302,CLAUDIA VANESA,F,Spanish,None
 41303,CONCEPCION LOURDES,F,Spanish,None
 41304,CONCEPCION MANUELA,F,Spanish,None
-41305,CONSTANÃ‡A,F,Spanish,None
+41305,CONSTAN√áA,F,Spanish,None
 41306,CONSUELO ESPERANZA,F,Spanish,None
 41307,CORALI,F,Spanish,None
 41308,CRISTIANA MARIA,F,Spanish,None
@@ -42508,7 +42508,7 @@
 41365,FLORENTINA ISABEL,F,Spanish,None
 41366,FLORINA ANDREEA,F,Spanish,None
 41367,FLORINA MADALINA,F,Spanish,None
-41368,FRANÃ‡OISE MARIE,F,Spanish,None
+41368,FRAN√áOISE MARIE,F,Spanish,None
 41369,GABRIELA ANDREEA,F,Spanish,None
 41370,GABRIELA SOFIA,F,Spanish,None
 41371,GEMMA ROSA,F,Spanish,None
@@ -42648,13 +42648,13 @@
 41505,MERCEDES CECILIA,F,Spanish,None
 41506,MICAELA AYELEN,F,Spanish,None
 41507,MIHAELA DIANA,F,Spanish,None
-41508,MIREN EGUSKIÃ‘E,F,Spanish,None
+41508,MIREN EGUSKI√ëE,F,Spanish,None
 41509,MIREN GENTZANE,F,Spanish,None
 41510,MIRIA,F,Spanish,None
 41511,MIRIAM JUDITH,F,Spanish,None
 41512,MONIKE,F,Spanish,None
 41513,MONIQUE MARIE,F,Spanish,None
-41514,MONTAÃ‘AS,F,Spanish,None
+41514,MONTA√ëAS,F,Spanish,None
 41515,MONTSERRAT ISABEL,F,Spanish,None
 41516,NASLY,F,Spanish,None
 41517,NATIVIDAD ROCIO,F,Spanish,None
@@ -43076,7 +43076,7 @@
 41933,MARIA MIGDALIA,F,Spanish,None
 41934,MARIA MIREIA,F,Spanish,None
 41935,MARIA NOHELIA,F,Spanish,None
-41936,MARIA PEÃ‘AS ALBAS,F,Spanish,None
+41936,MARIA PE√ëAS ALBAS,F,Spanish,None
 41937,MARIA PILAR LUISA,F,Spanish,None
 41938,MARIA PILAR OLGA,F,Spanish,None
 41939,MARIA ROSA ISABEL,F,Spanish,None
@@ -43314,8 +43314,8 @@
 42171,AZALEA,F,Spanish,None
 42172,BEATA KATARZYNA,F,Spanish,None
 42173,BEATRIZ GUADALUPE,F,Spanish,None
-42174,BEGOÃ‘A BEATRIZ,F,Spanish,None
-42175,BEGOÃ‘A TERESA,F,Spanish,None
+42174,BEGO√ëA BEATRIZ,F,Spanish,None
+42175,BEGO√ëA TERESA,F,Spanish,None
 42176,BERNICE,F,Spanish,None
 42177,BERTHA ELIZABETH,F,Spanish,None
 42178,BERYL ANN,F,Spanish,None
@@ -43407,7 +43407,7 @@
 42264,ERONDINA,F,Spanish,None
 42265,ESCELITA,F,Spanish,None
 42266,ESHA,F,Spanish,None
-42267,ESPAÃ‘A,F,Spanish,None
+42267,ESPA√ëA,F,Spanish,None
 42268,ESPERANZA LUCIA,F,Spanish,None
 42269,ESPIRITU,F,Spanish,None
 42270,ESSADIA,F,Spanish,None
@@ -43816,8 +43816,8 @@
 42673,BEATRIZ FRANCISCA,F,Spanish,None
 42674,BEATRIZ JULIA,F,Spanish,None
 42675,BEATRIZ LAURA,F,Spanish,None
-42676,BEGOÃ‘A ANGELES,F,Spanish,None
-42677,BEGOÃ‘A ARANZAZU,F,Spanish,None
+42676,BEGO√ëA ANGELES,F,Spanish,None
+42677,BEGO√ëA ARANZAZU,F,Spanish,None
 42678,BELEN ISABEL,F,Spanish,None
 42679,BERKIS,F,Spanish,None
 42680,BERNADETTE MARY,F,Spanish,None
@@ -44067,7 +44067,7 @@
 42924,MANUELA SOFIA,F,Spanish,None
 42925,MARA LUCIA,F,Spanish,None
 42926,MARCELA GABRIELA,F,Spanish,None
-42927,MARGARITA BEGOÃ‘A,F,Spanish,None
+42927,MARGARITA BEGO√ëA,F,Spanish,None
 42928,MARGARITA BELEN,F,Spanish,None
 42929,MARGARITA CAROLINA,F,Spanish,None
 42930,MARGARITA ESPERANZA,F,Spanish,None
@@ -44146,7 +44146,7 @@
 43003,NAAMA,F,Spanish,None
 43004,NAIARA CARMEN,F,Spanish,None
 43005,NANCY COROMOTO,F,Spanish,None
-43006,NATIVIDAD SEÃ‘OR,F,Spanish,None
+43006,NATIVIDAD SE√ëOR,F,Spanish,None
 43007,NAYELI CARMEN,F,Spanish,None
 43008,NEELTJE,F,Spanish,None
 43009,NEREA CRISTINA,F,Spanish,None
@@ -44287,7 +44287,7 @@
 43144,ALEXANDRA ELISABETH,F,Spanish,None
 43145,ALEXANDRA LORENA,F,Spanish,None
 43146,ALIANZA,F,Spanish,None
-43147,ALICIA BEGOÃ‘A,F,Spanish,None
+43147,ALICIA BEGO√ëA,F,Spanish,None
 43148,ALICIA LEONOR,F,Spanish,None
 43149,ALISON DAYANA,F,Spanish,None
 43150,ALISON MARIE,F,Spanish,None
@@ -44952,7 +44952,7 @@
 43809,BARBARA ESTHER,F,Spanish,None
 43810,BEATRIZ MAR,F,Spanish,None
 43811,BEDA,F,Spanish,None
-43812,BEGOÃ‘A MERCEDES,F,Spanish,None
+43812,BEGO√ëA MERCEDES,F,Spanish,None
 43813,BELLA JOSEFA,F,Spanish,None
 43814,BERTA ROSA,F,Spanish,None
 43815,BEVERLEY ANNE,F,Spanish,None
@@ -45779,7 +45779,7 @@
 44636,JOSEPHINE ANNE,F,Spanish,None
 44637,JOYCE ANN,F,Spanish,None
 44638,JUANA ALTAGRACIA,F,Spanish,None
-44639,JUANA BEGOÃ‘A,F,Spanish,None
+44639,JUANA BEGO√ëA,F,Spanish,None
 44640,JUANA GREGORIA,F,Spanish,None
 44641,JUCELIA,F,Spanish,None
 44642,JUDITH ALEXANDRA,F,Spanish,None
@@ -45826,7 +45826,7 @@
 44683,LUISA CECILIA,F,Spanish,None
 44684,LUISA MARILLAC,F,Spanish,None
 44685,LUZ ASTRID,F,Spanish,None
-44686,LUZ BEGOÃ‘A,F,Spanish,None
+44686,LUZ BEGO√ëA,F,Spanish,None
 44687,LUZ BENIGNA,F,Spanish,None
 44688,LUZ EMILIA,F,Spanish,None
 44689,MABEL BEATRIZ,F,Spanish,None
@@ -46190,7 +46190,7 @@
 45047,BEATRIZ PAULA,F,Spanish,None
 45048,BEATRIZ SARA,F,Spanish,None
 45049,BEATRIZ VERONICA,F,Spanish,None
-45050,BEGOÃ‘A MAR,F,Spanish,None
+45050,BEGO√ëA MAR,F,Spanish,None
 45051,BELEN ALEJANDRA,F,Spanish,None
 45052,BETTINA MARIA,F,Spanish,None
 45053,BIANCA ROXANA,F,Spanish,None
@@ -46279,7 +46279,7 @@
 45136,EULALIA CONCEPCION,F,Spanish,None
 45137,EULALIA DOLORES,F,Spanish,None
 45138,EUSEBIA CARMEN,F,Spanish,None
-45139,EVA BEGOÃ‘A,F,Spanish,None
+45139,EVA BEGO√ëA,F,Spanish,None
 45140,EVA NOEMI,F,Spanish,None
 45141,FABIOLA ROCIO,F,Spanish,None
 45142,FANNY PIEDAD,F,Spanish,None
@@ -46389,7 +46389,7 @@
 45246,JOANNA AGNIESZKA,F,Spanish,None
 45247,JOAQUINA CARMEN,F,Spanish,None
 45248,JOHANNA ISABEL,F,Spanish,None
-45249,JOKIÃ‘E,F,Spanish,None
+45249,JOKI√ëE,F,Spanish,None
 45250,JOSEFA GREGORIA,F,Spanish,None
 45251,JOSEFA PATRICIA,F,Spanish,None
 45252,JOSEFA SARA,F,Spanish,None
@@ -46558,7 +46558,7 @@
 45415,MIYUKI,F,Spanish,None
 45416,MONICA ALINA,F,Spanish,None
 45417,MONICA ANGELICA,F,Spanish,None
-45418,MONICA BEGOÃ‘A,F,Spanish,None
+45418,MONICA BEGO√ëA,F,Spanish,None
 45419,MONICA DIANA,F,Spanish,None
 45420,MONICA MILAGROS,F,Spanish,None
 45421,MONICA NARCISA,F,Spanish,None
@@ -46578,7 +46578,7 @@
 45435,NOELIA ALEXANDRA,F,Spanish,None
 45436,NOUARA,F,Spanish,None
 45437,NURIA AMPARO,F,Spanish,None
-45438,NURIA BEGOÃ‘A,F,Spanish,None
+45438,NURIA BEGO√ëA,F,Spanish,None
 45439,NURIA GEMA,F,Spanish,None
 45440,OANA LOREDANA,F,Spanish,None
 45441,OLARIZU,F,Spanish,None
@@ -46594,7 +46594,7 @@
 45451,PAOLA NATALIA,F,Spanish,None
 45452,PAOLA SOFIA,F,Spanish,None
 45453,PATRICIA AMPARO,F,Spanish,None
-45454,PATRICIA BEGOÃ‘A,F,Spanish,None
+45454,PATRICIA BEGO√ëA,F,Spanish,None
 45455,PATRICIA CAROL,F,Spanish,None
 45456,PATRICIA FRANCES,F,Spanish,None
 45457,PATRICIA MILAGROS,F,Spanish,None
@@ -46826,10 +46826,10 @@
 45683,ANNA ELENA,F,Spanish,None
 45684,ANNA MIREIA,F,Spanish,None
 45685,ANNABELL,F,Spanish,None
-45686,ANNE FRANÃ‡OISE,F,Spanish,None
+45686,ANNE FRAN√áOISE,F,Spanish,None
 45687,ANTOANELA,F,Spanish,None
 45688,ANTONIA ANDREA,F,Spanish,None
-45689,ANTONIA BEGOÃ‘A,F,Spanish,None
+45689,ANTONIA BEGO√ëA,F,Spanish,None
 45690,ANTONIA ROSALIA,F,Spanish,None
 45691,ANYELI,F,Spanish,None
 45692,ARACELI FRANCISCA,F,Spanish,None
@@ -46905,7 +46905,7 @@
 45762,CLAUDIA JOHANNA,F,Spanish,None
 45763,CLAUDIA LIZETH,F,Spanish,None
 45764,CLAUDIA ROMINA,F,Spanish,None
-45765,CONCEPCION BEGOÃ‘A,F,Spanish,None
+45765,CONCEPCION BEGO√ëA,F,Spanish,None
 45766,CONCEPCION JESUS,F,Spanish,None
 45767,CONMEMORACION,F,Spanish,None
 45768,CONSUELO FRANCISCA,F,Spanish,None
@@ -47064,7 +47064,7 @@
 45921,IRENE LUISA,F,Spanish,None
 45922,IRINA MARIANA,F,Spanish,None
 45923,IRMA SUSANA,F,Spanish,None
-45924,IRUÃ‘A,F,Spanish,None
+45924,IRU√ëA,F,Spanish,None
 45925,ISABEL AZUCENA,F,Spanish,None
 45926,ISABEL JULIANA,F,Spanish,None
 45927,IVETTE MARIA,F,Spanish,None
@@ -47365,7 +47365,7 @@
 46222,RUMYANKA,F,Spanish,None
 46223,RUTH CRISTINA,F,Spanish,None
 46224,SABINE MARIA,F,Spanish,None
-46225,SABIÃ‘E,F,Spanish,None
+46225,SABI√ëE,F,Spanish,None
 46226,SAFTA,F,Spanish,None
 46227,SANDITA,F,Spanish,None
 46228,SANDRA ADRIANA,F,Spanish,None
@@ -47397,7 +47397,7 @@
 46254,SONIA EVA,F,Spanish,None
 46255,SONIA IRENE,F,Spanish,None
 46256,SONIA MARTA,F,Spanish,None
-46257,SOÃ‘A,F,Spanish,None
+46257,SO√ëA,F,Spanish,None
 46258,SORIA,F,Spanish,None
 46259,STELA MARIA,F,Spanish,None
 46260,STINE,F,Spanish,None
@@ -47560,7 +47560,7 @@
 46417,ANTONIA GUADALUPE,F,Spanish,None
 46418,ANTONIA VALLE,F,Spanish,None
 46419,ANZELIKA,F,Spanish,None
-46420,AÃ‘ES,F,Spanish,None
+46420,A√ëES,F,Spanish,None
 46421,AOIFE,F,Spanish,None
 46422,ARA MARIA,F,Spanish,None
 46423,ARACELI BELEN,F,Spanish,None
@@ -47813,7 +47813,7 @@
 46670,INGRID ALEJANDRA,F,Spanish,None
 46671,INGRID VIVIANA,F,Spanish,None
 46672,INOA,F,Spanish,None
-46673,IÃ‘AKE,F,Spanish,None
+46673,I√ëAKE,F,Spanish,None
 46674,IOANA LILIANA,F,Spanish,None
 46675,IOMARA,F,Spanish,None
 46676,IONELA VERONICA,F,Spanish,None
@@ -47853,7 +47853,7 @@
 46710,JOSSELYN MICHELLE,F,Spanish,None
 46711,JUANA BELLA,F,Spanish,None
 46712,JULIA ADRIANA,F,Spanish,None
-46713,JULIA BEGOÃ‘A,F,Spanish,None
+46713,JULIA BEGO√ëA,F,Spanish,None
 46714,JULIA CECILIA,F,Spanish,None
 46715,JULIA ELISABETH,F,Spanish,None
 46716,JULIA GLORIA,F,Spanish,None
@@ -47953,7 +47953,7 @@
 46810,MARIA CIBELES,F,Spanish,None
 46811,MARIA DANA,F,Spanish,None
 46812,MARIA DAYANA,F,Spanish,None
-46813,MARIA DOLÃ‡A,F,Spanish,None
+46813,MARIA DOL√áA,F,Spanish,None
 46814,MARIA DONINA,F,Spanish,None
 46815,MARIA ERSILIA,F,Spanish,None
 46816,MARIA ESTEFANI,F,Spanish,None
@@ -48118,7 +48118,7 @@
 46975,RAMONA VICTORIA,F,Spanish,None
 46976,RAMONI,F,Spanish,None
 46977,RAN,F,Spanish,None
-46978,RAQUEL BEGOÃ‘A,F,Spanish,None
+46978,RAQUEL BEGO√ëA,F,Spanish,None
 46979,RAQUEL EMILIA,F,Spanish,None
 46980,RAQUEL JOSEFINA,F,Spanish,None
 46981,RAYMUNDA,F,Spanish,None
@@ -48169,7 +48169,7 @@
 47026,SANDRA LESLEY,F,Spanish,None
 47027,SANGITA,F,Spanish,None
 47028,SANTA CECILIA,F,Spanish,None
-47029,SARA BEGOÃ‘A,F,Spanish,None
+47029,SARA BEGO√ëA,F,Spanish,None
 47030,SARA SUSANA,F,Spanish,None
 47031,SARABI,F,Spanish,None
 47032,SATOKO,F,Spanish,None
@@ -48184,7 +48184,7 @@
 47041,SHIVA,F,Spanish,None
 47042,SHUHUI,F,Spanish,None
 47043,SIBILLA,F,Spanish,None
-47044,SILVIA BEGOÃ‘A,F,Spanish,None
+47044,SILVIA BEGO√ëA,F,Spanish,None
 47045,SILVIA CLAUDIA,F,Spanish,None
 47046,SILVIA GEMA,F,Spanish,None
 47047,SILVIA JUANA,F,Spanish,None
@@ -48497,7 +48497,7 @@
 47354,DIANE LESLEY,F,Spanish,None
 47355,DOLORES ADELA,F,Spanish,None
 47356,DOLORES ANGELA,F,Spanish,None
-47357,DOLORES BEGOÃ‘A,F,Spanish,None
+47357,DOLORES BEGO√ëA,F,Spanish,None
 47358,DOLORES CLARA,F,Spanish,None
 47359,DOLORES FUENSANTA,F,Spanish,None
 47360,DOMBINA,F,Spanish,None
@@ -48554,7 +48554,7 @@
 47411,EUGENIA PATRICIA,F,Spanish,None
 47412,FANNY LEONOR,F,Spanish,None
 47413,FATIMA ALEJANDRA,F,Spanish,None
-47414,FATIMA CONCEIÃ‡AO,F,Spanish,None
+47414,FATIMA CONCEI√áAO,F,Spanish,None
 47415,FATIMA EZZOHRA,F,Spanish,None
 47416,FATIMA ROSA,F,Spanish,None
 47417,FAUSIA,F,Spanish,None
@@ -49206,7 +49206,7 @@
 48063,AMANCAY,F,Spanish,None
 48064,AMPARITO,F,Spanish,None
 48065,ANA CELINA,F,Spanish,None
-48066,ANA CONCEIÃ‡AO,F,Spanish,None
+48066,ANA CONCEI√áAO,F,Spanish,None
 48067,ANA ISIDORA,F,Spanish,None
 48068,ANA IULIANA,F,Spanish,None
 48069,ANA JESUSA,F,Spanish,None
@@ -49255,7 +49255,7 @@
 48112,ARHOA,F,Spanish,None
 48113,ARIA,F,Spanish,None
 48114,ARIADNA PILAR,F,Spanish,None
-48115,ARIÃ‘E,F,Spanish,None
+48115,ARI√ëE,F,Spanish,None
 48116,ARMINDA PINO,F,Spanish,None
 48117,ASHLEIGH,F,Spanish,None
 48118,ATSUKO,F,Spanish,None
@@ -49271,9 +49271,9 @@
 48128,BEATA MALGORZATA,F,Spanish,None
 48129,BEATRIZ ASUNCION,F,Spanish,None
 48130,BEATRIZ MANUELA,F,Spanish,None
-48131,BEGOÃ‘A DOLORES,F,Spanish,None
-48132,BEGOÃ‘A LUCIA,F,Spanish,None
-48133,BEGOÃ‘A RAQUEL,F,Spanish,None
+48131,BEGO√ëA DOLORES,F,Spanish,None
+48132,BEGO√ëA LUCIA,F,Spanish,None
+48133,BEGO√ëA RAQUEL,F,Spanish,None
 48134,BERTILIA,F,Spanish,None
 48135,BETTY CARMEN,F,Spanish,None
 48136,BETTY PATRICIA,F,Spanish,None
@@ -49714,7 +49714,7 @@
 48571,MARIA HERMELINA,F,Spanish,None
 48572,MARIA ILIANA,F,Spanish,None
 48573,MARIA ISABEL ANGELES,F,Spanish,None
-48574,MARIA ISABEL BEGOÃ‘A,F,Spanish,None
+48574,MARIA ISABEL BEGO√ëA,F,Spanish,None
 48575,MARIA ISABEL ROSARIO,F,Spanish,None
 48576,MARIA ISABELLE,F,Spanish,None
 48577,MARIA IZABEL,F,Spanish,None
@@ -49994,10 +49994,10 @@
 48851,TATIANA MARIBEL,F,Spanish,None
 48852,TATYANA GEORGIEVA,F,Spanish,None
 48853,TERESA ADELA,F,Spanish,None
-48854,TERESA BEGOÃ‘A,F,Spanish,None
+48854,TERESA BEGO√ëA,F,Spanish,None
 48855,TERESA GEMA,F,Spanish,None
 48856,TERESINHA,F,Spanish,None
-48857,TERESITA NIÃ‘O,F,Spanish,None
+48857,TERESITA NI√ëO,F,Spanish,None
 48858,THAISA,F,Spanish,None
 48859,THERESA MARY,F,Spanish,None
 48860,TIAN,F,Spanish,None
@@ -50161,7 +50161,7 @@
 49018,ASSETOU,F,Spanish,None
 49019,ASUNCION ELENA,F,Spanish,None
 49020,ASUNCION GLORIA,F,Spanish,None
-49021,ATSEGIÃ‘E,F,Spanish,None
+49021,ATSEGI√ëE,F,Spanish,None
 49022,ATTIA,F,Spanish,None
 49023,AURA ISABEL,F,Spanish,None
 49024,AURELIA FRANCISCA,F,Spanish,None
@@ -50179,7 +50179,7 @@
 49036,BEATA EWA,F,Spanish,None
 49037,BEATRICE ALEXANDRA,F,Spanish,None
 49038,BEATRIZ ARACELI,F,Spanish,None
-49039,BEGOÃ‘A ANA,F,Spanish,None
+49039,BEGO√ëA ANA,F,Spanish,None
 49040,BELINDA ISABEL,F,Spanish,None
 49041,BENITA PILAR,F,Spanish,None
 49042,BERENA,F,Spanish,None
@@ -50294,7 +50294,7 @@
 49151,DELICIOSA,F,Spanish,None
 49152,DENISA CLAUDIA,F,Spanish,None
 49153,DENISA ROXANA,F,Spanish,None
-49154,DEÃ‘E,F,Spanish,None
+49154,DE√ëE,F,Spanish,None
 49155,DHARMA,F,Spanish,None
 49156,DIANA ANGELA,F,Spanish,None
 49157,DIANA DIMITROVA,F,Spanish,None
@@ -50383,7 +50383,7 @@
 49240,ESTEFANY CAROLINA,F,Spanish,None
 49241,ESTER JULIA,F,Spanish,None
 49242,ESTER PILAR,F,Spanish,None
-49243,ESTHER BEGOÃ‘A,F,Spanish,None
+49243,ESTHER BEGO√ëA,F,Spanish,None
 49244,ESTHER CECILIA,F,Spanish,None
 49245,ESTHER ESPERANZA,F,Spanish,None
 49246,ESTHER IRENE,F,Spanish,None
@@ -50692,7 +50692,7 @@
 49549,MARIA ROSARIO TERESA,F,Spanish,None
 49550,MARIA SEQUEROS,F,Spanish,None
 49551,MARIA SOLEMNIDAD,F,Spanish,None
-49552,MARIA TERESA BEGOÃ‘A,F,Spanish,None
+49552,MARIA TERESA BEGO√ëA,F,Spanish,None
 49553,MARIA TURRUCHEL,F,Spanish,None
 49554,MARIA WENDY,F,Spanish,None
 49555,MARIA YAMILA,F,Spanish,None
@@ -50740,7 +50740,7 @@
 49597,MELISSA CAROLINA,F,Spanish,None
 49598,MELVI,F,Spanish,None
 49599,MENGYAO,F,Spanish,None
-49600,MERCEDES BEGOÃ‘A,F,Spanish,None
+49600,MERCEDES BEGO√ëA,F,Spanish,None
 49601,MERCEDES CARIDAD,F,Spanish,None
 49602,MERLE,F,Spanish,None
 49603,MERYAMA,F,Spanish,None
@@ -51076,6 +51076,916 @@
 49933,ZOHORA,F,Spanish,None
 49934,ZOI,F,Spanish,None
 49935,ZOILA ROCIO,F,Spanish,None
+0, ABEDABUN,F,Native_American_Alaskan,None
+1, ABEQUA,F,Native_American_Alaskan,None
+2, ABEQUE,F,Native_American_Alaskan,None
+3, ADSILA,F,Native_American_Alaskan,None
+4, AILEN,F,Native_American_Alaskan,None
+5, AIYANA,F,Native_American_Alaskan,None
+6, AIYANNA,F,Native_American_Alaskan,None
+7, ALAMEDA,F,Native_American_Alaskan,None
+8, ALAQUA,F,Native_American_Alaskan,None
+9, ALSOOMSE,F,Native_American_Alaskan,None
+10, AMADAHY,F,Native_American_Alaskan,None
+11, ANGWUSNASOMTAQA,F,Native_American_Alaskan,None
+12, ANPAYTOO,F,Native_American_Alaskan,None
+13, APONI,F,Native_American_Alaskan,None
+14, AWANATA,F,Native_American_Alaskan,None
+15, AWENTIA,F,Native_American_Alaskan,None
+16, AWINITA,F,Native_American_Alaskan,None
+17, AYASHA,F,Native_American_Alaskan,None
+18, AYASHE,F,Native_American_Alaskan,None
+19, AYELEN,F,Native_American_Alaskan,None
+20, AYLEN,F,Native_American_Alaskan,None
+21, CALFURAY,F,Native_American_Alaskan,None
+22, CHA'RISA,F,Native_American_Alaskan,None
+23, CHEPI,F,Native_American_Alaskan,None
+24, CHOCHMINGWU,F,Native_American_Alaskan,None
+25, CHOSOVI,F,Native_American_Alaskan,None
+26, CHOSPOSI,F,Native_American_Alaskan,None
+27, CHUMANA,F,Native_American_Alaskan,None
+28, CHUMANI,F,Native_American_Alaskan,None
+29, CHU'SI,F,Native_American_Alaskan,None
+30, DOLI,F,Native_American_Alaskan,None
+31, DONOMA,F,Native_American_Alaskan,None
+32, EHAWEE,F,Native_American_Alaskan,None
+33, GALILAHI,F,Native_American_Alaskan,None
+34, HAKIDONMUYA,F,Native_American_Alaskan,None
+35, HANTAYWEE,F,Native_American_Alaskan,None
+36, HEHEWUTI,F,Native_American_Alaskan,None
+37, HONOVI,F,Native_American_Alaskan,None
+38, HURIT,F,Native_American_Alaskan,None
+39, HUYANA,F,Native_American_Alaskan,None
+40, ISI,F,Native_American_Alaskan,None
+41, JACI,F,Native_American_Alaskan,None
+42, KACHINA,F,Native_American_Alaskan,None
+43, KAI,F,Native_American_Alaskan,None
+44, KALISKA,F,Native_American_Alaskan,None
+45, KANTI,F,Native_American_Alaskan,None
+46, KASA,F,Native_American_Alaskan,None
+47, KATERI,F,Native_American_Alaskan,None
+48, KAYA,F,Native_American_Alaskan,None
+49, KEEGSQUAW,F,Native_American_Alaskan,None
+50, KEEZHEEKONI,F,Native_American_Alaskan,None
+51, KIMAMA,F,Native_American_Alaskan,None
+52, KIMI,F,Native_American_Alaskan,None
+53, KIMIMELA,F,Native_American_Alaskan,None
+54, KIWIDINOK,F,Native_American_Alaskan,None
+55, KOKO,F,Native_American_Alaskan,None
+56, KOKYANGWUTI,F,Native_American_Alaskan,None
+57, KUWANLELENTA,F,Native_American_Alaskan,None
+58, KUWANYAMTIWA,F,Native_American_Alaskan,None
+59, KUWANYAUMA,F,Native_American_Alaskan,None
+60, LENMANA,F,Native_American_Alaskan,None
+61, LILUYE,F,Native_American_Alaskan,None
+62, LITONYA,F,Native_American_Alaskan,None
+63, LOMAHONGVA,F,Native_American_Alaskan,None
+64, MACAWI,F,Native_American_Alaskan,None
+65, MAGASKAWEE,F,Native_American_Alaskan,None
+66, MAIARA,F,Native_American_Alaskan,None
+67, MAKA,F,Native_American_Alaskan,None
+68, MAKAWEE,F,Native_American_Alaskan,None
+69, MAKKITOTOSIMEW,F,Native_American_Alaskan,None
+70, MALILA,F,Native_American_Alaskan,None
+71, MANSI,F,Native_American_Alaskan,None
+72, MAPIYA,F,Native_American_Alaskan,None
+73, MEOQUANEE,F,Native_American_Alaskan,None
+74, METHOATASKE,F,Native_American_Alaskan,None
+75, MIGINA,F,Native_American_Alaskan,None
+76, MIGISI,F,Native_American_Alaskan,None
+77, MIMITEH,F,Native_American_Alaskan,None
+78, MISAE,F,Native_American_Alaskan,None
+79, MOEMA,F,Native_American_Alaskan,None
+80, MUNA,F,Native_American_Alaskan,None
+81, NADIE,F,Native_American_Alaskan,None
+82, NAHIMANA,F,Native_American_Alaskan,None
+83, NAIRA,F,Native_American_Alaskan,None
+84, NAMID,F,Native_American_Alaskan,None
+85, NASCHA,F,Native_American_Alaskan,None
+86, NAYELI,F,Native_American_Alaskan,None
+87, NIABI,F,Native_American_Alaskan,None
+88, NIDAWI,F,Native_American_Alaskan,None
+89, NINA,F,Native_American_Alaskan,None
+90, NITA,F,Native_American_Alaskan,None
+91, NITTAWOSEW,F,Native_American_Alaskan,None
+92, NIZHONI,F,Native_American_Alaskan,None
+93, NJLON,F,Native_American_Alaskan,None
+94, NOVA,F,Native_American_Alaskan,None
+95, NUKPANA,F,Native_American_Alaskan,None
+96, NUMEES,F,Native_American_Alaskan,None
+97, NUTTAH,F,Native_American_Alaskan,None
+98, ODAHINGUM,F,Native_American_Alaskan,None
+99, OMINOTAGO,F,Native_American_Alaskan,None
+100, OMUSA,F,Native_American_Alaskan,None
+101, ONATAH,F,Native_American_Alaskan,None
+102, OOLJEE,F,Native_American_Alaskan,None
+103, OOTA DABUN,F,Native_American_Alaskan,None
+104, ORENDA,F,Native_American_Alaskan,None
+105, PAKUNA,F,Native_American_Alaskan,None
+106, PAKWA,F,Native_American_Alaskan,None
+107, PAMUYA,F,Native_American_Alaskan,None
+108, PAPINA,F,Native_American_Alaskan,None
+109, PAUWAU,F,Native_American_Alaskan,None
+110, PAVATI,F,Native_American_Alaskan,None
+111, PETA,F,Native_American_Alaskan,None
+112, POCAHONTAS,F,Native_American_Alaskan,None
+113, POLIKWAPTIWA,F,Native_American_Alaskan,None
+114, POLOMA,F,Native_American_Alaskan,None
+115, POSALA,F,Native_American_Alaskan,None
+116, POWAQA,F,Native_American_Alaskan,None
+117, PTAYSANWEE,F,Native_American_Alaskan,None
+118, PULES,F,Native_American_Alaskan,None
+119, RAYEN,F,Native_American_Alaskan,None
+120, SAHKYO,F,Native_American_Alaskan,None
+121, SALALI,F,Native_American_Alaskan,None
+122, SANUYE,F,Native_American_Alaskan,None
+123, SAQUI,F,Native_American_Alaskan,None
+124, SAYEN,F,Native_American_Alaskan,None
+125, SHADI,F,Native_American_Alaskan,None
+126, SHESHEBENS,F,Native_American_Alaskan,None
+127, SHIDEEZHI,F,Native_American_Alaskan,None
+128, SHIKOBA,F,Native_American_Alaskan,None
+129, SHIMA,F,Native_American_Alaskan,None
+130, SHIMASANI,F,Native_American_Alaskan,None
+131, SHUMAN,F,Native_American_Alaskan,None
+132, SIHU,F,Native_American_Alaskan,None
+133, SINOPA,F,Native_American_Alaskan,None
+134, SITALA,F,Native_American_Alaskan,None
+135, SITSI,F,Native_American_Alaskan,None
+136, SOKANON,F,Native_American_Alaskan,None
+137, SOOLEAWA,F,Native_American_Alaskan,None
+138, SOYALA,F,Native_American_Alaskan,None
+139, SULETU,F,Native_American_Alaskan,None
+140, TABLITA,F,Native_American_Alaskan,None
+141, TADEWI,F,Native_American_Alaskan,None
+142, TAIGI,F,Native_American_Alaskan,None
+143, TAINI,F,Native_American_Alaskan,None
+144, TAIPA,F,Native_American_Alaskan,None
+145, TAKALA,F,Native_American_Alaskan,None
+146, TAKCHAWEE,F,Native_American_Alaskan,None
+147, TAKHI,F,Native_American_Alaskan,None
+148, TALLULA,F,Native_American_Alaskan,None
+149, TALLULAH,F,Native_American_Alaskan,None
+150, TALULLA,F,Native_American_Alaskan,None
+151, TALULLAH,F,Native_American_Alaskan,None
+152, TALUTAH,F,Native_American_Alaskan,None
+153, TAMAYA,F,Native_American_Alaskan,None
+154, TAYANITA,F,Native_American_Alaskan,None
+155, TIPONI,F,Native_American_Alaskan,None
+156, TISSEEWOONATIS,F,Native_American_Alaskan,None
+157, TIVA,F,Native_American_Alaskan,None
+158, TOLINKA,F,Native_American_Alaskan,None
+159, TOTSI,F,Native_American_Alaskan,None
+160, TUWA,F,Native_American_Alaskan,None
+161, UNA,F,Native_American_Alaskan,None
+162, URIKA,F,Native_American_Alaskan,None
+163, WACHIWI,F,Native_American_Alaskan,None
+164, WAKANDA,F,Native_American_Alaskan,None
+165, WAKI,F,Native_American_Alaskan,None
+166, WAUNA,F,Native_American_Alaskan,None
+167, WEEKO,F,Native_American_Alaskan,None
+168, WENONA,F,Native_American_Alaskan,None
+169, WENONAH,F,Native_American_Alaskan,None
+170, WICAPI WAKAN,F,Native_American_Alaskan,None
+171, WIHAKAYDA,F,Native_American_Alaskan,None
+172, WIKIMAK,F,Native_American_Alaskan,None
+173, WINONA,F,Native_American_Alaskan,None
+174, WITASHNAH,F,Native_American_Alaskan,None
+175, WUTI,F,Native_American_Alaskan,None
+176, YAMKA,F,Native_American_Alaskan,None
+177, YAZHI,F,Native_American_Alaskan,None
+178, YOKI,F,Native_American_Alaskan,None
+179, ZIHNA,F,Native_American_Alaskan,None
+180, ZITKALA,F,Native_American_Alaskan,None
+181, ABOOKSIGUN,M,Native_American_Alaskan,None
+182, ABUKCHEECH,M,Native_American_Alaskan,None
+183, ACHAK,M,Native_American_Alaskan,None
+184, ADAHY,M,Native_American_Alaskan,None
+185, AHANU,M,Native_American_Alaskan,None
+186, AHIGA,M,Native_American_Alaskan,None
+187, AHOTE,M,Native_American_Alaskan,None
+188, AHTAHKAKOOP,M,Native_American_Alaskan,None
+189, AMITOLA,M,Native_American_Alaskan,None
+190, ANTIMAN,M,Native_American_Alaskan,None
+191, ANTINANCO,M,Native_American_Alaskan,None
+192, APONIVI,M,Native_American_Alaskan,None
+193, ASHKII,M,Native_American_Alaskan,None
+194, ASKOOK,M,Native_American_Alaskan,None
+195, ASKUWHETEAU,M,Native_American_Alaskan,None
+196, ATA'HALNE,M,Native_American_Alaskan,None
+197, AUCAMAN,M,Native_American_Alaskan,None
+198, AVONACO,M,Native_American_Alaskan,None
+199, AYAWAMAT,M,Native_American_Alaskan,None
+200, BIDZIIL,M,Native_American_Alaskan,None
+201, BILAGAANA,M,Native_American_Alaskan,None
+202, CATAHECASSA,M,Native_American_Alaskan,None
+203, CHA'AKMONGWI,M,Native_American_Alaskan,None
+204, CHANKOOWASHTAY,M,Native_American_Alaskan,None
+205, CHANSOMPS,M,Native_American_Alaskan,None
+206, CHASCHUNKA√ä,M,Native_American_Alaskan,None
+207, CHA'TIMA,M,Native_American_Alaskan,None
+208, CHAVATANGAKWUNUA,M,Native_American_Alaskan,None
+209, CHAYTON,M,Native_American_Alaskan,None
+210, CHEVEYO,M,Native_American_Alaskan,None
+211, CHOCHMO,M,Native_American_Alaskan,None
+212, CHOCHOKPI,M,Native_American_Alaskan,None
+213, CHOCHUSCHUVIO,M,Native_American_Alaskan,None
+214, CHOGAN,M,Native_American_Alaskan,None
+215, CHOOVIO,M,Native_American_Alaskan,None
+216, CHOVIOHOYA,M,Native_American_Alaskan,None
+217, CHOWILAWU,M,Native_American_Alaskan,None
+218, CHUA,M,Native_American_Alaskan,None
+219, CHUCHIP,M,Native_American_Alaskan,None
+220, CHUNTA,M,Native_American_Alaskan,None
+221, CHUSI,M,Native_American_Alaskan,None
+222, CIQALA,M,Native_American_Alaskan,None
+223, COWESSESS,M,Native_American_Alaskan,None
+224, DEMONTHIN,M,Native_American_Alaskan,None
+225, EDITON,M,Native_American_Alaskan,None
+226, ELUWILUSSIT,M,Native_American_Alaskan,None
+227, ENAPAY,M,Native_American_Alaskan,None
+228, ENKOODABAOO,M,Native_American_Alaskan,None
+229, ENKOODABOOAOO,M,Native_American_Alaskan,None
+230, ETCHEMIN,M,Native_American_Alaskan,None
+231, ETLELOOAAT,M,Native_American_Alaskan,None
+232, GAAGII,M,Native_American_Alaskan,None
+233, GAD,M,Native_American_Alaskan,None
+234, GAHEGE,M,Native_American_Alaskan,None
+235, GOYATHLAY,M,Native_American_Alaskan,None
+236, GUDAHI,M,Native_American_Alaskan,None
+237, HAHKETHOMEMAH,M,Native_American_Alaskan,None
+238, HANIA,M,Native_American_Alaskan,None
+239, HASSUN,M,Native_American_Alaskan,None
+240, HASTIIN,M,Native_American_Alaskan,None
+241, HAWIOVI,M,Native_American_Alaskan,None
+242, HEAMMAWIHIO,M,Native_American_Alaskan,None
+243, HELUSHKA√ä(He-lush-ka),M,Native_American_Alaskan,None
+244, HESKOVIZENAKO,M,Native_American_Alaskan,None
+245, HESUTU,M,Native_American_Alaskan,None
+246, HEVATANEO,M,Native_American_Alaskan,None
+247, HEVOVITASTAMIUTSTO,M,Native_American_Alaskan,None
+248, HIAMOVI,M,Native_American_Alaskan,None
+249, HINTO,M,Native_American_Alaskan,None
+250, HOHNIHOHKAIYOHOS,M,Native_American_Alaskan,None
+251, HOK'EE,M,Native_American_Alaskan,None
+252, HOKOLESQUA,M,Native_American_Alaskan,None
+253, HONANI,M,Native_American_Alaskan,None
+254, HONAW,M,Native_American_Alaskan,None
+255, HONIAHAKA,M,Native_American_Alaskan,None
+256, HONON,M,Native_American_Alaskan,None
+257, HOTAH,M,Native_American_Alaskan,None
+258, HOTOTO,M,Native_American_Alaskan,None
+259, HOTUAEKHAASHTAIT,M,Native_American_Alaskan,None
+260, HOWAHKAN,M,Native_American_Alaskan,None
+261, HOWI,M,Native_American_Alaskan,None
+262, HURITT,M,Native_American_Alaskan,None
+263, ISI,M,Native_American_Alaskan,None
+264, ISTAQA,M,Native_American_Alaskan,None
+265, KACHADA,M,Native_American_Alaskan,None
+266, KANEONUSKATEW,M,Native_American_Alaskan,None
+267, KANGEE,M,Native_American_Alaskan,None
+268, KAWACATOOSE,M,Native_American_Alaskan,None
+269, KELE,M,Native_American_Alaskan,None
+270, KEME,M,Native_American_Alaskan,None
+271, KESEGOWAASE,M,Native_American_Alaskan,None
+272, KESTEJOO,M,Native_American_Alaskan,None
+273, KISECAWCHUCK,M,Native_American_Alaskan,None
+274, KITCHI,M,Native_American_Alaskan,None
+275, KOHANA,M,Native_American_Alaskan,None
+276, KOHKAHYCUMEST,M,Native_American_Alaskan,None
+277, KOLICHIYAW,M,Native_American_Alaskan,None
+278, KOSUMI,M,Native_American_Alaskan,None
+279, KOTORI,M,Native_American_Alaskan,None
+280, KUCKUNNIWI,M,Native_American_Alaskan,None
+281, KURUK,M,Native_American_Alaskan,None
+282, KWAHU,M,Native_American_Alaskan,None
+283, KWATOKO,M,Native_American_Alaskan,None
+284, LALAWETHIKA,M,Native_American_Alaskan,None
+285, LANSA,M,Native_American_Alaskan,None
+286, LAPU,M,Native_American_Alaskan,None
+287, LEN,M,Native_American_Alaskan,None
+288, LEYATI,M,Native_American_Alaskan,None
+289, LISE,M,Native_American_Alaskan,None
+290, LIWANU,M,Native_American_Alaskan,None
+291, LOKNI,M,Native_American_Alaskan,None
+292, LOOTAH,M,Native_American_Alaskan,None
+293, MACHAKW,M,Native_American_Alaskan,None
+294, MACHK,M,Native_American_Alaskan,None
+295, MAHKAH,M,Native_American_Alaskan,None
+296, MAHPEE,M,Native_American_Alaskan,None
+297, MAKKAPITEW,M,Native_American_Alaskan,None
+298, MAKYA,M,Native_American_Alaskan,None
+299, MANTOTOHPA,M,Native_American_Alaskan,None
+300, MASICHUVIO,M,Native_American_Alaskan,None
+301, MATCHITEHEW,M,Native_American_Alaskan,None
+302, MATCHITISIW,M,Native_American_Alaskan,None
+303, MATOSKAH,M,Native_American_Alaskan,None
+304, MATUNAAGA,M,Native_American_Alaskan,None
+305, MATWAU,M,Native_American_Alaskan,None
+306, MAZA BLASKA,M,Native_American_Alaskan,None
+307, MEGEDAGIK,M,Native_American_Alaskan,None
+308, MELKEDOODUM,M,Native_American_Alaskan,None
+309, METURATO,M,Native_American_Alaskan,None
+310, MINNINNEWAH,M,Native_American_Alaskan,None
+311, MISU,M,Native_American_Alaskan,None
+312, MOCHNI,M,Native_American_Alaskan,None
+313, MOKI,M,Native_American_Alaskan,None
+314, MOLIMO,M,Native_American_Alaskan,None
+315, MONA,M,Native_American_Alaskan,None
+316, MONGWAU,M,Native_American_Alaskan,None
+317, MUATA,M,Native_American_Alaskan,None
+318, MUKKI,M,Native_American_Alaskan,None
+319, MUNDOO,M,Native_American_Alaskan,None
+320, MUSCOWEQUAN,M,Native_American_Alaskan,None
+321, NAALNISH,M,Native_American_Alaskan,None
+322, NAHCOMENCE,M,Native_American_Alaskan,None
+323, NAHIOSSI,M,Native_American_Alaskan,None
+324, NAHUEL,M,Native_American_Alaskan,None
+325, NAPAYSHNI,M,Native_American_Alaskan,None
+326, NASTAS,M,Native_American_Alaskan,None
+327, NAWKAW,M,Native_American_Alaskan,None
+328, NIICHAAD,M,Native_American_Alaskan,None
+329, NIXKAMICH,M,Native_American_Alaskan,None
+330, NIYOL,M,Native_American_Alaskan,None
+331, NOOTAU,M,Native_American_Alaskan,None
+332, NOSH,M,Native_American_Alaskan,None
+333, NOSHI,M,Native_American_Alaskan,None
+334, NUKPANA,M,Native_American_Alaskan,None
+335, OCUMWHOWURST,M,Native_American_Alaskan,None
+336, OCUNNOWHURST,M,Native_American_Alaskan,None
+337, ODAKOTA,M,Native_American_Alaskan,None
+338, OGALEESHA,M,Native_American_Alaskan,None
+339, OHANZEE,M,Native_American_Alaskan,None
+340, OHCUMGACHE,M,Native_American_Alaskan,None
+341, OHITEKAH,M,Native_American_Alaskan,None
+342, OMAWNAKW,M,Native_American_Alaskan,None
+343, OTAKTAY,M,Native_American_Alaskan,None
+344, OTOAHHASTIS,M,Native_American_Alaskan,None
+345, OTOAHNACTO,M,Native_American_Alaskan,None
+346, PACHUA,M,Native_American_Alaskan,None
+347, PAHANA,M,Native_American_Alaskan,None
+348, PAJACKOK,M,Native_American_Alaskan,None
+349, PANNOOWAU,M,Native_American_Alaskan,None
+350, PAYTAH,M,Native_American_Alaskan,None
+351, PIVANE,M,Native_American_Alaskan,None
+352, POWWAW,M,Native_American_Alaskan,None
+353, QALETAQA,M,Native_American_Alaskan,None
+354, QOCHATA,M,Native_American_Alaskan,None
+355, QUANAH,M,Native_American_Alaskan,None
+356, QUIDEL,M,Native_American_Alaskan,None
+357, ROWTAG,M,Native_American_Alaskan,None
+358, SANI,M,Native_American_Alaskan,None
+359, SEGENAM,M,Native_American_Alaskan,None
+360, SEWATI,M,Native_American_Alaskan,None
+361, SHIKOBA,M,Native_American_Alaskan,None
+362, SHILAH,M,Native_American_Alaskan,None
+363, SHIRIKI,M,Native_American_Alaskan,None
+364, SHIYE,M,Native_American_Alaskan,None
+365, SHIZHE'E,M,Native_American_Alaskan,None
+366, SHOEMOWETOCHAWCAWEWAHCATOWE,M,Native_American_Alaskan,None
+367, SICHEII,M,Native_American_Alaskan,None
+368, SIKE,M,Native_American_Alaskan,None
+369, SIK'IS,M,Native_American_Alaskan,None
+370, SIKYAHONAW,M,Native_American_Alaskan,None
+371, SIKYATAVO,M,Native_American_Alaskan,None
+372, SKAH,M,Native_American_Alaskan,None
+373, SOWI'NGWA,M,Native_American_Alaskan,None
+374, SUCKI,M,Native_American_Alaskan,None
+375, SUNUKKUHKAU,M,Native_American_Alaskan,None
+376, TAHKEOME,M,Native_American_Alaskan,None
+377, TAHMELAPACHME,M,Native_American_Alaskan,None
+378, TAKODA,M,Native_American_Alaskan,None
+379, TANGAKWUNU,M,Native_American_Alaskan,None
+380, TAREGAN,M,Native_American_Alaskan,None
+381, TASUNKE,M,Native_American_Alaskan,None
+382, TATANKA-PTECILA,M,Native_American_Alaskan,None
+383, TECUMSEH,M,Native_American_Alaskan,None
+384, TEETONKA,M,Native_American_Alaskan,None
+385, TELUTCI,M,Native_American_Alaskan,None
+386, TENSKWATAWA,M,Native_American_Alaskan,None
+387, TIHKOOSUE,M,Native_American_Alaskan,None
+388, T'IIS,M,Native_American_Alaskan,None
+389, TOCHO,M,Native_American_Alaskan,None
+390, TOGQUOS,M,Native_American_Alaskan,None
+391, TOHOPKA,M,Native_American_Alaskan,None
+392, TOKALA,M,Native_American_Alaskan,None
+393, TOOANTUH,M,Native_American_Alaskan,None
+394, TSE,M,Native_American_Alaskan,None
+395, TSIISHCHILI,M,Native_American_Alaskan,None
+396, TUPI,M,Native_American_Alaskan,None
+397, UZUMATI,M,Native_American_Alaskan,None
+398, VAIVEAHTOISH,M,Native_American_Alaskan,None
+399, VIHO,M,Native_American_Alaskan,None
+400, VIPPONAH,M,Native_American_Alaskan,None
+401, VOHKINNE,M,Native_American_Alaskan,None
+402, VOISTITOEVITZ,M,Native_American_Alaskan,None
+403, VOISTTITOEVETZ,M,Native_American_Alaskan,None
+404, VOKIVOCUMMAST,M,Native_American_Alaskan,None
+405, WAHANASSATTA,M,Native_American_Alaskan,None
+406, WAHCHINKSAPA,M,Native_American_Alaskan,None
+407, WAHCHINTONKA,M,Native_American_Alaskan,None
+408, WAHKAN,M,Native_American_Alaskan,None
+409, WAMBLEESKA,M,Native_American_Alaskan,None
+410, WAMBLI-WASTE,M,Native_American_Alaskan,None
+411, WANAGEESKA,M,Native_American_Alaskan,None
+412, WANAHTON,M,Native_American_Alaskan,None
+413, WANIKIYA,M,Native_American_Alaskan,None
+414, WAPASHA,M,Native_American_Alaskan,None
+415, WAQUINI,M,Native_American_Alaskan,None
+416, WAYRA,M,Native_American_Alaskan,None
+417, WEAYAYA,M,Native_American_Alaskan,None
+418, WEMATIN,M,Native_American_Alaskan,None
+419, WICASA,M,Native_American_Alaskan,None
+420, WICKANINNISH,M,Native_American_Alaskan,None
+421, WIKVAYA,M,Native_American_Alaskan,None
+422, WOHEHIV,M,Native_American_Alaskan,None
+423, WOKAIHWOKOMAS,M,Native_American_Alaskan,None
+424, WUYI,M,Native_American_Alaskan,None
+425, YAHTO,M,Native_American_Alaskan,None
+426, YANISIN,M,Native_American_Alaskan,None
+427, YAS,M,Native_American_Alaskan,None
+428, YISKA,M,Native_American_Alaskan,None
+429,Adlartok√ä,F,Native_American_Alaskan,None
+430,Aga√ä,F,Native_American_Alaskan,None
+431,Aglakti√ä,F,Native_American_Alaskan,None
+432,Agloolik√ä,F,Native_American_Alaskan,None
+433,Aguta√ä,F,Native_American_Alaskan,None
+434,Ahnah√ä,F,Native_American_Alaskan,None
+435,Aipalovik√ä,F,Native_American_Alaskan,None
+436,Aituserk√ä,F,Native_American_Alaskan,None
+437,Akiak√ä,F,Native_American_Alaskan,None
+438,Akkikiktok√ä,F,Native_American_Alaskan,None
+439,Akkilokipok√ä,F,Native_American_Alaskan,None
+440,Akkituyok,F,Native_American_Alaskan,None
+441,Akluitok√ä,F,Native_American_Alaskan,None
+442,Akna√ä,F,Native_American_Alaskan,None
+443,Akrittok√ä,F,Native_American_Alaskan,None
+444,Alornerk√ä,F,Native_American_Alaskan,None
+445,Amaguq√ä,F,Native_American_Alaskan,None
+446,Amak√ä,F,Native_American_Alaskan,None
+447,Anana,F,Native_American_Alaskan,None
+448,Anernerk,F,Native_American_Alaskan,None
+449,Aningan√ä,F,Native_American_Alaskan,None
+450,Annakpok√ä,F,Native_American_Alaskan,None
+451,Anuun√ä,F,Native_American_Alaskan,None
+452,Anuniaq√ä,F,Native_American_Alaskan,None
+453,Anyu√ä,F,Native_American_Alaskan,None
+454,Aput√ä,F,Native_American_Alaskan,None
+455,Aquutaq√ä,F,Native_American_Alaskan,None
+456,Arjalinerk√ä,F,Native_American_Alaskan,None
+457,Arnaaluk√ä,F,Native_American_Alaskan,None
+458,Arrluk,F,Native_American_Alaskan,None
+459,Asiavik√ä,F,Native_American_Alaskan,None
+460,Assiminik√ä,F,Native_American_Alaskan,None
+461,Asungaq√ä√ä,F,Native_American_Alaskan,None
+462,Ataciara√ä,F,Native_American_Alaskan,None
+463,Ataneq√ä,F,Native_American_Alaskan,None
+464,Ataninnuaq√ä,F,Native_American_Alaskan,None
+465,Atka,F,Native_American_Alaskan,None
+466,Aukaneck,F,Native_American_Alaskan,None
+467,Aumanil√ä,F,Native_American_Alaskan,None
+468,Atkonartok,F,Native_American_Alaskan,None
+469,Aukaneck,F,Native_American_Alaskan,None
+470,Biisaiyowaq√ä,F,Native_American_Alaskan,None
+471,Buniq,F,Native_American_Alaskan,None
+472,Chena,F,Native_American_Alaskan,None
+473,Chu√ä,F,Native_American_Alaskan,None
+474,Chugach√ä,F,Native_American_Alaskan,None
+475,Chugiak√ä,F,Native_American_Alaskan,None
+476,Chulyin√ä,F,Native_American_Alaskan,None
+477,Cikuq√ä,F,Native_American_Alaskan,None
+478,Corazon,F,Native_American_Alaskan,None
+479,Cupun√ä,F,Native_American_Alaskan,None
+480,Deniigi√ä,F,Native_American_Alaskan,None
+481,Desna√ä,F,Native_American_Alaskan,None
+482,Ek Chua√ä,F,Native_American_Alaskan,None
+483,Eska√ä,F,Native_American_Alaskan,None
+484,Hey,F,Native_American_Alaskan,None
+485,Igalaq√ä,F,Native_American_Alaskan,None
+486,Iglopuk√ä,F,Native_American_Alaskan,None
+487,Ikiaq,F,Native_American_Alaskan,None
+488,Ikniqpalagaq√ä,F,Native_American_Alaskan,None
+489,Ileanaitut√ä,F,Native_American_Alaskan,None
+490,Illiivat√ä,F,Native_American_Alaskan,None
+491,Iluak√ä,F,Native_American_Alaskan,None
+492,Iluliaq√ä,F,Native_American_Alaskan,None
+493,Iluq√ä,F,Native_American_Alaskan,None
+494,Immuyak√ä,F,Native_American_Alaskan,None
+495,Imnek√ä,F,Native_American_Alaskan,None
+496,Injuquaq√ä,F,Native_American_Alaskan,None
+497,Inungoark√ä,F,Native_American_Alaskan,None
+498,Ipiktok√ä,F,Native_American_Alaskan,None
+499,Iqniq√ä,F,Native_American_Alaskan,None
+500,Irdlirvirisissong√ä,F,Native_American_Alaskan,None
+501,Issorartuyok√ä,F,Native_American_Alaskan,None
+502,Issudlerk√ä,F,Native_American_Alaskan,None
+503,Issumatar,F,Native_American_Alaskan,None
+504,Itigiaq√ä,F,Native_American_Alaskan,None
+505,Iyaroak√ä,F,Native_American_Alaskan,None
+506,Kakrayok√ä,F,Native_American_Alaskan,None
+507,Kamik√ä,F,Native_American_Alaskan,None
+508,Kanguyak√ä,F,Native_American_Alaskan,None
+509,Kannoyak√ä,F,Native_American_Alaskan,None
+510,Kanosak√ä,F,Native_American_Alaskan,None
+511,Kanut√ä,F,Native_American_Alaskan,None
+512,Kapik,F,Native_American_Alaskan,None
+513,Kappianartok√ä,F,Native_American_Alaskan,None
+514,Kappiataitok√ä,F,Native_American_Alaskan,None
+515,Karpok√ä,F,Native_American_Alaskan,None
+516,Kaskae√ä,F,Native_American_Alaskan,None
+517,Kassuq√ä,F,Native_American_Alaskan,None
+518,Kattituyok,F,Native_American_Alaskan,None
+519,Kaya√ä,F,Native_American_Alaskan,None
+520,Keelut√ä,F,Native_American_Alaskan,None
+521,Keruguq√ä,F,Native_American_Alaskan,None
+522,Kesuk√ä,F,Native_American_Alaskan,None
+523,K'eyush√ä,F,Native_American_Alaskan,None
+524,Kilalurak√ä,F,Native_American_Alaskan,None
+525,Kilaun√ä,F,Native_American_Alaskan,None
+526,Kinaktok√ä,F,Native_American_Alaskan,None
+527,Kinalik√ä,F,Native_American_Alaskan,None
+528,Kinapak√ä,F,Native_American_Alaskan,None
+529,Kingudlerk√ä,F,Native_American_Alaskan,None
+530,Kinguyakkii√ä,F,Native_American_Alaskan,None
+531,Kirima√ä,F,Native_American_Alaskan,None
+532,Koko,F,Native_American_Alaskan,None
+533,Kakortok√ä,F,Native_American_Alaskan,None
+534,Krernertok√ä,F,Native_American_Alaskan,None
+535,Kuk'uq√ä,F,Native_American_Alaskan,None
+536,Kulitak√ä,F,Native_American_Alaskan,None
+537,Kunikpok√ä,F,Native_American_Alaskan,None
+538,Kunwaktok,F,Native_American_Alaskan,None
+539,Kussuyok√ä,F,Native_American_Alaskan,None
+540,Kuvageegai,F,Native_American_Alaskan,None
+541,Maguyuk√ä,F,Native_American_Alaskan,None
+542,Makittuq√ä,F,Native_American_Alaskan,None
+543,Makoktok√ä,F,Native_American_Alaskan,None
+544,Makpigat√ä,F,Native_American_Alaskan,None
+545,Mangokpok√ä,F,Native_American_Alaskan,None
+546,Maniitok√ä,F,Native_American_Alaskan,None
+547,Manirak√ä,F,Native_American_Alaskan,None
+548,Masaaraq√ä,F,Native_American_Alaskan,None
+549,Massak√ä,F,Native_American_Alaskan,None
+550,Massalerauvok√ä,F,Native_American_Alaskan,None
+551,Mauja √ä,F,Native_American_Alaskan,None
+552,Mequssuk√ä,F,Native_American_Alaskan,None
+553,Miki√ä,F,Native_American_Alaskan,None
+554,Miksa,F,Native_American_Alaskan,None
+555,Mumik√ä,F,Native_American_Alaskan,None
+556,Naartok√ä,F,Native_American_Alaskan,None
+557,Naga√ä,F,Native_American_Alaskan,None
+558,Nagojut√ä,F,Native_American_Alaskan,None
+559,Nannuraluk√ä,F,Native_American_Alaskan,None
+560,Nanuq√ä,F,Native_American_Alaskan,None
+561,Nasamiituuq√ä,F,Native_American_Alaskan,None
+562,Nauja√ä,F,Native_American_Alaskan,None
+563,Negiliq√ä,F,Native_American_Alaskan,None
+564,Nerromiktok√ä,F,Native_American_Alaskan,None
+565,Nertornartok√ä,F,Native_American_Alaskan,None
+566,Nigaq√ä,F,Native_American_Alaskan,None
+567,Nilak√ä,F,Native_American_Alaskan,None
+568,Ningakpok√ä,F,Native_American_Alaskan,None
+569,Nini√ä,F,Native_American_Alaskan,None
+570,Nippikortuyok√ä,F,Native_American_Alaskan,None
+571,Noahtakmiut√ä,F,Native_American_Alaskan,None
+572,Noatak√ä,F,Native_American_Alaskan,None
+573,Nukilik,F,Native_American_Alaskan,None
+574,Nukka√ä,F,Native_American_Alaskan,None
+575,Nunataq√ä,F,Native_American_Alaskan,None
+576,Nutaaq√ä,F,Native_American_Alaskan,None
+577,Nutaralak√ä,F,Native_American_Alaskan,None
+578,Nutarniq√ä,F,Native_American_Alaskan,None
+579,Okauyak√ä,F,Native_American_Alaskan,None
+580,Olikpok√ä,F,Native_American_Alaskan,None
+581,Onartok√ä√ä,F,Native_American_Alaskan,None
+582,Oogrooq√ä,F,Native_American_Alaskan,None
+583,Oomailiq√ä,F,Native_American_Alaskan,None
+584,Pakak√ä,F,Native_American_Alaskan,None
+585,Palartok,F,Native_American_Alaskan,None
+586,Pamiiruq√ä,F,Native_American_Alaskan,None
+587,Pamiiyok√ä,F,Native_American_Alaskan,None
+588,Panik√ä,F,Native_American_Alaskan,None
+589,Pattangayok√ä,F,Native_American_Alaskan,None
+590,Pekartok√ä,F,Native_American_Alaskan,None
+591,Piaktok√ä,F,Native_American_Alaskan,None
+592,Pikatti,F,Native_American_Alaskan,None
+593,Piktaungitok√ä,F,Native_American_Alaskan,None
+594,Pitsiark,F,Native_American_Alaskan,None
+595,Poallu√ä,F,Native_American_Alaskan,None
+596,Pukak√ä,F,Native_American_Alaskan,None
+597,Pukiq√ä,F,Native_American_Alaskan,None
+598,Pukulria√ä,F,Native_American_Alaskan,None
+599,Purnaq√ä,F,Native_American_Alaskan,None
+600,Putyuk√ä,F,Native_American_Alaskan,None
+601,Qaniit √ä,F,Native_American_Alaskan,None
+602,Qannik√ä,F,Native_American_Alaskan,None
+603,Qatqain√ä,F,Native_American_Alaskan,None
+604,Qatiichii√ä√ä,F,Native_American_Alaskan,None
+605,Qeorvik√ä,F,Native_American_Alaskan,None
+606,Qigiq√ä,F,Native_American_Alaskan,None
+607,Qilaq√ä,F,Native_American_Alaskan,None
+608,Qimmiq√ä,F,Native_American_Alaskan,None
+609,Qimugkauyar√ä,F,Native_American_Alaskan,None
+610,Qimugta√ä,F,Native_American_Alaskan,None
+611,Qimukti√ä,F,Native_American_Alaskan,None
+612,Qopuk√ä,F,Native_American_Alaskan,None
+613,Quvianuq,F,Native_American_Alaskan,None
+614,Sadluyok√ä,F,Native_American_Alaskan,None
+615,Saghani√ä,F,Native_American_Alaskan,None
+616,Sakari√ä,F,Native_American_Alaskan,None
+617,Salaksartok,F,Native_American_Alaskan,None
+618,Sangilak,F,Native_American_Alaskan,None
+619,Sedna√ä,F,Native_American_Alaskan,None
+620,Sesi√ä,F,Native_American_Alaskan,None
+621,Shesh√ä,F,Native_American_Alaskan,None
+622,Shila√ä,F,Native_American_Alaskan,None
+623,Shtiya√ä,F,Native_American_Alaskan,None
+624,Sialuk√ä,F,Native_American_Alaskan,None
+625,Siarut,F,Native_American_Alaskan,None
+626,Siku√ä,F,Native_American_Alaskan,None
+627,Sikuaq√ä,F,Native_American_Alaskan,None
+628,Silatuyok,F,Native_American_Alaskan,None
+629,Sinaaq√ä,F,Native_American_Alaskan,None
+630,sinniktok√ä,F,Native_American_Alaskan,None
+631,Sirmiq√ä,F,Native_American_Alaskan,None
+632,Sitiyok√ä,F,Native_American_Alaskan,None
+633,Sivudlerk√ä,F,Native_American_Alaskan,None
+634,Sos√ä,F,Native_American_Alaskan,None
+635,Suinnak√ä,F,Native_American_Alaskan,None
+636,Suka√ä,F,Native_American_Alaskan,None
+637,Suluk,F,Native_American_Alaskan,None
+638,Sura√ä√ä√ä,F,Native_American_Alaskan,None
+639,Takiyok√ä,F,Native_American_Alaskan,None
+640,Tatkret√ä,F,Native_American_Alaskan,None
+641,Takubvik√ä,F,Native_American_Alaskan,None
+642,Taliriktug√ä,F,Native_American_Alaskan,None
+643,Tanaraq√ä,F,Native_American_Alaskan,None
+644,Taqukaq√ä,F,Native_American_Alaskan,None
+645,Tarralikitak√ä,F,Native_American_Alaskan,None
+646,Tartok√ä,F,Native_American_Alaskan,None
+647,Tattilgat√ä,F,Native_American_Alaskan,None
+648,Tavrani Tavra√ä,F,Native_American_Alaskan,None
+649,Tekkeitsertok√ä,F,Native_American_Alaskan,None
+650,Tiglikte√ä,F,Native_American_Alaskan,None
+651,Tiilaqiia√ä,F,Native_American_Alaskan,None
+652,Tikaani√ä,F,Native_American_Alaskan,None
+653,Tikivik√ä,F,Native_American_Alaskan,None
+654,Tiquana√ä,F,Native_American_Alaskan,None
+655,Tiguaq√ä,F,Native_American_Alaskan,None
+656,Tingenek√ä,F,Native_American_Alaskan,None
+657,Tingiyok,F,Native_American_Alaskan,None
+658,Tipvigut,F,Native_American_Alaskan,None
+659,Tlate Hiin,F,Native_American_Alaskan,None
+660,Tomkin√ä,F,Native_American_Alaskan,None
+661,Tonrar√ä,F,Native_American_Alaskan,None
+662,Tonraq√ä,F,Native_American_Alaskan,None
+663,Tootega√ä,F,Native_American_Alaskan,None
+664,Torngasak√ä,F,Native_American_Alaskan,None
+665,Tornuaq√ä,F,Native_American_Alaskan,None
+666,Tuaq√ä,F,Native_American_Alaskan,None
+667,Tukkuttok√ä,F,Native_American_Alaskan,None
+668,Tuktu√ä,F,Native_American_Alaskan,None
+669,Tukturaluk√ä,F,Native_American_Alaskan,None
+670,Tullik√ä,F,Native_American_Alaskan,None
+671,Tulugaq√ä,F,Native_American_Alaskan,None
+672,Tulukaruk√ä,F,Native_American_Alaskan,None
+673,Tunerk√ä,F,Native_American_Alaskan,None
+674,Tungortok√ä,F,Native_American_Alaskan,None
+675,Tungulria√ä,F,Native_American_Alaskan,None
+676,Tupilek√ä,F,Native_American_Alaskan,None
+677,Tupit√ä,F,Native_American_Alaskan,None
+678,Tuuluuwaq,F,Native_American_Alaskan,None
+679,Tuwawi√ä,F,Native_American_Alaskan,None
+680,Ublureak√ä,F,Native_American_Alaskan,None
+681,Uglu√ä,F,Native_American_Alaskan,None
+682,Uiritsaktak√ä,F,Native_American_Alaskan,None
+683,Ukluk√ä,F,Native_American_Alaskan,None
+684,Ulva√ä,F,Native_American_Alaskan,None
+685,Umiak√ä,F,Native_American_Alaskan,None
+686,Umiaktorvik√ä,F,Native_American_Alaskan,None
+687,Unalaq√ä,F,Native_American_Alaskan,None
+688,Uukkarnit√ä,F,Native_American_Alaskan,None
+689,Uvlugiaq√ä,F,Native_American_Alaskan,None
+690,Uyarak√ä,F,Native_American_Alaskan,None
+691,Yakone√ä,F,Native_American_Alaskan,None
+692,Yuralria√ä,F,Native_American_Alaskan,None
+693,Madison,F,Native_American_Alaskan,None
+694,Emma,F,Native_American_Alaskan,None
+695,Emily,F,Native_American_Alaskan,None
+696,Samantha,F,Native_American_Alaskan,None
+697,Hannah,F,Native_American_Alaskan,None
+698,Isabella,F,Native_American_Alaskan,None
+699,Olivia,F,Native_American_Alaskan,None
+700,Abigail,F,Native_American_Alaskan,None
+701,Elizabeth,F,Native_American_Alaskan,None
+702,Grace,F,Native_American_Alaskan,None
+703,Alexis,F,Native_American_Alaskan,None
+704,Jessica,F,Native_American_Alaskan,None
+705,Anna,F,Native_American_Alaskan,None
+706,Ava,F,Native_American_Alaskan,None
+707,Lillian,F,Native_American_Alaskan,None
+708,Sophia,F,Native_American_Alaskan,None
+709,Sierra,F,Native_American_Alaskan,None
+710,Trinity,F,Native_American_Alaskan,None
+711,Lily,F,Native_American_Alaskan,None
+712,Taylor,F,Native_American_Alaskan,None
+713,Hailey,F,Native_American_Alaskan,None
+714,Kaitlyn,F,Native_American_Alaskan,None
+715,Savannah,F,Native_American_Alaskan,None
+716,Alyssa,F,Native_American_Alaskan,None
+717,Lauren,F,Native_American_Alaskan,None
+718,Mary,F,Native_American_Alaskan,None
+719,Sarah,F,Native_American_Alaskan,None
+720,Ella,F,Native_American_Alaskan,None
+721,Isabelle,F,Native_American_Alaskan,None
+722,Jasmine,F,Native_American_Alaskan,None
+723,Katherine,F,Native_American_Alaskan,None
+724,Ashley,F,Native_American_Alaskan,None
+725,Chloe,F,Native_American_Alaskan,None
+726,Faith,F,Native_American_Alaskan,None
+727,Kylie,F,Native_American_Alaskan,None
+728,Morgan,F,Native_American_Alaskan,None
+729,Nevaeh,F,Native_American_Alaskan,None
+730,Paige,F,Native_American_Alaskan,None
+731,Zoe,F,Native_American_Alaskan,None
+732,Brianna,F,Native_American_Alaskan,None
+733,Brooke,F,Native_American_Alaskan,None
+734,Kayla,F,Native_American_Alaskan,None
+735,Mia,F,Native_American_Alaskan,None
+736,Rebecca,F,Native_American_Alaskan,None
+737,Ariana,F,Native_American_Alaskan,None
+738,Arianna,F,Native_American_Alaskan,None
+739,Haley,F,Native_American_Alaskan,None
+740,Jenna,F,Native_American_Alaskan,None
+741,Katelyn,F,Native_American_Alaskan,None
+742,Naomi,F,Native_American_Alaskan,None
+743,Natalie,F,Native_American_Alaskan,None
+744,Riley,F,Native_American_Alaskan,None
+745,Ashlyn,F,Native_American_Alaskan,None
+746,Leah,F,Native_American_Alaskan,None
+747,Alexandra,F,Native_American_Alaskan,None
+748,Aubrey,F,Native_American_Alaskan,None
+749,Aurora,F,Native_American_Alaskan,None
+750,Bethany,F,Native_American_Alaskan,None
+751,Destiny,F,Native_American_Alaskan,None
+752,Jillian,F,Native_American_Alaskan,None
+753,Julia,F,Native_American_Alaskan,None
+754,Rylee,F,Native_American_Alaskan,None
+755,Serenity,F,Native_American_Alaskan,None
+756,Vanessa,F,Native_American_Alaskan,None
+757,Andrea,F,Native_American_Alaskan,None
+758,Caitlyn,F,Native_American_Alaskan,None
+759,Jordan,F,Native_American_Alaskan,None
+760,Katie,F,Native_American_Alaskan,None
+761,Leilani,F,Native_American_Alaskan,None
+762,Lydia,F,Native_American_Alaskan,None
+763,Mackenzie,F,Native_American_Alaskan,None
+764,Megan,F,Native_American_Alaskan,None
+765,Sara,F,Native_American_Alaskan,None
+766,Savanna,F,Native_American_Alaskan,None
+767,Victoria,F,Native_American_Alaskan,None
+768,Aaliyah,F,Native_American_Alaskan,None
+769,Alicia,F,Native_American_Alaskan,None
+770,Amanda,F,Native_American_Alaskan,None
+771,Angelina,F,Native_American_Alaskan,None
+772,Audrey,F,Native_American_Alaskan,None
+773,Autumn,F,Native_American_Alaskan,None
+774,Avery,F,Native_American_Alaskan,None
+775,Jade,F,Native_American_Alaskan,None
+776,Maria,F,Native_American_Alaskan,None
+777,Mariah,F,Native_American_Alaskan,None
+778,Mya,F,Native_American_Alaskan,None
+779,Shelby,F,Native_American_Alaskan,None
+780,Sydney,F,Native_American_Alaskan,None
+781,Alana,F,Native_American_Alaskan,None
+782,Alexandria,F,Native_American_Alaskan,None
+783,Allison,F,Native_American_Alaskan,None
+784,Amelia,F,Native_American_Alaskan,None
+785,Anastasia,F,Native_American_Alaskan,None
+786,Breanna,F,Native_American_Alaskan,None
+787,Cadence,F,Native_American_Alaskan,None
+788,Dakota,F,Native_American_Alaskan,None
+789,Desiree,F,Native_American_Alaskan,None
+790,Ellie,F,Native_American_Alaskan,None
+791,Evelyn,F,Native_American_Alaskan,None
+792,Gabrielle,F,Native_American_Alaskan,None
+793,Jada,F,Native_American_Alaskan,None
+794,Kira,F,Native_American_Alaskan,None
+795,Madeline,F,Native_American_Alaskan,None
+796,Madelyn,F,Native_American_Alaskan,None
+797,Makenna,F,Native_American_Alaskan,None
+798,Margaret,F,Native_American_Alaskan,None
+799,Maya,F,Native_American_Alaskan,None
+800,Miranda,F,Native_American_Alaskan,None
+801,Rachel,F,Native_American_Alaskan,None
+802,Sofia,F,Native_American_Alaskan,None
+803,Ethan,M,Native_American_Alaskan,None
+804,Jacob,M,Native_American_Alaskan,None
+805,Joshua,M,Native_American_Alaskan,None
+806,Michael,M,Native_American_Alaskan,None
+807,William,M,Native_American_Alaskan,None
+808,Benjamin,M,Native_American_Alaskan,None
+809,Joseph,M,Native_American_Alaskan,None
+810,Logan,M,Native_American_Alaskan,None
+811,John,M,Native_American_Alaskan,None
+812,Matthew,M,Native_American_Alaskan,None
+813,Daniel,M,Native_American_Alaskan,None
+814,Tyler,M,Native_American_Alaskan,None
+815,Aiden,M,Native_American_Alaskan,None
+816,Andrew,M,Native_American_Alaskan,None
+817,Elijah,M,Native_American_Alaskan,None
+818,Ryan,M,Native_American_Alaskan,None
+819,Zachary,M,Native_American_Alaskan,None
+820,Alexander,M,Native_American_Alaskan,None
+821,David,M,Native_American_Alaskan,None
+822,Samuel,M,Native_American_Alaskan,None
+823,Hunter,M,Native_American_Alaskan,None
+824,James,M,Native_American_Alaskan,None
+825,Dylan,M,Native_American_Alaskan,None
+826,Gabriel,M,Native_American_Alaskan,None
+827,Anthony,M,Native_American_Alaskan,None
+828,Aidan,M,Native_American_Alaskan,None
+829,Caleb,M,Native_American_Alaskan,None
+830,Mason,M,Native_American_Alaskan,None
+831,Noah,M,Native_American_Alaskan,None
+832,Luke,M,Native_American_Alaskan,None
+833,Owen,M,Native_American_Alaskan,None
+834,Robert,M,Native_American_Alaskan,None
+835,Isaiah,M,Native_American_Alaskan,None
+836,Christopher,M,Native_American_Alaskan,None
+837,Isaac,M,Native_American_Alaskan,None
+838,Thomas,M,Native_American_Alaskan,None
+839,Austin,M,Native_American_Alaskan,None
+840,Connor,M,Native_American_Alaskan,None
+841,Hayden,M,Native_American_Alaskan,None
+842,Nathan,M,Native_American_Alaskan,None
+843,Ian,M,Native_American_Alaskan,None
+844,Nicholas,M,Native_American_Alaskan,None
+845,Cody,M,Native_American_Alaskan,None
+846,Gavin,M,Native_American_Alaskan,None
+847,Brayden,M,Native_American_Alaskan,None
+848,Liam,M,Native_American_Alaskan,None
+849,Aaron,M,Native_American_Alaskan,None
+850,Brandon,M,Native_American_Alaskan,None
+851,Jack,M,Native_American_Alaskan,None
+852,Josiah,M,Native_American_Alaskan,None
+853,Timothy,M,Native_American_Alaskan,None
+854,Jason,M,Native_American_Alaskan,None
+855,Landon,M,Native_American_Alaskan,None
+856,Lucas,M,Native_American_Alaskan,None
+857,Devin,M,Native_American_Alaskan,None
+858,Evan,M,Native_American_Alaskan,None
+859,Jordan,M,Native_American_Alaskan,None
+860,Justin,M,Native_American_Alaskan,None
+861,Cole,M,Native_American_Alaskan,None
+862,Jackson,M,Native_American_Alaskan,None
+863,Jeremiah,M,Native_American_Alaskan,None
+864,Jonathan,M,Native_American_Alaskan,None
+865,Kaleb,M,Native_American_Alaskan,None
+866,Vincent,M,Native_American_Alaskan,None
+867,Jayden,M,Native_American_Alaskan,None
+868,Kaden,M,Native_American_Alaskan,None
+869,Riley,M,Native_American_Alaskan,None
+870,Seth,M,Native_American_Alaskan,None
+871,Charles,M,Native_American_Alaskan,None
+872,Elias,M,Native_American_Alaskan,None
+873,Paul,M,Native_American_Alaskan,None
+874,Peter,M,Native_American_Alaskan,None
+875,Tristan,M,Native_American_Alaskan,None
+876,Adam,M,Native_American_Alaskan,None
+877,Aden,M,Native_American_Alaskan,None
+878,Kyle,M,Native_American_Alaskan,None
+879,Marcus,M,Native_American_Alaskan,None
+880,Nathaniel,M,Native_American_Alaskan,None
+881,Richard,M,Native_American_Alaskan,None
+882,Ashton,M,Native_American_Alaskan,None
+883,Caden,M,Native_American_Alaskan,None
+884,Cameron,M,Native_American_Alaskan,None
+885,Jesse,M,Native_American_Alaskan,None
+886,Sean,M,Native_American_Alaskan,None
+887,Trevor,M,Native_American_Alaskan,None
+888,Wyatt,M,Native_American_Alaskan,None
+889,Blake,M,Native_American_Alaskan,None
+890,Carter,M,Native_American_Alaskan,None
+891,Christian,M,Native_American_Alaskan,None
+892,Malachi,M,Native_American_Alaskan,None
+893,Dawson,M,Native_American_Alaskan,None
+894,Eric,M,Native_American_Alaskan,None
+895,Jaden,M,Native_American_Alaskan,None
+896,Kevin,M,Native_American_Alaskan,None
+897,Shane,M,Native_American_Alaskan,None
+898,Avery,M,Native_American_Alaskan,None
+899,Carson,M,Native_American_Alaskan,None
+900,Devon,M,Native_American_Alaskan,None
+901,Dominic,M,Native_American_Alaskan,None
+902,Kenneth,M,Native_American_Alaskan,None
+903,Nolan,M,Native_American_Alaskan,None
+904,Patrick,M,Native_American_Alaskan,None
+905,Preston,M,Native_American_Alaskan,None
+906,Ryder,M,Native_American_Alaskan,None
+907,Scott,M,Native_American_Alaskan,None
+908,Steven,M,Native_American_Alaskan,None
+909,Trenton,M,Native_American_Alaskan,None
 0,Aaron,M,African_American,None
 1,Absolan,M,African_American,None
 2,Adrian,M,African_American,None
@@ -57178,913 +58088,3 @@
 5491,ZACK,M,Caucasian,None
 5492,ZACKARY,M,Caucasian,None
 5493,ZANE,M,Caucasian,None
-5494, ABEDABUN,F,Native_American_Alaskan,None
-5495, ABEQUA,F,Native_American_Alaskan,None
-5496, ABEQUE,F,Native_American_Alaskan,None
-5497, ADSILA,F,Native_American_Alaskan,None
-5498, AILEN,F,Native_American_Alaskan,None
-5499, AIYANA,F,Native_American_Alaskan,None
-5500, AIYANNA,F,Native_American_Alaskan,None
-5501, ALAMEDA,F,Native_American_Alaskan,None
-5502, ALAQUA,F,Native_American_Alaskan,None
-5503, ALSOOMSE,F,Native_American_Alaskan,None
-5504, AMADAHY,F,Native_American_Alaskan,None
-5505, ANGWUSNASOMTAQA,F,Native_American_Alaskan,None
-5506, ANPAYTOO,F,Native_American_Alaskan,None
-5507, APONI,F,Native_American_Alaskan,None
-5508, AWANATA,F,Native_American_Alaskan,None
-5509, AWENTIA,F,Native_American_Alaskan,None
-5510, AWINITA,F,Native_American_Alaskan,None
-5511, AYASHA,F,Native_American_Alaskan,None
-5512, AYASHE,F,Native_American_Alaskan,None
-5513, AYELEN,F,Native_American_Alaskan,None
-5514, AYLEN,F,Native_American_Alaskan,None
-5515, CALFURAY,F,Native_American_Alaskan,None
-5516, CHA'RISA,F,Native_American_Alaskan,None
-5517, CHEPI,F,Native_American_Alaskan,None
-5518, CHOCHMINGWU,F,Native_American_Alaskan,None
-5519, CHOSOVI,F,Native_American_Alaskan,None
-5520, CHOSPOSI,F,Native_American_Alaskan,None
-5521, CHUMANA,F,Native_American_Alaskan,None
-5522, CHUMANI,F,Native_American_Alaskan,None
-5523, CHU'SI,F,Native_American_Alaskan,None
-5524, DOLI,F,Native_American_Alaskan,None
-5525, DONOMA,F,Native_American_Alaskan,None
-5526, EHAWEE,F,Native_American_Alaskan,None
-5527, GALILAHI,F,Native_American_Alaskan,None
-5528, HAKIDONMUYA,F,Native_American_Alaskan,None
-5529, HANTAYWEE,F,Native_American_Alaskan,None
-5530, HEHEWUTI,F,Native_American_Alaskan,None
-5531, HONOVI,F,Native_American_Alaskan,None
-5532, HURIT,F,Native_American_Alaskan,None
-5533, HUYANA,F,Native_American_Alaskan,None
-5534, ISI,F,Native_American_Alaskan,None
-5535, JACI,F,Native_American_Alaskan,None
-5536, KACHINA,F,Native_American_Alaskan,None
-5537, KAI,F,Native_American_Alaskan,None
-5538, KALISKA,F,Native_American_Alaskan,None
-5539, KANTI,F,Native_American_Alaskan,None
-5540, KASA,F,Native_American_Alaskan,None
-5541, KATERI,F,Native_American_Alaskan,None
-5542, KAYA,F,Native_American_Alaskan,None
-5543, KEEGSQUAW,F,Native_American_Alaskan,None
-5544, KEEZHEEKONI,F,Native_American_Alaskan,None
-5545, KIMAMA,F,Native_American_Alaskan,None
-5546, KIMI,F,Native_American_Alaskan,None
-5547, KIMIMELA,F,Native_American_Alaskan,None
-5548, KIWIDINOK,F,Native_American_Alaskan,None
-5549, KOKO,F,Native_American_Alaskan,None
-5550, KOKYANGWUTI,F,Native_American_Alaskan,None
-5551, KUWANLELENTA,F,Native_American_Alaskan,None
-5552, KUWANYAMTIWA,F,Native_American_Alaskan,None
-5553, KUWANYAUMA,F,Native_American_Alaskan,None
-5554, LENMANA,F,Native_American_Alaskan,None
-5555, LILUYE,F,Native_American_Alaskan,None
-5556, LITONYA,F,Native_American_Alaskan,None
-5557, LOMAHONGVA,F,Native_American_Alaskan,None
-5558, MACAWI,F,Native_American_Alaskan,None
-5559, MAGASKAWEE,F,Native_American_Alaskan,None
-5560, MAIARA,F,Native_American_Alaskan,None
-5561, MAKA,F,Native_American_Alaskan,None
-5562, MAKAWEE,F,Native_American_Alaskan,None
-5563, MAKKITOTOSIMEW,F,Native_American_Alaskan,None
-5564, MALILA,F,Native_American_Alaskan,None
-5565, MANSI,F,Native_American_Alaskan,None
-5566, MAPIYA,F,Native_American_Alaskan,None
-5567, MEOQUANEE,F,Native_American_Alaskan,None
-5568, METHOATASKE,F,Native_American_Alaskan,None
-5569, MIGINA,F,Native_American_Alaskan,None
-5570, MIGISI,F,Native_American_Alaskan,None
-5571, MIMITEH,F,Native_American_Alaskan,None
-5572, MISAE,F,Native_American_Alaskan,None
-5573, MOEMA,F,Native_American_Alaskan,None
-5574, MUNA,F,Native_American_Alaskan,None
-5575, NADIE,F,Native_American_Alaskan,None
-5576, NAHIMANA,F,Native_American_Alaskan,None
-5577, NAIRA,F,Native_American_Alaskan,None
-5578, NAMID,F,Native_American_Alaskan,None
-5579, NASCHA,F,Native_American_Alaskan,None
-5580, NAYELI,F,Native_American_Alaskan,None
-5581, NIABI,F,Native_American_Alaskan,None
-5582, NIDAWI,F,Native_American_Alaskan,None
-5583, NINA,F,Native_American_Alaskan,None
-5584, NITA,F,Native_American_Alaskan,None
-5585, NITTAWOSEW,F,Native_American_Alaskan,None
-5586, NIZHONI,F,Native_American_Alaskan,None
-5587, NJLON,F,Native_American_Alaskan,None
-5588, NOVA,F,Native_American_Alaskan,None
-5589, NUKPANA,F,Native_American_Alaskan,None
-5590, NUMEES,F,Native_American_Alaskan,None
-5591, NUTTAH,F,Native_American_Alaskan,None
-5592, ODAHINGUM,F,Native_American_Alaskan,None
-5593, OMINOTAGO,F,Native_American_Alaskan,None
-5594, OMUSA,F,Native_American_Alaskan,None
-5595, ONATAH,F,Native_American_Alaskan,None
-5596, OOLJEE,F,Native_American_Alaskan,None
-5597, OOTA DABUN,F,Native_American_Alaskan,None
-5598, ORENDA,F,Native_American_Alaskan,None
-5599, PAKUNA,F,Native_American_Alaskan,None
-5600, PAKWA,F,Native_American_Alaskan,None
-5601, PAMUYA,F,Native_American_Alaskan,None
-5602, PAPINA,F,Native_American_Alaskan,None
-5603, PAUWAU,F,Native_American_Alaskan,None
-5604, PAVATI,F,Native_American_Alaskan,None
-5605, PETA,F,Native_American_Alaskan,None
-5606, POCAHONTAS,F,Native_American_Alaskan,None
-5607, POLIKWAPTIWA,F,Native_American_Alaskan,None
-5608, POLOMA,F,Native_American_Alaskan,None
-5609, POSALA,F,Native_American_Alaskan,None
-5610, POWAQA,F,Native_American_Alaskan,None
-5611, PTAYSANWEE,F,Native_American_Alaskan,None
-5612, PULES,F,Native_American_Alaskan,None
-5613, RAYEN,F,Native_American_Alaskan,None
-5614, SAHKYO,F,Native_American_Alaskan,None
-5615, SALALI,F,Native_American_Alaskan,None
-5616, SANUYE,F,Native_American_Alaskan,None
-5617, SAQUI,F,Native_American_Alaskan,None
-5618, SAYEN,F,Native_American_Alaskan,None
-5619, SHADI,F,Native_American_Alaskan,None
-5620, SHESHEBENS,F,Native_American_Alaskan,None
-5621, SHIDEEZHI,F,Native_American_Alaskan,None
-5622, SHIKOBA,F,Native_American_Alaskan,None
-5623, SHIMA,F,Native_American_Alaskan,None
-5624, SHIMASANI,F,Native_American_Alaskan,None
-5625, SHUMAN,F,Native_American_Alaskan,None
-5626, SIHU,F,Native_American_Alaskan,None
-5627, SINOPA,F,Native_American_Alaskan,None
-5628, SITALA,F,Native_American_Alaskan,None
-5629, SITSI,F,Native_American_Alaskan,None
-5630, SOKANON,F,Native_American_Alaskan,None
-5631, SOOLEAWA,F,Native_American_Alaskan,None
-5632, SOYALA,F,Native_American_Alaskan,None
-5633, SULETU,F,Native_American_Alaskan,None
-5634, TABLITA,F,Native_American_Alaskan,None
-5635, TADEWI,F,Native_American_Alaskan,None
-5636, TAIGI,F,Native_American_Alaskan,None
-5637, TAINI,F,Native_American_Alaskan,None
-5638, TAIPA,F,Native_American_Alaskan,None
-5639, TAKALA,F,Native_American_Alaskan,None
-5640, TAKCHAWEE,F,Native_American_Alaskan,None
-5641, TAKHI,F,Native_American_Alaskan,None
-5642, TALLULA,F,Native_American_Alaskan,None
-5643, TALLULAH,F,Native_American_Alaskan,None
-5644, TALULLA,F,Native_American_Alaskan,None
-5645, TALULLAH,F,Native_American_Alaskan,None
-5646, TALUTAH,F,Native_American_Alaskan,None
-5647, TAMAYA,F,Native_American_Alaskan,None
-5648, TAYANITA,F,Native_American_Alaskan,None
-5649, TIPONI,F,Native_American_Alaskan,None
-5650, TISSEEWOONATIS,F,Native_American_Alaskan,None
-5651, TIVA,F,Native_American_Alaskan,None
-5652, TOLINKA,F,Native_American_Alaskan,None
-5653, TOTSI,F,Native_American_Alaskan,None
-5654, TUWA,F,Native_American_Alaskan,None
-5655, UNA,F,Native_American_Alaskan,None
-5656, URIKA,F,Native_American_Alaskan,None
-5657, WACHIWI,F,Native_American_Alaskan,None
-5658, WAKANDA,F,Native_American_Alaskan,None
-5659, WAKI,F,Native_American_Alaskan,None
-5660, WAUNA,F,Native_American_Alaskan,None
-5661, WEEKO,F,Native_American_Alaskan,None
-5662, WENONA,F,Native_American_Alaskan,None
-5663, WENONAH,F,Native_American_Alaskan,None
-5664, WICAPI WAKAN,F,Native_American_Alaskan,None
-5665, WIHAKAYDA,F,Native_American_Alaskan,None
-5666, WIKIMAK,F,Native_American_Alaskan,None
-5667, WINONA,F,Native_American_Alaskan,None
-5668, WITASHNAH,F,Native_American_Alaskan,None
-5669, WUTI,F,Native_American_Alaskan,None
-5670, YAMKA,F,Native_American_Alaskan,None
-5671, YAZHI,F,Native_American_Alaskan,None
-5672, YOKI,F,Native_American_Alaskan,None
-5673, ZIHNA,F,Native_American_Alaskan,None
-5674, ZITKALA,F,Native_American_Alaskan,None
-5675, ABOOKSIGUN,M,Native_American_Alaskan,None
-5676, ABUKCHEECH,M,Native_American_Alaskan,None
-5677, ACHAK,M,Native_American_Alaskan,None
-5678, ADAHY,M,Native_American_Alaskan,None
-5679, AHANU,M,Native_American_Alaskan,None
-5680, AHIGA,M,Native_American_Alaskan,None
-5681, AHOTE,M,Native_American_Alaskan,None
-5682, AHTAHKAKOOP,M,Native_American_Alaskan,None
-5683, AMITOLA,M,Native_American_Alaskan,None
-5684, ANTIMAN,M,Native_American_Alaskan,None
-5685, ANTINANCO,M,Native_American_Alaskan,None
-5686, APONIVI,M,Native_American_Alaskan,None
-5687, ASHKII,M,Native_American_Alaskan,None
-5688, ASKOOK,M,Native_American_Alaskan,None
-5689, ASKUWHETEAU,M,Native_American_Alaskan,None
-5690, ATA'HALNE,M,Native_American_Alaskan,None
-5691, AUCAMAN,M,Native_American_Alaskan,None
-5692, AVONACO,M,Native_American_Alaskan,None
-5693, AYAWAMAT,M,Native_American_Alaskan,None
-5694, BIDZIIL,M,Native_American_Alaskan,None
-5695, BILAGAANA,M,Native_American_Alaskan,None
-5696, CATAHECASSA,M,Native_American_Alaskan,None
-5697, CHA'AKMONGWI,M,Native_American_Alaskan,None
-5698, CHANKOOWASHTAY,M,Native_American_Alaskan,None
-5699, CHANSOMPS,M,Native_American_Alaskan,None
-5700, CHASCHUNKAÊ,M,Native_American_Alaskan,None
-5701, CHA'TIMA,M,Native_American_Alaskan,None
-5702, CHAVATANGAKWUNUA,M,Native_American_Alaskan,None
-5703, CHAYTON,M,Native_American_Alaskan,None
-5704, CHEVEYO,M,Native_American_Alaskan,None
-5705, CHOCHMO,M,Native_American_Alaskan,None
-5706, CHOCHOKPI,M,Native_American_Alaskan,None
-5707, CHOCHUSCHUVIO,M,Native_American_Alaskan,None
-5708, CHOGAN,M,Native_American_Alaskan,None
-5709, CHOOVIO,M,Native_American_Alaskan,None
-5710, CHOVIOHOYA,M,Native_American_Alaskan,None
-5711, CHOWILAWU,M,Native_American_Alaskan,None
-5712, CHUA,M,Native_American_Alaskan,None
-5713, CHUCHIP,M,Native_American_Alaskan,None
-5714, CHUNTA,M,Native_American_Alaskan,None
-5715, CHUSI,M,Native_American_Alaskan,None
-5716, CIQALA,M,Native_American_Alaskan,None
-5717, COWESSESS,M,Native_American_Alaskan,None
-5718, DEMONTHIN,M,Native_American_Alaskan,None
-5719, EDITON,M,Native_American_Alaskan,None
-5720, ELUWILUSSIT,M,Native_American_Alaskan,None
-5721, ENAPAY,M,Native_American_Alaskan,None
-5722, ENKOODABAOO,M,Native_American_Alaskan,None
-5723, ENKOODABOOAOO,M,Native_American_Alaskan,None
-5724, ETCHEMIN,M,Native_American_Alaskan,None
-5725, ETLELOOAAT,M,Native_American_Alaskan,None
-5726, GAAGII,M,Native_American_Alaskan,None
-5727, GAD,M,Native_American_Alaskan,None
-5728, GAHEGE,M,Native_American_Alaskan,None
-5729, GOYATHLAY,M,Native_American_Alaskan,None
-5730, GUDAHI,M,Native_American_Alaskan,None
-5731, HAHKETHOMEMAH,M,Native_American_Alaskan,None
-5732, HANIA,M,Native_American_Alaskan,None
-5733, HASSUN,M,Native_American_Alaskan,None
-5734, HASTIIN,M,Native_American_Alaskan,None
-5735, HAWIOVI,M,Native_American_Alaskan,None
-5736, HEAMMAWIHIO,M,Native_American_Alaskan,None
-5737, HELUSHKAÊ(He-lush-ka),M,Native_American_Alaskan,None
-5738, HESKOVIZENAKO,M,Native_American_Alaskan,None
-5739, HESUTU,M,Native_American_Alaskan,None
-5740, HEVATANEO,M,Native_American_Alaskan,None
-5741, HEVOVITASTAMIUTSTO,M,Native_American_Alaskan,None
-5742, HIAMOVI,M,Native_American_Alaskan,None
-5743, HINTO,M,Native_American_Alaskan,None
-5744, HOHNIHOHKAIYOHOS,M,Native_American_Alaskan,None
-5745, HOK'EE,M,Native_American_Alaskan,None
-5746, HOKOLESQUA,M,Native_American_Alaskan,None
-5747, HONANI,M,Native_American_Alaskan,None
-5748, HONAW,M,Native_American_Alaskan,None
-5749, HONIAHAKA,M,Native_American_Alaskan,None
-5750, HONON,M,Native_American_Alaskan,None
-5751, HOTAH,M,Native_American_Alaskan,None
-5752, HOTOTO,M,Native_American_Alaskan,None
-5753, HOTUAEKHAASHTAIT,M,Native_American_Alaskan,None
-5754, HOWAHKAN,M,Native_American_Alaskan,None
-5755, HOWI,M,Native_American_Alaskan,None
-5756, HURITT,M,Native_American_Alaskan,None
-5757, ISI,M,Native_American_Alaskan,None
-5758, ISTAQA,M,Native_American_Alaskan,None
-5759, KACHADA,M,Native_American_Alaskan,None
-5760, KANEONUSKATEW,M,Native_American_Alaskan,None
-5761, KANGEE,M,Native_American_Alaskan,None
-5762, KAWACATOOSE,M,Native_American_Alaskan,None
-5763, KELE,M,Native_American_Alaskan,None
-5764, KEME,M,Native_American_Alaskan,None
-5765, KESEGOWAASE,M,Native_American_Alaskan,None
-5766, KESTEJOO,M,Native_American_Alaskan,None
-5767, KISECAWCHUCK,M,Native_American_Alaskan,None
-5768, KITCHI,M,Native_American_Alaskan,None
-5769, KOHANA,M,Native_American_Alaskan,None
-5770, KOHKAHYCUMEST,M,Native_American_Alaskan,None
-5771, KOLICHIYAW,M,Native_American_Alaskan,None
-5772, KOSUMI,M,Native_American_Alaskan,None
-5773, KOTORI,M,Native_American_Alaskan,None
-5774, KUCKUNNIWI,M,Native_American_Alaskan,None
-5775, KURUK,M,Native_American_Alaskan,None
-5776, KWAHU,M,Native_American_Alaskan,None
-5777, KWATOKO,M,Native_American_Alaskan,None
-5778, LALAWETHIKA,M,Native_American_Alaskan,None
-5779, LANSA,M,Native_American_Alaskan,None
-5780, LAPU,M,Native_American_Alaskan,None
-5781, LEN,M,Native_American_Alaskan,None
-5782, LEYATI,M,Native_American_Alaskan,None
-5783, LISE,M,Native_American_Alaskan,None
-5784, LIWANU,M,Native_American_Alaskan,None
-5785, LOKNI,M,Native_American_Alaskan,None
-5786, LOOTAH,M,Native_American_Alaskan,None
-5787, MACHAKW,M,Native_American_Alaskan,None
-5788, MACHK,M,Native_American_Alaskan,None
-5789, MAHKAH,M,Native_American_Alaskan,None
-5790, MAHPEE,M,Native_American_Alaskan,None
-5791, MAKKAPITEW,M,Native_American_Alaskan,None
-5792, MAKYA,M,Native_American_Alaskan,None
-5793, MANTOTOHPA,M,Native_American_Alaskan,None
-5794, MASICHUVIO,M,Native_American_Alaskan,None
-5795, MATCHITEHEW,M,Native_American_Alaskan,None
-5796, MATCHITISIW,M,Native_American_Alaskan,None
-5797, MATOSKAH,M,Native_American_Alaskan,None
-5798, MATUNAAGA,M,Native_American_Alaskan,None
-5799, MATWAU,M,Native_American_Alaskan,None
-5800, MAZA BLASKA,M,Native_American_Alaskan,None
-5801, MEGEDAGIK,M,Native_American_Alaskan,None
-5802, MELKEDOODUM,M,Native_American_Alaskan,None
-5803, METURATO,M,Native_American_Alaskan,None
-5804, MINNINNEWAH,M,Native_American_Alaskan,None
-5805, MISU,M,Native_American_Alaskan,None
-5806, MOCHNI,M,Native_American_Alaskan,None
-5807, MOKI,M,Native_American_Alaskan,None
-5808, MOLIMO,M,Native_American_Alaskan,None
-5809, MONA,M,Native_American_Alaskan,None
-5810, MONGWAU,M,Native_American_Alaskan,None
-5811, MUATA,M,Native_American_Alaskan,None
-5812, MUKKI,M,Native_American_Alaskan,None
-5813, MUNDOO,M,Native_American_Alaskan,None
-5814, MUSCOWEQUAN,M,Native_American_Alaskan,None
-5815, NAALNISH,M,Native_American_Alaskan,None
-5816, NAHCOMENCE,M,Native_American_Alaskan,None
-5817, NAHIOSSI,M,Native_American_Alaskan,None
-5818, NAHUEL,M,Native_American_Alaskan,None
-5819, NAPAYSHNI,M,Native_American_Alaskan,None
-5820, NASTAS,M,Native_American_Alaskan,None
-5821, NAWKAW,M,Native_American_Alaskan,None
-5822, NIICHAAD,M,Native_American_Alaskan,None
-5823, NIXKAMICH,M,Native_American_Alaskan,None
-5824, NIYOL,M,Native_American_Alaskan,None
-5825, NOOTAU,M,Native_American_Alaskan,None
-5826, NOSH,M,Native_American_Alaskan,None
-5827, NOSHI,M,Native_American_Alaskan,None
-5828, NUKPANA,M,Native_American_Alaskan,None
-5829, OCUMWHOWURST,M,Native_American_Alaskan,None
-5830, OCUNNOWHURST,M,Native_American_Alaskan,None
-5831, ODAKOTA,M,Native_American_Alaskan,None
-5832, OGALEESHA,M,Native_American_Alaskan,None
-5833, OHANZEE,M,Native_American_Alaskan,None
-5834, OHCUMGACHE,M,Native_American_Alaskan,None
-5835, OHITEKAH,M,Native_American_Alaskan,None
-5836, OMAWNAKW,M,Native_American_Alaskan,None
-5837, OTAKTAY,M,Native_American_Alaskan,None
-5838, OTOAHHASTIS,M,Native_American_Alaskan,None
-5839, OTOAHNACTO,M,Native_American_Alaskan,None
-5840, PACHUA,M,Native_American_Alaskan,None
-5841, PAHANA,M,Native_American_Alaskan,None
-5842, PAJACKOK,M,Native_American_Alaskan,None
-5843, PANNOOWAU,M,Native_American_Alaskan,None
-5844, PAYTAH,M,Native_American_Alaskan,None
-5845, PIVANE,M,Native_American_Alaskan,None
-5846, POWWAW,M,Native_American_Alaskan,None
-5847, QALETAQA,M,Native_American_Alaskan,None
-5848, QOCHATA,M,Native_American_Alaskan,None
-5849, QUANAH,M,Native_American_Alaskan,None
-5850, QUIDEL,M,Native_American_Alaskan,None
-5851, ROWTAG,M,Native_American_Alaskan,None
-5852, SANI,M,Native_American_Alaskan,None
-5853, SEGENAM,M,Native_American_Alaskan,None
-5854, SEWATI,M,Native_American_Alaskan,None
-5855, SHIKOBA,M,Native_American_Alaskan,None
-5856, SHILAH,M,Native_American_Alaskan,None
-5857, SHIRIKI,M,Native_American_Alaskan,None
-5858, SHIYE,M,Native_American_Alaskan,None
-5859, SHIZHE'E,M,Native_American_Alaskan,None
-5860, SHOEMOWETOCHAWCAWEWAHCATOWE,M,Native_American_Alaskan,None
-5861, SICHEII,M,Native_American_Alaskan,None
-5862, SIKE,M,Native_American_Alaskan,None
-5863, SIK'IS,M,Native_American_Alaskan,None
-5864, SIKYAHONAW,M,Native_American_Alaskan,None
-5865, SIKYATAVO,M,Native_American_Alaskan,None
-5866, SKAH,M,Native_American_Alaskan,None
-5867, SOWI'NGWA,M,Native_American_Alaskan,None
-5868, SUCKI,M,Native_American_Alaskan,None
-5869, SUNUKKUHKAU,M,Native_American_Alaskan,None
-5870, TAHKEOME,M,Native_American_Alaskan,None
-5871, TAHMELAPACHME,M,Native_American_Alaskan,None
-5872, TAKODA,M,Native_American_Alaskan,None
-5873, TANGAKWUNU,M,Native_American_Alaskan,None
-5874, TAREGAN,M,Native_American_Alaskan,None
-5875, TASUNKE,M,Native_American_Alaskan,None
-5876, TATANKA-PTECILA,M,Native_American_Alaskan,None
-5877, TECUMSEH,M,Native_American_Alaskan,None
-5878, TEETONKA,M,Native_American_Alaskan,None
-5879, TELUTCI,M,Native_American_Alaskan,None
-5880, TENSKWATAWA,M,Native_American_Alaskan,None
-5881, TIHKOOSUE,M,Native_American_Alaskan,None
-5882, T'IIS,M,Native_American_Alaskan,None
-5883, TOCHO,M,Native_American_Alaskan,None
-5884, TOGQUOS,M,Native_American_Alaskan,None
-5885, TOHOPKA,M,Native_American_Alaskan,None
-5886, TOKALA,M,Native_American_Alaskan,None
-5887, TOOANTUH,M,Native_American_Alaskan,None
-5888, TSE,M,Native_American_Alaskan,None
-5889, TSIISHCHILI,M,Native_American_Alaskan,None
-5890, TUPI,M,Native_American_Alaskan,None
-5891, UZUMATI,M,Native_American_Alaskan,None
-5892, VAIVEAHTOISH,M,Native_American_Alaskan,None
-5893, VIHO,M,Native_American_Alaskan,None
-5894, VIPPONAH,M,Native_American_Alaskan,None
-5895, VOHKINNE,M,Native_American_Alaskan,None
-5896, VOISTITOEVITZ,M,Native_American_Alaskan,None
-5897, VOISTTITOEVETZ,M,Native_American_Alaskan,None
-5898, VOKIVOCUMMAST,M,Native_American_Alaskan,None
-5899, WAHANASSATTA,M,Native_American_Alaskan,None
-5900, WAHCHINKSAPA,M,Native_American_Alaskan,None
-5901, WAHCHINTONKA,M,Native_American_Alaskan,None
-5902, WAHKAN,M,Native_American_Alaskan,None
-5903, WAMBLEESKA,M,Native_American_Alaskan,None
-5904, WAMBLI-WASTE,M,Native_American_Alaskan,None
-5905, WANAGEESKA,M,Native_American_Alaskan,None
-5906, WANAHTON,M,Native_American_Alaskan,None
-5907, WANIKIYA,M,Native_American_Alaskan,None
-5908, WAPASHA,M,Native_American_Alaskan,None
-5909, WAQUINI,M,Native_American_Alaskan,None
-5910, WAYRA,M,Native_American_Alaskan,None
-5911, WEAYAYA,M,Native_American_Alaskan,None
-5912, WEMATIN,M,Native_American_Alaskan,None
-5913, WICASA,M,Native_American_Alaskan,None
-5914, WICKANINNISH,M,Native_American_Alaskan,None
-5915, WIKVAYA,M,Native_American_Alaskan,None
-5916, WOHEHIV,M,Native_American_Alaskan,None
-5917, WOKAIHWOKOMAS,M,Native_American_Alaskan,None
-5918, WUYI,M,Native_American_Alaskan,None
-5919, YAHTO,M,Native_American_Alaskan,None
-5920, YANISIN,M,Native_American_Alaskan,None
-5921, YAS,M,Native_American_Alaskan,None
-5922, YISKA,M,Native_American_Alaskan,None
-5923,AdlartokÊ,F,Native_American_Alaskan,None
-5924,AgaÊ,F,Native_American_Alaskan,None
-5925,AglaktiÊ,F,Native_American_Alaskan,None
-5926,AgloolikÊ,F,Native_American_Alaskan,None
-5927,AgutaÊ,F,Native_American_Alaskan,None
-5928,AhnahÊ,F,Native_American_Alaskan,None
-5929,AipalovikÊ,F,Native_American_Alaskan,None
-5930,AituserkÊ,F,Native_American_Alaskan,None
-5931,AkiakÊ,F,Native_American_Alaskan,None
-5932,AkkikiktokÊ,F,Native_American_Alaskan,None
-5933,AkkilokipokÊ,F,Native_American_Alaskan,None
-5934,Akkituyok,F,Native_American_Alaskan,None
-5935,AkluitokÊ,F,Native_American_Alaskan,None
-5936,AknaÊ,F,Native_American_Alaskan,None
-5937,AkrittokÊ,F,Native_American_Alaskan,None
-5938,AlornerkÊ,F,Native_American_Alaskan,None
-5939,AmaguqÊ,F,Native_American_Alaskan,None
-5940,AmakÊ,F,Native_American_Alaskan,None
-5941,Anana,F,Native_American_Alaskan,None
-5942,Anernerk,F,Native_American_Alaskan,None
-5943,AninganÊ,F,Native_American_Alaskan,None
-5944,AnnakpokÊ,F,Native_American_Alaskan,None
-5945,AnuunÊ,F,Native_American_Alaskan,None
-5946,AnuniaqÊ,F,Native_American_Alaskan,None
-5947,AnyuÊ,F,Native_American_Alaskan,None
-5948,AputÊ,F,Native_American_Alaskan,None
-5949,AquutaqÊ,F,Native_American_Alaskan,None
-5950,ArjalinerkÊ,F,Native_American_Alaskan,None
-5951,ArnaalukÊ,F,Native_American_Alaskan,None
-5952,Arrluk,F,Native_American_Alaskan,None
-5953,AsiavikÊ,F,Native_American_Alaskan,None
-5954,AssiminikÊ,F,Native_American_Alaskan,None
-5955,AsungaqÊÊ,F,Native_American_Alaskan,None
-5956,AtaciaraÊ,F,Native_American_Alaskan,None
-5957,AtaneqÊ,F,Native_American_Alaskan,None
-5958,AtaninnuaqÊ,F,Native_American_Alaskan,None
-5959,Atka,F,Native_American_Alaskan,None
-5960,Aukaneck,F,Native_American_Alaskan,None
-5961,AumanilÊ,F,Native_American_Alaskan,None
-5962,Atkonartok,F,Native_American_Alaskan,None
-5963,Aukaneck,F,Native_American_Alaskan,None
-5964,BiisaiyowaqÊ,F,Native_American_Alaskan,None
-5965,Buniq,F,Native_American_Alaskan,None
-5966,Chena,F,Native_American_Alaskan,None
-5967,ChuÊ,F,Native_American_Alaskan,None
-5968,ChugachÊ,F,Native_American_Alaskan,None
-5969,ChugiakÊ,F,Native_American_Alaskan,None
-5970,ChulyinÊ,F,Native_American_Alaskan,None
-5971,CikuqÊ,F,Native_American_Alaskan,None
-5972,Corazon,F,Native_American_Alaskan,None
-5973,CupunÊ,F,Native_American_Alaskan,None
-5974,DeniigiÊ,F,Native_American_Alaskan,None
-5975,DesnaÊ,F,Native_American_Alaskan,None
-5976,Ek ChuaÊ,F,Native_American_Alaskan,None
-5977,EskaÊ,F,Native_American_Alaskan,None
-5978,Hey,F,Native_American_Alaskan,None
-5979,IgalaqÊ,F,Native_American_Alaskan,None
-5980,IglopukÊ,F,Native_American_Alaskan,None
-5981,Ikiaq,F,Native_American_Alaskan,None
-5982,IkniqpalagaqÊ,F,Native_American_Alaskan,None
-5983,IleanaitutÊ,F,Native_American_Alaskan,None
-5984,IlliivatÊ,F,Native_American_Alaskan,None
-5985,IluakÊ,F,Native_American_Alaskan,None
-5986,IluliaqÊ,F,Native_American_Alaskan,None
-5987,IluqÊ,F,Native_American_Alaskan,None
-5988,ImmuyakÊ,F,Native_American_Alaskan,None
-5989,ImnekÊ,F,Native_American_Alaskan,None
-5990,InjuquaqÊ,F,Native_American_Alaskan,None
-5991,InungoarkÊ,F,Native_American_Alaskan,None
-5992,IpiktokÊ,F,Native_American_Alaskan,None
-5993,IqniqÊ,F,Native_American_Alaskan,None
-5994,IrdlirvirisissongÊ,F,Native_American_Alaskan,None
-5995,IssorartuyokÊ,F,Native_American_Alaskan,None
-5996,IssudlerkÊ,F,Native_American_Alaskan,None
-5997,Issumatar,F,Native_American_Alaskan,None
-5998,ItigiaqÊ,F,Native_American_Alaskan,None
-5999,IyaroakÊ,F,Native_American_Alaskan,None
-6000,KakrayokÊ,F,Native_American_Alaskan,None
-6001,KamikÊ,F,Native_American_Alaskan,None
-6002,KanguyakÊ,F,Native_American_Alaskan,None
-6003,KannoyakÊ,F,Native_American_Alaskan,None
-6004,KanosakÊ,F,Native_American_Alaskan,None
-6005,KanutÊ,F,Native_American_Alaskan,None
-6006,Kapik,F,Native_American_Alaskan,None
-6007,KappianartokÊ,F,Native_American_Alaskan,None
-6008,KappiataitokÊ,F,Native_American_Alaskan,None
-6009,KarpokÊ,F,Native_American_Alaskan,None
-6010,KaskaeÊ,F,Native_American_Alaskan,None
-6011,KassuqÊ,F,Native_American_Alaskan,None
-6012,Kattituyok,F,Native_American_Alaskan,None
-6013,KayaÊ,F,Native_American_Alaskan,None
-6014,KeelutÊ,F,Native_American_Alaskan,None
-6015,KeruguqÊ,F,Native_American_Alaskan,None
-6016,KesukÊ,F,Native_American_Alaskan,None
-6017,K'eyushÊ,F,Native_American_Alaskan,None
-6018,KilalurakÊ,F,Native_American_Alaskan,None
-6019,KilaunÊ,F,Native_American_Alaskan,None
-6020,KinaktokÊ,F,Native_American_Alaskan,None
-6021,KinalikÊ,F,Native_American_Alaskan,None
-6022,KinapakÊ,F,Native_American_Alaskan,None
-6023,KingudlerkÊ,F,Native_American_Alaskan,None
-6024,KinguyakkiiÊ,F,Native_American_Alaskan,None
-6025,KirimaÊ,F,Native_American_Alaskan,None
-6026,Koko,F,Native_American_Alaskan,None
-6027,KakortokÊ,F,Native_American_Alaskan,None
-6028,KrernertokÊ,F,Native_American_Alaskan,None
-6029,Kuk'uqÊ,F,Native_American_Alaskan,None
-6030,KulitakÊ,F,Native_American_Alaskan,None
-6031,KunikpokÊ,F,Native_American_Alaskan,None
-6032,Kunwaktok,F,Native_American_Alaskan,None
-6033,KussuyokÊ,F,Native_American_Alaskan,None
-6034,Kuvageegai,F,Native_American_Alaskan,None
-6035,MaguyukÊ,F,Native_American_Alaskan,None
-6036,MakittuqÊ,F,Native_American_Alaskan,None
-6037,MakoktokÊ,F,Native_American_Alaskan,None
-6038,MakpigatÊ,F,Native_American_Alaskan,None
-6039,MangokpokÊ,F,Native_American_Alaskan,None
-6040,ManiitokÊ,F,Native_American_Alaskan,None
-6041,ManirakÊ,F,Native_American_Alaskan,None
-6042,MasaaraqÊ,F,Native_American_Alaskan,None
-6043,MassakÊ,F,Native_American_Alaskan,None
-6044,MassalerauvokÊ,F,Native_American_Alaskan,None
-6045,Mauja Ê,F,Native_American_Alaskan,None
-6046,MequssukÊ,F,Native_American_Alaskan,None
-6047,MikiÊ,F,Native_American_Alaskan,None
-6048,Miksa,F,Native_American_Alaskan,None
-6049,MumikÊ,F,Native_American_Alaskan,None
-6050,NaartokÊ,F,Native_American_Alaskan,None
-6051,NagaÊ,F,Native_American_Alaskan,None
-6052,NagojutÊ,F,Native_American_Alaskan,None
-6053,NannuralukÊ,F,Native_American_Alaskan,None
-6054,NanuqÊ,F,Native_American_Alaskan,None
-6055,NasamiituuqÊ,F,Native_American_Alaskan,None
-6056,NaujaÊ,F,Native_American_Alaskan,None
-6057,NegiliqÊ,F,Native_American_Alaskan,None
-6058,NerromiktokÊ,F,Native_American_Alaskan,None
-6059,NertornartokÊ,F,Native_American_Alaskan,None
-6060,NigaqÊ,F,Native_American_Alaskan,None
-6061,NilakÊ,F,Native_American_Alaskan,None
-6062,NingakpokÊ,F,Native_American_Alaskan,None
-6063,NiniÊ,F,Native_American_Alaskan,None
-6064,NippikortuyokÊ,F,Native_American_Alaskan,None
-6065,NoahtakmiutÊ,F,Native_American_Alaskan,None
-6066,NoatakÊ,F,Native_American_Alaskan,None
-6067,Nukilik,F,Native_American_Alaskan,None
-6068,NukkaÊ,F,Native_American_Alaskan,None
-6069,NunataqÊ,F,Native_American_Alaskan,None
-6070,NutaaqÊ,F,Native_American_Alaskan,None
-6071,NutaralakÊ,F,Native_American_Alaskan,None
-6072,NutarniqÊ,F,Native_American_Alaskan,None
-6073,OkauyakÊ,F,Native_American_Alaskan,None
-6074,OlikpokÊ,F,Native_American_Alaskan,None
-6075,OnartokÊÊ,F,Native_American_Alaskan,None
-6076,OogrooqÊ,F,Native_American_Alaskan,None
-6077,OomailiqÊ,F,Native_American_Alaskan,None
-6078,PakakÊ,F,Native_American_Alaskan,None
-6079,Palartok,F,Native_American_Alaskan,None
-6080,PamiiruqÊ,F,Native_American_Alaskan,None
-6081,PamiiyokÊ,F,Native_American_Alaskan,None
-6082,PanikÊ,F,Native_American_Alaskan,None
-6083,PattangayokÊ,F,Native_American_Alaskan,None
-6084,PekartokÊ,F,Native_American_Alaskan,None
-6085,PiaktokÊ,F,Native_American_Alaskan,None
-6086,Pikatti,F,Native_American_Alaskan,None
-6087,PiktaungitokÊ,F,Native_American_Alaskan,None
-6088,Pitsiark,F,Native_American_Alaskan,None
-6089,PoalluÊ,F,Native_American_Alaskan,None
-6090,PukakÊ,F,Native_American_Alaskan,None
-6091,PukiqÊ,F,Native_American_Alaskan,None
-6092,PukulriaÊ,F,Native_American_Alaskan,None
-6093,PurnaqÊ,F,Native_American_Alaskan,None
-6094,PutyukÊ,F,Native_American_Alaskan,None
-6095,Qaniit Ê,F,Native_American_Alaskan,None
-6096,QannikÊ,F,Native_American_Alaskan,None
-6097,QatqainÊ,F,Native_American_Alaskan,None
-6098,QatiichiiÊÊ,F,Native_American_Alaskan,None
-6099,QeorvikÊ,F,Native_American_Alaskan,None
-6100,QigiqÊ,F,Native_American_Alaskan,None
-6101,QilaqÊ,F,Native_American_Alaskan,None
-6102,QimmiqÊ,F,Native_American_Alaskan,None
-6103,QimugkauyarÊ,F,Native_American_Alaskan,None
-6104,QimugtaÊ,F,Native_American_Alaskan,None
-6105,QimuktiÊ,F,Native_American_Alaskan,None
-6106,QopukÊ,F,Native_American_Alaskan,None
-6107,Quvianuq,F,Native_American_Alaskan,None
-6108,SadluyokÊ,F,Native_American_Alaskan,None
-6109,SaghaniÊ,F,Native_American_Alaskan,None
-6110,SakariÊ,F,Native_American_Alaskan,None
-6111,Salaksartok,F,Native_American_Alaskan,None
-6112,Sangilak,F,Native_American_Alaskan,None
-6113,SednaÊ,F,Native_American_Alaskan,None
-6114,SesiÊ,F,Native_American_Alaskan,None
-6115,SheshÊ,F,Native_American_Alaskan,None
-6116,ShilaÊ,F,Native_American_Alaskan,None
-6117,ShtiyaÊ,F,Native_American_Alaskan,None
-6118,SialukÊ,F,Native_American_Alaskan,None
-6119,Siarut,F,Native_American_Alaskan,None
-6120,SikuÊ,F,Native_American_Alaskan,None
-6121,SikuaqÊ,F,Native_American_Alaskan,None
-6122,Silatuyok,F,Native_American_Alaskan,None
-6123,SinaaqÊ,F,Native_American_Alaskan,None
-6124,sinniktokÊ,F,Native_American_Alaskan,None
-6125,SirmiqÊ,F,Native_American_Alaskan,None
-6126,SitiyokÊ,F,Native_American_Alaskan,None
-6127,SivudlerkÊ,F,Native_American_Alaskan,None
-6128,SosÊ,F,Native_American_Alaskan,None
-6129,SuinnakÊ,F,Native_American_Alaskan,None
-6130,SukaÊ,F,Native_American_Alaskan,None
-6131,Suluk,F,Native_American_Alaskan,None
-6132,SuraÊÊÊ,F,Native_American_Alaskan,None
-6133,TakiyokÊ,F,Native_American_Alaskan,None
-6134,TatkretÊ,F,Native_American_Alaskan,None
-6135,TakubvikÊ,F,Native_American_Alaskan,None
-6136,TaliriktugÊ,F,Native_American_Alaskan,None
-6137,TanaraqÊ,F,Native_American_Alaskan,None
-6138,TaqukaqÊ,F,Native_American_Alaskan,None
-6139,TarralikitakÊ,F,Native_American_Alaskan,None
-6140,TartokÊ,F,Native_American_Alaskan,None
-6141,TattilgatÊ,F,Native_American_Alaskan,None
-6142,Tavrani TavraÊ,F,Native_American_Alaskan,None
-6143,TekkeitsertokÊ,F,Native_American_Alaskan,None
-6144,TiglikteÊ,F,Native_American_Alaskan,None
-6145,TiilaqiiaÊ,F,Native_American_Alaskan,None
-6146,TikaaniÊ,F,Native_American_Alaskan,None
-6147,TikivikÊ,F,Native_American_Alaskan,None
-6148,TiquanaÊ,F,Native_American_Alaskan,None
-6149,TiguaqÊ,F,Native_American_Alaskan,None
-6150,TingenekÊ,F,Native_American_Alaskan,None
-6151,Tingiyok,F,Native_American_Alaskan,None
-6152,Tipvigut,F,Native_American_Alaskan,None
-6153,Tlate Hiin,F,Native_American_Alaskan,None
-6154,TomkinÊ,F,Native_American_Alaskan,None
-6155,TonrarÊ,F,Native_American_Alaskan,None
-6156,TonraqÊ,F,Native_American_Alaskan,None
-6157,TootegaÊ,F,Native_American_Alaskan,None
-6158,TorngasakÊ,F,Native_American_Alaskan,None
-6159,TornuaqÊ,F,Native_American_Alaskan,None
-6160,TuaqÊ,F,Native_American_Alaskan,None
-6161,TukkuttokÊ,F,Native_American_Alaskan,None
-6162,TuktuÊ,F,Native_American_Alaskan,None
-6163,TukturalukÊ,F,Native_American_Alaskan,None
-6164,TullikÊ,F,Native_American_Alaskan,None
-6165,TulugaqÊ,F,Native_American_Alaskan,None
-6166,TulukarukÊ,F,Native_American_Alaskan,None
-6167,TunerkÊ,F,Native_American_Alaskan,None
-6168,TungortokÊ,F,Native_American_Alaskan,None
-6169,TungulriaÊ,F,Native_American_Alaskan,None
-6170,TupilekÊ,F,Native_American_Alaskan,None
-6171,TupitÊ,F,Native_American_Alaskan,None
-6172,Tuuluuwaq,F,Native_American_Alaskan,None
-6173,TuwawiÊ,F,Native_American_Alaskan,None
-6174,UblureakÊ,F,Native_American_Alaskan,None
-6175,UgluÊ,F,Native_American_Alaskan,None
-6176,UiritsaktakÊ,F,Native_American_Alaskan,None
-6177,UklukÊ,F,Native_American_Alaskan,None
-6178,UlvaÊ,F,Native_American_Alaskan,None
-6179,UmiakÊ,F,Native_American_Alaskan,None
-6180,UmiaktorvikÊ,F,Native_American_Alaskan,None
-6181,UnalaqÊ,F,Native_American_Alaskan,None
-6182,UukkarnitÊ,F,Native_American_Alaskan,None
-6183,UvlugiaqÊ,F,Native_American_Alaskan,None
-6184,UyarakÊ,F,Native_American_Alaskan,None
-6185,YakoneÊ,F,Native_American_Alaskan,None
-6186,YuralriaÊ,F,Native_American_Alaskan,None
-6187,Madison,F,Native_American_Alaskan,None
-6188,Emma,F,Native_American_Alaskan,None
-6189,Emily,F,Native_American_Alaskan,None
-6190,Samantha,F,Native_American_Alaskan,None
-6191,Hannah,F,Native_American_Alaskan,None
-6192,Isabella,F,Native_American_Alaskan,None
-6193,Olivia,F,Native_American_Alaskan,None
-6194,Abigail,F,Native_American_Alaskan,None
-6195,Elizabeth,F,Native_American_Alaskan,None
-6196,Grace,F,Native_American_Alaskan,None
-6197,Alexis,F,Native_American_Alaskan,None
-6198,Jessica,F,Native_American_Alaskan,None
-6199,Anna,F,Native_American_Alaskan,None
-6200,Ava,F,Native_American_Alaskan,None
-6201,Lillian,F,Native_American_Alaskan,None
-6202,Sophia,F,Native_American_Alaskan,None
-6203,Sierra,F,Native_American_Alaskan,None
-6204,Trinity,F,Native_American_Alaskan,None
-6205,Lily,F,Native_American_Alaskan,None
-6206,Taylor,F,Native_American_Alaskan,None
-6207,Hailey,F,Native_American_Alaskan,None
-6208,Kaitlyn,F,Native_American_Alaskan,None
-6209,Savannah,F,Native_American_Alaskan,None
-6210,Alyssa,F,Native_American_Alaskan,None
-6211,Lauren,F,Native_American_Alaskan,None
-6212,Mary,F,Native_American_Alaskan,None
-6213,Sarah,F,Native_American_Alaskan,None
-6214,Ella,F,Native_American_Alaskan,None
-6215,Isabelle,F,Native_American_Alaskan,None
-6216,Jasmine,F,Native_American_Alaskan,None
-6217,Katherine,F,Native_American_Alaskan,None
-6218,Ashley,F,Native_American_Alaskan,None
-6219,Chloe,F,Native_American_Alaskan,None
-6220,Faith,F,Native_American_Alaskan,None
-6221,Kylie,F,Native_American_Alaskan,None
-6222,Morgan,F,Native_American_Alaskan,None
-6223,Nevaeh,F,Native_American_Alaskan,None
-6224,Paige,F,Native_American_Alaskan,None
-6225,Zoe,F,Native_American_Alaskan,None
-6226,Brianna,F,Native_American_Alaskan,None
-6227,Brooke,F,Native_American_Alaskan,None
-6228,Kayla,F,Native_American_Alaskan,None
-6229,Mia,F,Native_American_Alaskan,None
-6230,Rebecca,F,Native_American_Alaskan,None
-6231,Ariana,F,Native_American_Alaskan,None
-6232,Arianna,F,Native_American_Alaskan,None
-6233,Haley,F,Native_American_Alaskan,None
-6234,Jenna,F,Native_American_Alaskan,None
-6235,Katelyn,F,Native_American_Alaskan,None
-6236,Naomi,F,Native_American_Alaskan,None
-6237,Natalie,F,Native_American_Alaskan,None
-6238,Riley,F,Native_American_Alaskan,None
-6239,Ashlyn,F,Native_American_Alaskan,None
-6240,Leah,F,Native_American_Alaskan,None
-6241,Alexandra,F,Native_American_Alaskan,None
-6242,Aubrey,F,Native_American_Alaskan,None
-6243,Aurora,F,Native_American_Alaskan,None
-6244,Bethany,F,Native_American_Alaskan,None
-6245,Destiny,F,Native_American_Alaskan,None
-6246,Jillian,F,Native_American_Alaskan,None
-6247,Julia,F,Native_American_Alaskan,None
-6248,Rylee,F,Native_American_Alaskan,None
-6249,Serenity,F,Native_American_Alaskan,None
-6250,Vanessa,F,Native_American_Alaskan,None
-6251,Andrea,F,Native_American_Alaskan,None
-6252,Caitlyn,F,Native_American_Alaskan,None
-6253,Jordan,F,Native_American_Alaskan,None
-6254,Katie,F,Native_American_Alaskan,None
-6255,Leilani,F,Native_American_Alaskan,None
-6256,Lydia,F,Native_American_Alaskan,None
-6257,Mackenzie,F,Native_American_Alaskan,None
-6258,Megan,F,Native_American_Alaskan,None
-6259,Sara,F,Native_American_Alaskan,None
-6260,Savanna,F,Native_American_Alaskan,None
-6261,Victoria,F,Native_American_Alaskan,None
-6262,Aaliyah,F,Native_American_Alaskan,None
-6263,Alicia,F,Native_American_Alaskan,None
-6264,Amanda,F,Native_American_Alaskan,None
-6265,Angelina,F,Native_American_Alaskan,None
-6266,Audrey,F,Native_American_Alaskan,None
-6267,Autumn,F,Native_American_Alaskan,None
-6268,Avery,F,Native_American_Alaskan,None
-6269,Jade,F,Native_American_Alaskan,None
-6270,Maria,F,Native_American_Alaskan,None
-6271,Mariah,F,Native_American_Alaskan,None
-6272,Mya,F,Native_American_Alaskan,None
-6273,Shelby,F,Native_American_Alaskan,None
-6274,Sydney,F,Native_American_Alaskan,None
-6275,Alana,F,Native_American_Alaskan,None
-6276,Alexandria,F,Native_American_Alaskan,None
-6277,Allison,F,Native_American_Alaskan,None
-6278,Amelia,F,Native_American_Alaskan,None
-6279,Anastasia,F,Native_American_Alaskan,None
-6280,Breanna,F,Native_American_Alaskan,None
-6281,Cadence,F,Native_American_Alaskan,None
-6282,Dakota,F,Native_American_Alaskan,None
-6283,Desiree,F,Native_American_Alaskan,None
-6284,Ellie,F,Native_American_Alaskan,None
-6285,Evelyn,F,Native_American_Alaskan,None
-6286,Gabrielle,F,Native_American_Alaskan,None
-6287,Jada,F,Native_American_Alaskan,None
-6288,Kira,F,Native_American_Alaskan,None
-6289,Madeline,F,Native_American_Alaskan,None
-6290,Madelyn,F,Native_American_Alaskan,None
-6291,Makenna,F,Native_American_Alaskan,None
-6292,Margaret,F,Native_American_Alaskan,None
-6293,Maya,F,Native_American_Alaskan,None
-6294,Miranda,F,Native_American_Alaskan,None
-6295,Rachel,F,Native_American_Alaskan,None
-6296,Sofia,F,Native_American_Alaskan,None
-6297,Ethan,M,Native_American_Alaskan,None
-6298,Jacob,M,Native_American_Alaskan,None
-6299,Joshua,M,Native_American_Alaskan,None
-6300,Michael,M,Native_American_Alaskan,None
-6301,William,M,Native_American_Alaskan,None
-6302,Benjamin,M,Native_American_Alaskan,None
-6303,Joseph,M,Native_American_Alaskan,None
-6304,Logan,M,Native_American_Alaskan,None
-6305,John,M,Native_American_Alaskan,None
-6306,Matthew,M,Native_American_Alaskan,None
-6307,Daniel,M,Native_American_Alaskan,None
-6308,Tyler,M,Native_American_Alaskan,None
-6309,Aiden,M,Native_American_Alaskan,None
-6310,Andrew,M,Native_American_Alaskan,None
-6311,Elijah,M,Native_American_Alaskan,None
-6312,Ryan,M,Native_American_Alaskan,None
-6313,Zachary,M,Native_American_Alaskan,None
-6314,Alexander,M,Native_American_Alaskan,None
-6315,David,M,Native_American_Alaskan,None
-6316,Samuel,M,Native_American_Alaskan,None
-6317,Hunter,M,Native_American_Alaskan,None
-6318,James,M,Native_American_Alaskan,None
-6319,Dylan,M,Native_American_Alaskan,None
-6320,Gabriel,M,Native_American_Alaskan,None
-6321,Anthony,M,Native_American_Alaskan,None
-6322,Aidan,M,Native_American_Alaskan,None
-6323,Caleb,M,Native_American_Alaskan,None
-6324,Mason,M,Native_American_Alaskan,None
-6325,Noah,M,Native_American_Alaskan,None
-6326,Luke,M,Native_American_Alaskan,None
-6327,Owen,M,Native_American_Alaskan,None
-6328,Robert,M,Native_American_Alaskan,None
-6329,Isaiah,M,Native_American_Alaskan,None
-6330,Christopher,M,Native_American_Alaskan,None
-6331,Isaac,M,Native_American_Alaskan,None
-6332,Thomas,M,Native_American_Alaskan,None
-6333,Austin,M,Native_American_Alaskan,None
-6334,Connor,M,Native_American_Alaskan,None
-6335,Hayden,M,Native_American_Alaskan,None
-6336,Nathan,M,Native_American_Alaskan,None
-6337,Ian,M,Native_American_Alaskan,None
-6338,Nicholas,M,Native_American_Alaskan,None
-6339,Cody,M,Native_American_Alaskan,None
-6340,Gavin,M,Native_American_Alaskan,None
-6341,Brayden,M,Native_American_Alaskan,None
-6342,Liam,M,Native_American_Alaskan,None
-6343,Aaron,M,Native_American_Alaskan,None
-6344,Brandon,M,Native_American_Alaskan,None
-6345,Jack,M,Native_American_Alaskan,None
-6346,Josiah,M,Native_American_Alaskan,None
-6347,Timothy,M,Native_American_Alaskan,None
-6348,Jason,M,Native_American_Alaskan,None
-6349,Landon,M,Native_American_Alaskan,None
-6350,Lucas,M,Native_American_Alaskan,None
-6351,Devin,M,Native_American_Alaskan,None
-6352,Evan,M,Native_American_Alaskan,None
-6353,Jordan,M,Native_American_Alaskan,None
-6354,Justin,M,Native_American_Alaskan,None
-6355,Cole,M,Native_American_Alaskan,None
-6356,Jackson,M,Native_American_Alaskan,None
-6357,Jeremiah,M,Native_American_Alaskan,None
-6358,Jonathan,M,Native_American_Alaskan,None
-6359,Kaleb,M,Native_American_Alaskan,None
-6360,Vincent,M,Native_American_Alaskan,None
-6361,Jayden,M,Native_American_Alaskan,None
-6362,Kaden,M,Native_American_Alaskan,None
-6363,Riley,M,Native_American_Alaskan,None
-6364,Seth,M,Native_American_Alaskan,None
-6365,Charles,M,Native_American_Alaskan,None
-6366,Elias,M,Native_American_Alaskan,None
-6367,Paul,M,Native_American_Alaskan,None
-6368,Peter,M,Native_American_Alaskan,None
-6369,Tristan,M,Native_American_Alaskan,None
-6370,Adam,M,Native_American_Alaskan,None
-6371,Aden,M,Native_American_Alaskan,None
-6372,Kyle,M,Native_American_Alaskan,None
-6373,Marcus,M,Native_American_Alaskan,None
-6374,Nathaniel,M,Native_American_Alaskan,None
-6375,Richard,M,Native_American_Alaskan,None
-6376,Ashton,M,Native_American_Alaskan,None
-6377,Caden,M,Native_American_Alaskan,None
-6378,Cameron,M,Native_American_Alaskan,None
-6379,Jesse,M,Native_American_Alaskan,None
-6380,Sean,M,Native_American_Alaskan,None
-6381,Trevor,M,Native_American_Alaskan,None
-6382,Wyatt,M,Native_American_Alaskan,None
-6383,Blake,M,Native_American_Alaskan,None
-6384,Carter,M,Native_American_Alaskan,None
-6385,Christian,M,Native_American_Alaskan,None
-6386,Malachi,M,Native_American_Alaskan,None
-6387,Dawson,M,Native_American_Alaskan,None
-6388,Eric,M,Native_American_Alaskan,None
-6389,Jaden,M,Native_American_Alaskan,None
-6390,Kevin,M,Native_American_Alaskan,None
-6391,Shane,M,Native_American_Alaskan,None
-6392,Avery,M,Native_American_Alaskan,None
-6393,Carson,M,Native_American_Alaskan,None
-6394,Devon,M,Native_American_Alaskan,None
-6395,Dominic,M,Native_American_Alaskan,None
-6396,Kenneth,M,Native_American_Alaskan,None
-6397,Nolan,M,Native_American_Alaskan,None
-6398,Patrick,M,Native_American_Alaskan,None
-6399,Preston,M,Native_American_Alaskan,None
-6400,Ryder,M,Native_American_Alaskan,None
-6401,Scott,M,Native_American_Alaskan,None
-6402,Steven,M,Native_American_Alaskan,None
-6403,Trenton,M,Native_American_Alaskan,None
