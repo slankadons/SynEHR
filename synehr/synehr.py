@@ -94,17 +94,8 @@ def syn_ehr(size=1000, male_gender=None,asian=None, spanish=None, afr_amer=None,
     last_names_data=last_names_data.dropna(how='any')
     first_names_data=first_names_data.dropna(how='any')
 
-    print "Checking for null values in first names: ",first_names_data.isnull().any(axis=0)
-    print "Length of first: ",len(first_names_data)
-
-
-    print "Checking for null values in last names: ", last_names_data.isnull().any(axis=0)
-    print "length of last: ",len(last_names_data)
-    #print first_names_data.head()
-    #print last_names_data.head()
     print "Read Successful..."
-    #print "Asian: ",default['asian']
-    #print default[asian]
+
     data=mk_data(first_names_data, last_names_data, min_date, max_date, size=size, male_gender=male_gender,race_ratio=default)
 
     return data
@@ -112,8 +103,7 @@ def syn_ehr(size=1000, male_gender=None,asian=None, spanish=None, afr_amer=None,
 if __name__=='__main__':
 
         data=syn_ehr()
-        #print "In Main: "
-        #print data.head()
+        print "data generated. first 5 rows:\n ",data.head()
 
 
 

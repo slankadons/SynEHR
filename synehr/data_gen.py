@@ -46,18 +46,22 @@ def data_gen(first_names_data,last_names_data,size,race_ratio,male_gender):
     mixed_size = int(size * race_ratio['mixed'])
     #print mixed_size
 
-    sum_sizes=asian_size+spanish_size+afr_amer_size+caucasian_size+native_amer_alaskan_size+mixed_size
+
     sizes={'asian':asian_size,'spanish':spanish_size,'afr_amer':afr_amer_size,'caucasian':caucasian_size,
            'native_amer_alaskan':native_amer_alaskan_size,'mixed':mixed_size}
-
+    sum_sizes=sum(sizes.values())
 
 
     #check if sum of sizes matches the user specified size. If it doesn't, add the remainder difference randomly
     #to a race
     if sum_sizes!=size:
-        rem=size-sum_sizes
-        elem=random.choice(sizes.keys())
-        sizes[elem]+=rem
+        elem = random.choice(sizes.keys())
+        if sum_sizes>size:
+            rem=sum_sizes-size
+            sizes[elem]-=rem
+        else:
+            rem=size-sum_sizes
+            sizes[elem]+=rem
     print "sum of all sizes: ",sum(sizes.values())
     print sizes
 
@@ -74,7 +78,7 @@ def data_gen(first_names_data,last_names_data,size,race_ratio,male_gender):
 
 
     spanish_male_size = int(sizes['spanish'] * male_gender)
-    spanish_female_size = sizes['spanish']=spanish_male_size
+    spanish_female_size = sizes['spanish']-spanish_male_size
 
 
     afr_amer_male_size = int(sizes['afr_amer'] * male_gender)
@@ -109,12 +113,8 @@ def data_gen(first_names_data,last_names_data,size,race_ratio,male_gender):
     asian_female_fn=first_names_data.loc[(first_names_data['race']=='Asian')& (first_names_data['gender']=='F'),]
     asian_female_data=asian_male_fn.sample(n=asian_female_size,replace=True)
     asian_data_fn=pd.concat([asian_male_data,asian_female_data])
-    #print "Asian First Names Data: ",asian_data_fn.tail()
-    #print asian_data_fn.isnull().any(axis=0)
 
     asian_dataset_ln = last_names_data[last_names_data['race'] == 'Asian']
-    #print asian_dataset_ln.head()
-    #print asian_dataset_ln.isnull().any(axis=0)
 
     #Exract all chinese rows from data
     asian_chinese_fn=asian_data_fn.loc[(asian_data_fn['detailed_race']=='Chinese')]
@@ -124,14 +124,11 @@ def data_gen(first_names_data,last_names_data,size,race_ratio,male_gender):
     asian_chinese_ln=asian_dataset_ln.loc[(asian_dataset_ln['detailed_race']=='Chinese')]
     #Select as many Last names randomly as you need
     last_names=asian_chinese_ln.sample(n=chinese_rows,replace=True)
-    #print "LAst names: ",len(last_names)
-    #print last_names['last']
-    #print asian_chinese_fn.head()
+
     asian_chinese_fn.insert(1,'last',last_names['last'].tolist())
-    #print "Chinese Data Head: ",asian_chinese_fn.head()
-    #print asian_chinese_fn.isnull().head()
+
     chinese_rows = len(asian_chinese_fn)
-    print "no of chinese rows: ", chinese_rows
+
 
 
 
@@ -144,50 +141,48 @@ def data_gen(first_names_data,last_names_data,size,race_ratio,male_gender):
     asian_indian_ln = asian_dataset_ln.loc[(asian_dataset_ln['detailed_race'] == 'Indian')]
     # Select as many Last names randomly as you need
     last_names = asian_indian_ln.sample(n= indian_rows, replace=True)
-    # print "LAst names: ",len(last_names)
-    # print last_names['last']
-    # print asian_chinese_fn.head()
-    asian_indian_fn.insert(1, 'last', last_names['last'].tolist())
-    #print "Indian Data Head: ",asian_indian_fn.head()
 
-    print "No. of Indian rows: ",len(asian_indian_fn)
+    asian_indian_fn.insert(1, 'last', last_names['last'].tolist())
+
+
+
     asian_data_fn=pd.concat([asian_indian_fn,asian_chinese_fn])
-    #print "Asian_data head: ", asian_data_fn.head()
+
 
 
 
     spanish_male_fn = first_names_data.loc[(first_names_data['race'] == 'Spanish') & (first_names_data['gender'] == 'M'),]
     spanish_male_data = spanish_male_fn.sample(n=spanish_male_size, replace=True)
-    #print len(spanish_male_data)
+
     spanish_female_fn = first_names_data.loc[(first_names_data['race'] == 'Spanish') & (first_names_data['gender'] == 'F'),]
-    spanish_female_data = spanish_male_fn.sample(n=spanish_female_size, replace=True)
-    #print len(spanish_female_data)
+    spanish_female_data = spanish_female_fn.sample(n=spanish_female_size, replace=True)
+
     spanish_data_fn=pd.concat([spanish_male_data,spanish_female_data])
-    #print spanish_male_size+spanish_female_size
 
     spanish_ln=spanish_dataset_ln.sample(n=(spanish_male_size+spanish_female_size), replace=True)
-    #print len(spanish_ln)
-    #
+
     spanish_data_fn.insert(1,'last',spanish_ln['last'].tolist())
     print "spanish_data_fn: ", len(spanish_data_fn)
     print spanish_data_fn.isnull().any(axis=0)
-    #print "Spanish Data Head: ",spanish_data_fn.head()
+
 
 
 
     afr_amer_male_fn = first_names_data.loc[(first_names_data['race'] == 'African_American') & (first_names_data['gender'] == 'M'),]
-    #print "afro male:", len(afr_amer_male_fn)
+
     afr_amer_female_fn = first_names_data.loc[(first_names_data['race'] == 'African_American') & (first_names_data['gender'] == 'F'),]
-    #print "afro female: ",len(afr_amer_female_fn)
+
     afr_amer_male_data=afr_amer_male_fn.sample(n=afr_amer_male_size,replace=True)
-    #print len(afr_amer_male_data)
+
     afr_amer_female_data=afr_amer_female_fn.sample(n=afr_amer_female_size,replace=True)
-    #print len(afr_amer_female_data)
+
     afr_amer_data_fn=pd.concat([afr_amer_male_data,afr_amer_female_data])
 
     afr_amer_ln=afr_amer_dataset_ln.sample(n=(afr_amer_male_size+afr_amer_female_size), replace=True)
     afr_amer_data_fn.insert(1,'last',afr_amer_ln['last'].tolist())
-    #print "African American Head: ",afr_amer_female_fn.head()
+
+    print afr_amer_data_fn.isnull().any(axis=0)
+
 
 
 
@@ -196,14 +191,12 @@ def data_gen(first_names_data,last_names_data,size,race_ratio,male_gender):
     native_amer_male_data = native_amer_male_fn.sample(n=native_amer_male_size, replace=True)
     native_amer_female_data = native_amer_female_fn.sample(n=native_amer_female_size, replace=True)
     native_amer_data_fn = pd.concat([native_amer_male_data, native_amer_female_data])
-    #print "nat fn len: ",len(native_amer_data_fn)
 
     native_ln = native_amer_alaskan_dataset_ln.sample(n=(native_amer_male_size + native_amer_female_size), replace=True)
-    #print native_ln.head()
-    #print "Length of Nat last names:",len(native_ln)
+
     native_amer_data_fn.insert(1, 'last', native_ln['last'].tolist())
 
-    #print native_amer_data_fn.head()
+
 
     caucasian_male_fn = first_names_data.loc[(first_names_data['race'] == 'Caucasian') & (first_names_data['gender'] == 'M'),]
     caucasian_female_fn = first_names_data.loc[(first_names_data['race'] == 'Caucasian') & (first_names_data['gender'] == 'F'),]
@@ -221,19 +214,19 @@ def data_gen(first_names_data,last_names_data,size,race_ratio,male_gender):
     mixed_male_fn=mixed_dataset.loc[(mixed_dataset['gender']=='M'),]
     mixed_female_fn = mixed_dataset.loc[(mixed_dataset['gender'] == 'F'),]
     mixed_male_data = mixed_male_fn.sample(n=mixed_male_size, replace=True)
-    #print "Mixed Male: ",mixed_male_data.head()
+
     mixed_female_data = mixed_female_fn.sample(n=mixed_female_size, replace=True)
-    #print "Mixed Female: ",mixed_female_data.head()
     mixed_data_fn = pd.concat([mixed_male_data, mixed_female_data])
-    #print "Mixed Lastnames Length: ",len(mixed_dataset_ln)
+
     mixed_ln = mixed_dataset_ln.sample(n=(mixed_male_size + mixed_female_size), replace=True)
     mixed_data_fn.insert(1, 'last', mixed_ln['last'].tolist())
 
     Data=pd.concat([asian_data_fn, spanish_data_fn, afr_amer_data_fn, caucasian_data_fn,
                      native_amer_data_fn, mixed_data_fn],axis=0)
 
-    #print "Final Data looks like this: ", Data.head()
-    print "Size of final Data: ",len(Data)
+
+    print "Size of Data: ",len(Data)
+    print "Name,race generated..."
 
     #print Data.tail()
 
@@ -248,33 +241,34 @@ def mk_data(first_names_data, last_names_data, min_date, max_date, size,male_gen
 
     # data generator by race
     print "Calling the data generator function..."
-    print size
-    print race_ratio
-    race_generator = data_gen(first_names_data, last_names_data, size,race_ratio,male_gender)
 
+
+    data = data_gen(first_names_data, last_names_data, size,race_ratio,male_gender)
+
+    print "Generating address..."
     # fake factory
     addresses = fake_factory(size)
 
-    #frames = [random_generator, race_generator]
-    data = race_generator
-    data['address'] = pd.DataFrame(addresses)
+    print "Generate DOB..."
+    data['address'] = addresses
+
     #print data.head()
 
     dates=genDOB(size,min_date,max_date)
-    #f_name = os.path.join(os.path.dirname(__file__), 'test1.csv')
-    #data.to_csv(f_name)
-    data['DOB']=pd.DataFrame(dates)
-    #print data.head()
-    size=len(data)
-    #print "Size of data: ",len(data)
-    data1=data.dropna(how='any')
-    #print "After dropping any with na: ",len(data1)
+
+
+    data['DOB']=dates
+
+    print "Inducing error in Data..."
     error_rate=int(0.1*size)
-    error_index=npr.randint(0,len(data1),size=error_rate)
-    data_err=data1.ix[error_index]
-    #print "Data to generate Error: ",data_err.head()
-    #data_err=gen_typo(data_err)
-    #data1.ix[error_index]=data_err
+    error_index=npr.randint(0,len(data),size=error_rate)
+
+    data_err=data.iloc[error_index]
+
+
+    data_err=gen_typo(data_err)
+
+    data.iloc[error_index,0]=data_err
 
     return data
 
