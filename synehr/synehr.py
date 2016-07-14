@@ -33,13 +33,13 @@ def fake_factory(size):
         addresses.append(address)
     return addresses
 
-def genDOB(size):
+def genDOB(size,min_Date,max_Date):
     dob=[]
     # How many seconds between [date] and [01/03/2014]? That will be maxSeconds
-    minDate=datetime.strptime("1916/01/01","%Y/%m/%d")
+    minDate=datetime.strptime(min_Date,"%Y/%m/%d")
     #refDate = datetime.strptime(DateOfBirth.ToString(), "%d/%m/%Y %H:%M:%S")
     # In above, be careful that your locale is returning dates in a matching format
-    maxDate = datetime.strptime("01/03/2014", "%d/%m/%Y")
+    maxDate = datetime.strptime(max_Date, "%Y/%m/%d")
     # Calculate the difference between the starting date and the maximum date
     timeDifference = maxDate - minDate
     maxSeconds = timeDifference.total_seconds()
@@ -225,7 +225,7 @@ def data_gen(first_names_data,last_names_data,size,race_ratio,male_gender):
 
     return Data
 
-def mk_data(first_names_data, last_names_data, size, male_gender,race_ratio={}):
+def mk_data(first_names_data, last_names_data, min_date, max_date, size,male_gender, race_ratio={}):
     """
     1. All races are inputted as integers to signify the percentages
     2. Generates Dataset based on user preferences."""
@@ -246,7 +246,7 @@ def mk_data(first_names_data, last_names_data, size, male_gender,race_ratio={}):
     data['address'] = pd.DataFrame(addresses)
     print data.head()
 
-    dates=genDOB(size)
+    dates=genDOB(size,min_date,max_date)
     #f_name = os.path.join(os.path.dirname(__file__), 'test1.csv')
     #data.to_csv(f_name)
     data['DOB']=pd.DataFrame(dates)
@@ -283,7 +283,8 @@ class GenderValueError(Exception):
     def __init__(self):
         Exception.__init__(self,"Gender value out of range. Please use percentage between 0% and 100% or select None")
 
-def syn_ehr(size=100,male_gender=None,asian=None, spanish=None, afr_amer=None, caucasian=None, native_amer_alaskan=None, mixed=None):
+def syn_ehr(size=100, male_gender=None,asian=None, spanish=None, afr_amer=None, caucasian=None, native_amer_alaskan=None,
+            mixed=None, min_date="1916/01/01", max_date="2014/03/01"):
     sum=0
     default={}
     listed={}
@@ -349,6 +350,7 @@ def syn_ehr(size=100,male_gender=None,asian=None, spanish=None, afr_amer=None, c
         if(male_gender==None):
             male_gender=npr.random()
             male_gender=round(male_gender,2)
+            print male_gender
 
     #default=[]
         rem=1.0-sum
@@ -367,13 +369,15 @@ def syn_ehr(size=100,male_gender=None,asian=None, spanish=None, afr_amer=None, c
     print "Read Successful..."
     #print "Asian: ",default['asian']
     #print default[asian]
-    mk_data(first_names_data, last_names_data, size=size, male_gender=male_gender,race_ratio=default)
+    data=mk_data(first_names_data, last_names_data, min_date, max_date, size=size, male_gender=male_gender,race_ratio=default)
 
-    return
+    return data
 #print '__name__'
 if __name__=='__main__':
 
-        syn_ehr()
+        data=syn_ehr(min_date="1996/12/01")
+        print "In Main: "
+        print data.head()
 
 
 
