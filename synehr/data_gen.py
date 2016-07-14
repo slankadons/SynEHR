@@ -1,5 +1,5 @@
 from auxillary import genDOB
-
+from auxillary import genMPI
 from auxillary import fake_factory
 import numpy as np
 import pandas as pd
@@ -244,27 +244,35 @@ def mk_data(first_names_data, last_names_data, min_date, max_date, size,male_gen
     # dataset list by race
 
     # data generator by race
+    error_rate = int(0.1 * size)
+    size_new=size-error_rate
     print "Calling the data generator function..."
 
 
-    data = data_gen(first_names_data, last_names_data, size,race_ratio,male_gender)
+    data = data_gen(first_names_data, last_names_data, size_new,race_ratio,male_gender)
 
     print "Generating address..."
     # fake factory
-    addresses = fake_factory(size)
+    addresses = fake_factory(size_new)
 
     print "Generate DOB..."
     data['address'] = addresses
 
     #print data.head()
 
-    dates=genDOB(size,min_date,max_date)
+    dates=genDOB(size_new,min_date,max_date)
 
 
     data['DOB']=dates
 
+    print "Generate Master Patient Index..."
+    mpi=genMPI(size_new)
+
+
+    data.insert(0,'MPI',mpi)
+
     print "Inducing error in Data..."
-    error_rate=int(0.1*size)
+
     error_index=npr.randint(0,len(data),size=error_rate)
 
     data_err=data.iloc[error_index]
@@ -272,7 +280,9 @@ def mk_data(first_names_data, last_names_data, min_date, max_date, size,male_gen
 
     data_err=gen_typo(data_err)
 
-    data.iloc[error_index,0]=data_err
+    data=pd.concat([data,data_err],axis=0,ignore_index=True)
+
+
 
     return data
 

@@ -71,3 +71,18 @@ def constrained_sum_sample_pos(num_terms, total):
 
     #print "After correction: ",num.sum()
     return num
+
+def genMPI(size):
+    """
+    Generates a Master Patient Index for the dataset
+    :param size:
+    :return: List of Master Patient Indices
+    """
+    hosp="HOSP"
+    MPI=[]
+    for i in range(size):
+        mpi=hosp+str(i)
+        MPI+=[mpi]
+
+    return MPI
+
