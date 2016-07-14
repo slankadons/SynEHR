@@ -102,8 +102,10 @@ def syn_ehr(size=1000, male_gender=None,asian=None, spanish=None, afr_amer=None,
 #print '__name__'
 if __name__=='__main__':
 
-        data=syn_ehr()
+        data=syn_ehr(asian=1)
         print "data generated. first 5 rows:\n ",data.head()
+        print data.iloc[npr.randint(len(data),size=25)]
+
 
 
 

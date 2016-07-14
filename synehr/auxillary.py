@@ -12,12 +12,12 @@ def readCSV():
         os.path.dirname(__file__), 'data', 'Master_First_Names.csv')
     first_name_columns = ['first', 'gender', 'race', 'detailed_race']
     first_names = pd.read_csv(f_name, sep=',', header=0,
-                     names=first_name_columns, na_values='?',encoding='latin-1')
+                     names=first_name_columns, na_values='?',encoding='utf-8')
     f_name = os.path.join(
         os.path.dirname(__file__), 'data', 'Master_Last_Names.csv')
     last_name_columns = ['last', 'race', 'detailed_race']
     last_names = pd.read_csv(f_name, sep=',', header=0,
-                     names=last_name_columns, na_values='?',encoding='latin-1')
+                     names=last_name_columns, na_values='?',encoding='utf-8')
     return first_names, last_names
 
 def fake_factory(size):

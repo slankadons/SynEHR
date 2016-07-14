@@ -29,6 +29,7 @@ def gen_errors(size,data):
     gender_mis_index=np.random.randint(low=0,high=len(data),size=errors['gender_mis'])
     gender_mis_data=data.iloc[gender_mis_index]
     gender_mis_error=gender_misclassification(gender_mis_data)
+
     data_err=gender_mis_error
     return data_err
 
