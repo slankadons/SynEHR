@@ -46,7 +46,23 @@ def data_gen(first_names_data,last_names_data,size,race_ratio,male_gender):
     mixed_size = int(size * race_ratio['mixed'])
     print mixed_size
 
-    print "sum of all sizes: ",asian_size+spanish_size+afr_amer_size+caucasian_size+native_amer_alaskan_size+mixed_size
+    sum_sizes=asian_size+spanish_size+afr_amer_size+caucasian_size+native_amer_alaskan_size+mixed_size
+    sizes={'asian':asian_size,'spanish':spanish_size,'afr_amer':afr_amer_size,'caucasian':caucasian_size,
+           'native_amer_alaskan':native_amer_alaskan_size,'mixed':mixed_size}
+
+
+
+    #check if sum of sizes matches the user specified size. If it doesn't, add the remainder difference randomly
+    #to a race
+    if sum_sizes!=size:
+        rem=size-sum_sizes
+    elem=random.choice(sizes.keys())
+    sizes[elem]+=rem
+
+
+
+
+
 
     ### sizes for each race by gender
 
@@ -189,11 +205,11 @@ def data_gen(first_names_data,last_names_data,size,race_ratio,male_gender):
     mixed_male_fn=mixed_dataset.loc[(mixed_dataset['gender']=='M'),]
     mixed_female_fn = mixed_dataset.loc[(mixed_dataset['gender'] == 'F'),]
     mixed_male_data = mixed_male_fn.sample(n=mixed_male_size, replace=True)
-    print "Mixed Male: ",mixed_male_data.head()
+    #print "Mixed Male: ",mixed_male_data.head()
     mixed_female_data = mixed_female_fn.sample(n=mixed_female_size, replace=True)
-    print "Mixed Female: ",mixed_female_data.head()
+    #print "Mixed Female: ",mixed_female_data.head()
     mixed_data_fn = pd.concat([mixed_male_data, mixed_female_data])
-    print "Mixed Lastnames Length: ",len(mixed_dataset_ln)
+    #print "Mixed Lastnames Length: ",len(mixed_dataset_ln)
     mixed_ln = mixed_dataset_ln.sample(n=(mixed_male_size + mixed_female_size), replace=True)
     mixed_data_fn.insert(1, 'last', mixed_ln['last'].tolist())
 
@@ -226,23 +242,23 @@ def mk_data(first_names_data, last_names_data, min_date, max_date, size,male_gen
     #frames = [random_generator, race_generator]
     data = race_generator
     data['address'] = pd.DataFrame(addresses)
-    print data.head()
+    #print data.head()
 
     dates=genDOB(size,min_date,max_date)
     #f_name = os.path.join(os.path.dirname(__file__), 'test1.csv')
     #data.to_csv(f_name)
     data['DOB']=pd.DataFrame(dates)
-    print data.head()
+    #print data.head()
     size=len(data)
-    print "Size of data: ",len(data)
+    #print "Size of data: ",len(data)
     data1=data.dropna(how='any')
-    print "After dropping any with na: ",len(data1)
+    #print "After dropping any with na: ",len(data1)
     error_rate=int(0.1*size)
     error_index=npr.randint(0,len(data1),size=error_rate)
     data_err=data1.ix[error_index]
-    print "Data to generate Error: ",data_err.head()
-    data_err=gen_typo(data_err)
-    data1.ix[error_index]=data_err
+    #print "Data to generate Error: ",data_err.head()
+    #data_err=gen_typo(data_err)
+    #data1.ix[error_index]=data_err
 
     return data
 

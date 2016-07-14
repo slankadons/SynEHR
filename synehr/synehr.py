@@ -112,8 +112,8 @@ def syn_ehr(size=1000, male_gender=None,asian=None, spanish=None, afr_amer=None,
 if __name__=='__main__':
 
         data=syn_ehr()
-        print "In Main: "
-        print data.head()
+        #print "In Main: "
+        #print data.head()
 
 
 
