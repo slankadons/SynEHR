@@ -5,7 +5,7 @@ import random
 from Exceptions import SizeValueError
 from Exceptions import GenderValueError
 from auxillary import readCSV
-from auxillary import constrained_sum_sample_pos
+from auxillary import sum_num_terms_equals_total
 from data_gen import mk_data
 
 
@@ -83,7 +83,7 @@ def syn_ehr(size=1000, male_gender=None,asian=None, spanish=None, afr_amer=None,
         rem=1.0-sum
         n=len(default)
         #Generate n random float numbers such that sum of n numbers equals rem.
-        val=constrained_sum_sample_pos(n, rem)
+        val=sum_num_terms_equals_total(n, rem)
         i=0
         for d in default:
             default[d]=round(val[i],2)

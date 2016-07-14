@@ -47,7 +47,7 @@ def genDOB(size,min_Date,max_Date):
         dob.append(retDate)
     return dob
 
-def constrained_sum_sample_pos(num_terms, total):
+def sum_num_terms_equals_total(num_terms, total):
     """Return a randomly chosen list of n positive integers summing to total.
     Each such list is equally likely to occur."""
 
