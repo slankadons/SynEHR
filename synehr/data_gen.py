@@ -31,9 +31,9 @@ def gen_typo(Data):
 
 def data_gen(first_names_data,last_names_data,size,race_ratio,male_gender):
     ### sizes for each race
-    female_gender=1-male_gender
 
     asian_size = int(size * race_ratio['asian'])
+
     #print asian_size
     spanish_size = int(size * race_ratio['spanish'])
     #print spanish_size
@@ -49,6 +49,10 @@ def data_gen(first_names_data,last_names_data,size,race_ratio,male_gender):
 
     sizes={'asian':asian_size,'spanish':spanish_size,'afr_amer':afr_amer_size,'caucasian':caucasian_size,
            'native_amer_alaskan':native_amer_alaskan_size,'mixed':mixed_size}
+    # check if all sizes generated are greater than zero, else set them to zero
+    for item in sizes:
+        if(sizes[item]<0):
+            sizes[item]=0
     sum_sizes=sum(sizes.values())
 
 
