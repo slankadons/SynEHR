@@ -9,5 +9,5 @@ setup(name='synehr',
       license='',
       packages=['synehr'],
       install_requires=[
-          'numpy','random','pandas','Faker'],
+          'numpy','random','pandas','Faker','fake-factory'],
       zip_safe=False)

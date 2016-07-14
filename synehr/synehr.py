@@ -2,7 +2,8 @@ import numpy.random as npr
 import numpy as np
 import os
 import pandas as pd
-from faker import Faker
+#from faker import Factory
+import faker
 import random
 
 def readCSV():
@@ -21,7 +22,7 @@ def readCSV():
 
 def fake_factory(size):
     #install('Faker')
-    fake = Faker()
+    fake = faker.Faker()
     addresses = []
     for _ in range(0, size):
         address = fake.address()
@@ -199,7 +200,7 @@ def data_gen(first_names_data,last_names_data,size,race_ratio,male_gender):
     print Data.tail()
 
 
-    return
+    return Data
 
 def mk_data(first_names_data, last_names_data, size, male_gender,race_ratio={}):
     """
