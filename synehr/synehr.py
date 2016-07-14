@@ -8,31 +8,6 @@ from auxillary import readCSV
 from auxillary import constrained_sum_sample_pos
 from data_gen import mk_data
 
-def gen_typo(Data):
-
-    arr = np.array(Data['first'])
-    characters = 'qwertyuioplkjhgfdsazxcvbnm'
-
-    for i in range(0, len(arr)):
-        x = arr[i]
-        # print x
-        # print len(x)
-        if len(x) > 3:
-            if (random.randint(0, 2) == 1):
-                rnd = random.randint(2, len(x) - 2)
-                # print rnd
-                tmp1 = random.randint(0, len(characters))
-                rndCharacter = characters[tmp1:tmp1 + 1]
-                # print rndCharacter
-                # x[rnd:rnd+1] = rndCharacter
-                x = x[0:rnd] + rndCharacter + x[rnd + 1:]
-                arr[i] = x
-    Data['first']=arr
-    print "Induced Errors: ",Data['first']
-    return Data['first']
-
-
-
 
 
 def syn_ehr(size=1000, male_gender=None,asian=None, spanish=None, afr_amer=None, caucasian=None, native_amer_alaskan=None,
@@ -102,7 +77,7 @@ def syn_ehr(size=1000, male_gender=None,asian=None, spanish=None, afr_amer=None,
         if(male_gender==None):
             male_gender=npr.random()
             male_gender=round(male_gender,2)
-            print male_gender
+            #print male_gender
 
     #default=[]
         rem=1.0-sum
@@ -111,7 +86,7 @@ def syn_ehr(size=1000, male_gender=None,asian=None, spanish=None, afr_amer=None,
         val=constrained_sum_sample_pos(n, rem)
         i=0
         for d in default:
-            default[d]=val[i]
+            default[d]=round(val[i],2)
             i+=1
     default.update(listed)
     print "Reading From Database..."
