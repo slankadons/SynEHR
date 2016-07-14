@@ -2,7 +2,6 @@ import numpy.random as npr
 import numpy as np
 import os
 import pandas as pd
-#from faker import Factory
 import faker
 import random
 
@@ -13,7 +12,7 @@ from datetime import timedelta
 def readCSV():
     """Read in master files for first name and last name"""
     f_name = os.path.join(
-        os.path.dirname(__file__), 'data', 'Master_First_Names_t.csv')
+        os.path.dirname(__file__), 'data', 'Master_First_Names.csv')
     first_name_columns = ['first', 'gender', 'race', 'detailed_race']
     first_names = pd.read_csv(f_name, sep=',', header=0,
                      names=first_name_columns, na_values='?')
