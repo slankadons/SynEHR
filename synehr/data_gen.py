@@ -7,28 +7,6 @@ import pandas as pd
 import numpy.random as npr
 import random
 
-def gen_typo(Data):
-
-    arr = np.array(Data['first'])
-    characters = 'qwertyuioplkjhgfdsazxcvbnm'
-
-    for i in range(0, len(arr)):
-        x = arr[i]
-        # print x
-        # print len(x)
-        if len(x) > 3:
-            if (random.randint(0, 2) == 1):
-                rnd = random.randint(2, len(x) - 2)
-                # print rnd
-                tmp1 = random.randint(0, len(characters))
-                rndCharacter = characters[tmp1:tmp1 + 1]
-                # print rndCharacter
-                # x[rnd:rnd+1] = rndCharacter
-                x = x[0:rnd] + rndCharacter + x[rnd + 1:]
-                arr[i] = x
-    Data['first']=arr
-    print "Induced Errors: ",Data['first']
-    return Data['first']
 
 def data_gen(first_names_data,last_names_data,size,race_ratio,male_gender):
     ### sizes for each race
@@ -284,6 +262,8 @@ def mk_data(first_names_data, last_names_data, min_date, max_date, size,male_gen
     #data=pd.concat([data,data_err],axis=0,ignore_index=True)
 
     data_err=gen_errors(error_rate,data_err)
+
+    #print data_err
 
     data = pd.concat([data, data_err], axis=0, ignore_index=True)
 
