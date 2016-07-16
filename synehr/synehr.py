@@ -80,15 +80,20 @@ def syn_ehr(size=1000, male_gender=None,asian=None, spanish=None, afr_amer=None,
             #print male_gender
 
     #default=[]
+        #print "sum: ",sum
         rem=1.0-sum
         n=len(default)
         #Generate n random float numbers such that sum of n numbers equals rem.
         val=sum_num_terms_equals_total(n, rem)
+        print "val: " ,val
+        #sumv=sum(val)
+
         i=0
         for d in default:
             default[d]=round(val[i],2)
             i+=1
     default.update(listed)
+    print default
     print "Reading From Database..."
     first_names_data, last_names_data = readCSV()
     last_names_data=last_names_data.dropna(how='any')
@@ -102,7 +107,7 @@ def syn_ehr(size=1000, male_gender=None,asian=None, spanish=None, afr_amer=None,
 #print '__name__'
 if __name__=='__main__':
 
-        data=syn_ehr()
+        data=syn_ehr(size=5000)
         print "data generated. first 5 rows:\n ",data.head()
         #print data.iloc[npr.randint(len(data),size=25)]
 

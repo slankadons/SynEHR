@@ -28,24 +28,6 @@ def data_gen(first_names_data,last_names_data,size,race_ratio,male_gender):
 
     sizes={'asian':asian_size,'spanish':spanish_size,'afr_amer':afr_amer_size,'caucasian':caucasian_size,
            'native_amer_alaskan':native_amer_alaskan_size,'mixed':mixed_size}
-    # check if all sizes generated are greater than zero, else set them to zero
-    for item in sizes:
-        if(sizes[item]<0):
-            sizes[item]=0
-    sum_sizes=sum(sizes.values())
-
-
-    #check if sum of sizes matches the user specified size. If it doesn't, add the remainder difference randomly
-    #to a race
-    if sum_sizes!=size:
-        elem = random.choice(sizes.keys())
-        if sum_sizes>size:
-            rem=sum_sizes-size
-            sizes[elem]-=rem
-        else:
-            rem=size-sum_sizes
-            sizes[elem]+=rem
-    print "sum of all sizes: ",sum(sizes.values())
     print sizes
 
 
@@ -79,7 +61,7 @@ def data_gen(first_names_data,last_names_data,size,race_ratio,male_gender):
     mixed_female_size = sizes['mixed']-mixed_male_size
 
 
-    #Collecting last names of different races and putting them in tables
+    #Collecting last names of different races and putting them in different tables
 
     asian_dataset_ln = last_names_data[last_names_data['race'] == 'Asian']
     spanish_dataset_ln = last_names_data[last_names_data['race'] == 'Spanish']
@@ -216,7 +198,7 @@ def data_gen(first_names_data,last_names_data,size,race_ratio,male_gender):
 
     return Data
 
-def mk_data(first_names_data, last_names_data, min_date, max_date, size,male_gender, race_ratio={}):
+def mk_data(first_names_data, last_names_data, min_date, max_date, size,male_gender, race_ratio):
     """
     1. All races are inputted as integers to signify the percentages
     2. Generates Dataset based on user preferences."""
@@ -234,11 +216,11 @@ def mk_data(first_names_data, last_names_data, min_date, max_date, size,male_gen
     # fake factory
     addresses = fake_factory(size_new)
 
-    print "Generate DOB..."
+
     data['address'] = addresses
 
     #print data.head()
-
+    print "Generate DOB..."
     dates=genDOB(size_new,min_date,max_date)
 
 
@@ -269,6 +251,5 @@ def mk_data(first_names_data, last_names_data, min_date, max_date, size,male_gen
 
 
     return data
-
 
 

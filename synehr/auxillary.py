@@ -56,14 +56,21 @@ def sum_num_terms_equals_total(num_terms, total):
     #suml = 0
 
     for i in range(num_terms):
-        k = npr.random()
+        k = random.random()
+        while (k<0):
+            k=random.random()
         k = round(k, 2)
+        print "k: ",k
         num+=[k]
     suml=sum(num)
+    #print "suml: ",suml
+    #print "num before * total: ",num
     for i in range(num_terms):
         num[i] = (num[i] / suml)
         num[i] *= total
         num[i] = round(num[i], 2)
+    #print "num after *total: ",num
+    suml= sum(num)
 
     #print "sum before rounding and correction: ",num.sum()
 
@@ -72,11 +79,11 @@ def sum_num_terms_equals_total(num_terms, total):
         if suml>total:
             rem=suml-total
             num[k]-=rem
-        else:
+        elif suml<total:
             rem=total-suml
-            num[k]+=suml
+            num[k]+=rem
 
-    #print "After correction: ",num.sum()
+    #print "After correction: ",sum(num)
     return num
 
 def genMPI(size):
