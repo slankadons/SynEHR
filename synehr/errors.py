@@ -59,7 +59,7 @@ def gen_errors(size,data):
     sub_DOB=char_sub_data.sample(n=sub_err['DOB'])
     col_DOB=sub_DOB['DOB'].tolist()
     sub_DOB['DOB']=char_sub_date(col_DOB)
-    print "date error: ",sub_DOB.head()
+    # print "date error: ",sub_DOB.head()
 
     sub_err = pd.concat([sub_first, sub_last, sub_addr,sub_DOB])
 
@@ -109,7 +109,7 @@ def gen_errors(size,data):
     transpo_DOB = char_transpo_data.sample(n=transpo_err['DOB'])
     col_DOB = transpo_DOB['DOB'].tolist()
     transpo_DOB['DOB'] = char_transpo_date(col_DOB)
-    print "date error: ", sub_DOB.head()
+    # print "date error: ", sub_DOB.head()
 
     transpo_err = pd.concat([sub_first, sub_last, sub_addr, sub_DOB])
 
@@ -266,7 +266,7 @@ def char_transpo_date(col_date):
                 year[3]=year[2]
                 year[2]=buf
             year = ''.join(year)
-            print "Error induced year: ",year
+            # print "Error induced year: ",year
 
         elif choice == 2:
             dayl=list(day)
@@ -280,7 +280,7 @@ def char_transpo_date(col_date):
         date_err = '/'.join([year, month, day])
         date = datetime.datetime.strptime(date_err, "%Y/%m/%d")
         new_dates += [date]
-        print new_dates
+        # print new_dates
     return new_dates
 
 
