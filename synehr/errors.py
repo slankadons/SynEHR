@@ -331,11 +331,25 @@ def char_transpo_date(col_date):
             if len(day)==1 and int(day)<=2:
                 day*=10
             elif abs(int(dayl[0])-int(dayl[1]))==1 or random.randint(0,10)==1:
-                if()
-                buf=dayl[0]
-                dayl[0]=dayl[1]
-                dayl[1]=buf
-                day=''.join(dayl)
+                if month in [1,3,5,7,8,10,12]:
+                    if(int(dayl[1]+dayl[0])<31):
+                        buf=dayl[0]
+                        dayl[0]=dayl[1]
+                        dayl[1]=buf
+                        day=''.join(dayl)
+                elif month in [4,6,9,11]:
+                    if (int(dayl[1] + dayl[0]) < 30):
+                        buf = dayl[0]
+                        dayl[0] = dayl[1]
+                        dayl[1] = buf
+                        day = ''.join(dayl)
+                elif int(month)==2:
+                    if ((int(dayl[1] + dayl[0]) < 28) or (int(year)%400==0 and int(dayl[1] + dayl[0]) < 29)):
+                        buf = dayl[0]
+                        dayl[0] = dayl[1]
+                        dayl[1] = buf
+                        day = ''.join(dayl)
+
         date_err = '/'.join([year, month, day])
         date = datetime.datetime.strptime(date_err, "%Y/%m/%d")
         new_dates += [date]
