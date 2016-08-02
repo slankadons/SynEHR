@@ -214,27 +214,28 @@ def mk_data(first_names_data, last_names_data, min_date, max_date, size,male_gen
 
     print "Generating address..."
     # fake factory
-    addresses = fake_factory(size_new)
+    size_records=len(data)
+    addresses = fake_factory(size_records)
 
 
     data['address'] = addresses
 
-    #print data.head()
+
     print "Generate DOB..."
-    dates=genDOB(size_new,min_date,max_date)
+    dates=genDOB(size_records,min_date,max_date)
 
 
     data['DOB']=dates
 
     print "Generate Master Patient Index..."
-    mpi=genMPI(size_new)
+    mpi=genMPI(size_records)
 
 
     data.insert(0,'MPI',mpi)
 
     print "Inducing error in Data..."
 
-    error_index=npr.randint(0,len(data),size=error_rate)
+    error_index=npr.randint(0,size_records,size=error_rate)
 
     data_err=data.iloc[error_index]
 
