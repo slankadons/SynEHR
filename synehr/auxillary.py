@@ -57,7 +57,7 @@ def sum_num_terms_equals_total(num_terms, total):
 
     for i in range(num_terms):
         k = random.random()
-        while (k<0):
+        while (k<=0):
             k=random.random()
         k = round(k, 2)
         print "k: ",k
