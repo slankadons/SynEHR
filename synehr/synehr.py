@@ -12,6 +12,22 @@ from data_gen import mk_data
 
 def syn_ehr(size=1000, male_gender=None,asian=None, spanish=None, afr_amer=None, caucasian=None, native_amer_alaskan=None,
             mixed=None, min_date="1916/01/01", max_date="2014/03/01"):
+    """ Calculates the size of each race dataset to generate, then sends the calculations to the mk_data function to generate the
+        synthetic health records.
+        Args:
+            size (int): The number of synthetic records to create. Default is 1000 records if not specified.
+            male_gender (float): The percentage of synthetic male records to create. If not specified, a random percentage will be selected.
+            asian (float): The percentage of synthetic asian records to create. If not specified, a random percentage will be selected.
+            spanish (float):  percentage of synthetic spanish records to create. If not specified, a random percentage will be selected.
+            afr_amer (float): The percentage of synthetic african american records to create. If not specified, a random percentage will be selected.
+            caucasian (float): The percentage of synthetic caucasian records to create. If not specified, a random percentage will be selected.
+            native_amer_alaskan (float): The percentage of synthetic native american/ alaskan records to create. If not specified, a random percentage will be selected.
+            mixed (float): The percentage of synthetic mixed-race records to create. If not specified, a random percentage will be selected.
+            min_date (date): Default to 01/01/1916 for date of birth selection
+            max_date (date): Default to 03/01/2014 for date of birth selection
+        Returns:
+            The synthetic data records.
+        """
     sum=0
     default={}
     listed={}
