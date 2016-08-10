@@ -20,13 +20,15 @@ def gen_errors(size, data):
     """
     # initializing a dictionary of all the errors to be generated
     errors = {'insertion': 0, 'omission': 0, 'substitution': 0, 'transposition': 0, 'gender_mis': 0}
+
     val = sum_num_terms_equals_total(5, size)
     i = 0
     for item in errors:
-        errors[item] = int(val[i])
+        errors[item] = val[i]
         i += 1
     sume = sum(errors.values())
-    if sum != size:
+
+    if sume != size:
         item = random.choice(errors.keys())
         if sume > size:
             rem = sume - size
@@ -34,7 +36,7 @@ def gen_errors(size, data):
         else:
             rem = size - sume
             errors[item] += rem
-
+    print "Errors: ",errors
     #Initializing flags to indicate if error has been induced.
     flag_insert=False
     flag_gendermis=False
@@ -48,14 +50,14 @@ def gen_errors(size, data):
         flag_insert=True
         insertion_index = np.random.randint(low=0, high=len(data), size=errors['insertion'])
         insertion_data = data.iloc[insertion_index]
-        insertion_err = {'first': 0, 'last': 0, 'DOB': 0, 'address': 0}
+        insertion_err = {'first': 0, 'last': 0, 'address': 0}
         val = sum_num_terms_equals_total(4, len(insertion_data))
 
         i = 0
         for item in insertion_err:
             insertion_err[item] = int(val[i])
             i += 1
-
+        # print "inserton_err: ",insertion_err
         flag_first = False
         flag_last = False
         flag_address = False
@@ -76,19 +78,43 @@ def gen_errors(size, data):
             col_addr = insertion_addr['address'].tolist()
             insertion_addr['address'] = char_insertion_str(col_addr)
             flag_address = True
+        #In an event that all zeros are generated, force induce errors
+        if(not (flag_first)):
+            if(not flag_last):
+                if(not flag_address):
+                    choice=np.random.randint(0,3)
+                    if choice==0:
+                        insertion_first = insertion_data.sample(n=errors['insertion'])
+                        col_first = insertion_first['first'].tolist()
+                        insertion_first['first'] = char_insertion_str(col_first)
+                        flag_first = True
+                    elif choice==1:
+                        insertion_last = insertion_data.sample(n=errors['insertion'])
+                        col_last = insertion_last['last'].tolist()
+                        insertion_last['last'] = char_insertion_str(col_last)
+                        flag_last = True
+                    elif choice==2:
+                        insertion_addr = insertion_data.sample(n=errors['insertion'])
+                        col_addr = insertion_addr['address'].tolist()
+                        insertion_addr['address'] = char_insertion_str(col_addr)
+                        flag_address = True
+
+
+
 
         if (flag_first):
-            insertion_err = insertion_first
+            insertion_error = insertion_first
             if (flag_last):
-                insertion_err = pd.concat([insertion_err, insertion_last])
+                insertion_error = pd.concat([insertion_error, insertion_last])
             if (flag_address):
-                insertion_err = pd.concat([insertion_err, insertion_addr])
+                insertion_error = pd.concat([insertion_error, insertion_addr])
         elif (flag_last):
-            insertion_err = insertion_last
+            insertion_error = insertion_last
             if (flag_address):
-                insertion_err = pd.concat([insertion_err, insertion_addr])
+                insertion_error = pd.concat([insertion_error, insertion_addr])
         elif (flag_address):
-            insertion_err = insertion_addr
+            insertion_error = insertion_addr
+        flag_insert=True
 
 
     if errors['gender_mis']>0:
@@ -98,7 +124,7 @@ def gen_errors(size, data):
         gender_mis_error = gender_misclassification(gender_mis_data)
 
     if errors['substitution']>0:
-        flag_sub=True
+
         char_sub_index = np.random.randint(low=0, high=len(data), size=errors['substitution'])
         char_sub_data = data.iloc[char_sub_index]
         sub_err = {'first': 0, 'last': 0, 'DOB': 0, 'address': 0}
@@ -107,12 +133,17 @@ def gen_errors(size, data):
         flag_last = False
         flag_address = False
         flag_DOB=False
+
+        i = 0
+        for item in sub_err:
+            sub_err[item] = int(val[i])
+            i += 1
+
+        print "sub_err: ",sub_err
+
         if sub_err['first'] > 0:
             flag_first=True
-            i = 0
-            for item in sub_err:
-                sub_err[item] = int(val[i])
-                i += 1
+
             sub_first = char_sub_data.sample(n=sub_err['first'])
             col_first = sub_first['first'].tolist()
             sub_first['first'] = char_sub_str(col_first)
@@ -135,29 +166,32 @@ def gen_errors(size, data):
             sub_DOB['DOB'] = char_sub_date(col_DOB)
 
         if (flag_first):
-            sub_err = sub_first
+            sub_error = sub_first
             if (flag_last):
-                sub_err = pd.concat([sub_err, sub_last])
+                sub_error = pd.concat([sub_error, sub_last])
             if (flag_address):
-                sub_err = pd.concat([sub_err, sub_addr])
+                sub_error = pd.concat([sub_error, sub_addr])
             if (flag_DOB):
-                sub_err=pd.concat([sub_err,sub_DOB])
+                sub_error=pd.concat([sub_error,sub_DOB])
         elif (flag_last):
-            sub_err = sub_last
+            sub_error = sub_last
             if (flag_address):
-                sub_err = pd.concat([sub_err, sub_addr])
-                sub_err= pd.concat([sub_err,sub_DOB])
+                sub_error = pd.concat([sub_error, sub_addr])
+                sub_error = pd.concat([sub_error,sub_DOB])
         elif (flag_address):
-            sub_err = sub_addr
+            sub_error = sub_addr
             if(flag_DOB):
-                sub_err=pd.concat([sub_err,sub_DOB])
+                sub_error=pd.concat([sub_error,sub_DOB])
         elif (flag_DOB):
-            sub_err=sub_DOB
+            sub_error=sub_DOB
+        flag_sub = True
+
+
 
 
     #sub_err = pd.concat([sub_first, sub_last, sub_addr, sub_DOB])
     if(errors['omission']>0):
-        flag_omission=True
+
         char_omission_index = np.random.randint(low=0, high=len(data), size=errors['omission'])
         char_omission_data = data.iloc[char_omission_index]
         omission_err = {'first': 0, 'last': 0, 'address': 0}
@@ -180,28 +214,29 @@ def gen_errors(size, data):
             omission_last = char_omission_data.sample(n=omission_err['last'])
             col_last = omission_last['last'].tolist()
             omission_last['last'] = char_omission(col_last)
-        if(omission_err['addr']>0):
+        if(omission_err['address']>0):
             flag_address=True
             omission_addr = char_omission_data.sample(n=omission_err['address'])
             col_addr = omission_addr['address'].tolist()
             omission_addr['address'] = char_omission(col_addr)
 
         if (flag_first):
-            omission_err = omission_first
+            omission_error = omission_first
             if (flag_last):
-                omission_err = pd.concat([omission_err, omission_last])
+                omission_error = pd.concat([omission_error, omission_last])
             if (flag_address):
-                omission_err = pd.concat([omission_err, omission_addr])
+                omission_error = pd.concat([omission_error, omission_addr])
         elif (flag_last):
-            omission_err = omission_last
+            omission_error = omission_last
             if (flag_address):
-                omission_err = pd.concat([omission_err, omission_addr])
+                omission_error = pd.concat([omission_err, omission_addr])
         elif (flag_address):
-            omission_err = omission_addr
+            omission_error = omission_addr
+        flag_omission = True
 
 
     if(errors['transposition']>0):
-        flag_transpo=True
+
         char_transpo_index = np.random.randint(low=0, high=len(data), size=errors['transposition'])
         char_transpo_data = data.iloc[char_transpo_index]
         transpo_err = {'first': 0, 'last': 0, 'DOB': 0, 'address': 0}
@@ -238,32 +273,65 @@ def gen_errors(size, data):
             transpo_DOB['DOB'] = char_transpo_date(col_DOB)
 
         if (flag_first):
-            transpo_err = transpo_first
+            transpo_error = transpo_first
             if (flag_last):
-                transpo_err = pd.concat([transpo_err, transpo_last])
+                transpo_error = pd.concat([transpo_error, transpo_last])
             if (flag_address):
-                transpo_err = pd.concat([transpo_err, transpo_addr])
+                transpo_error = pd.concat([transpo_error, transpo_addr])
             if (flag_DOB):
-                transpo_err = pd.concat([transpo_err, transpo_DOB])
+                transpo_error = pd.concat([transpo_error, transpo_DOB])
         elif (flag_last):
-            transpo_err = transpo_last
+            transpo_error = transpo_last
             if (flag_address):
-                transpo_err = pd.concat([transpo_err, transpo_addr])
-                transpo_err = pd.concat([transpo_err, transpo_DOB])
+                transpo_error = pd.concat([transpo_error, transpo_addr])
+            if(flag_DOB):
+                transpo_error = pd.concat([transpo_error, transpo_DOB])
         elif (flag_address):
-            transpo_err = transpo_addr
+            transpo_error = transpo_addr
             if (flag_DOB):
-                transpo_err = pd.concat([transpo_err, transpo_DOB])
+                transpo_error = pd.concat([transpo_error, transpo_DOB])
         elif (flag_DOB):
-            transpo_err = transpo_DOB
+            transpo_error = transpo_DOB
+        flag_transpo = True
 
 
     #transpo_err = pd.concat([sub_first, sub_last, sub_addr, sub_DOB])
 
+    if(flag_insert):
+        data_err=insertion_error
+        if(flag_omission):
+            data_err=pd.concat([data_err,omission_error])
+        if(flag_sub==True):
+            data_err=pd.concat([data_err,sub_error])
+        if(flag_gendermis):
+            data_err=pd.concat([data_err,gender_mis_error])
+        if(flag_transpo):
+            data_err=pd.concat([data_err,transpo_error])
+    elif (flag_omission):
+        data_err = omission_error
+        if (flag_sub):
+            data_err = pd.concat([data_err, sub_error])
+        if (flag_gendermis):
+            data_err = pd.concat([data_err, gender_mis_error])
+        if (flag_transpo):
+            data_err = pd.concat([data_err, transpo_error])
+    elif (flag_sub):
+        data_err = sub_error
+        if (flag_gendermis):
+            data_err = pd.concat([data_err, gender_mis_error])
+        if (flag_transpo):
+            data_err = pd.concat([data_err, transpo_error])
+    elif (flag_gendermis):
+        data_err = gender_mis_error
+        if (flag_transpo):
+            data_err = pd.concat([data_err, transpo_error])
+    elif (flag_transpo):
+            data_err = transpo_error
 
 
 
-    data_err = pd.concat([insertion_err, gender_mis_error, omission_err, sub_err, transpo_err])
+
+    #data_err = pd.concat([insertion_err, gender_mis_error, omission_err, sub_err, transpo_err])
 
     return data_err
 
@@ -280,7 +348,7 @@ def gender_misclassification(data):
     data['gender'].replace('F', 'M', inplace=True)
     data['gender'].replace('O', 'F', inplace=True)
     # print "after swap: ",data['gender']
-    # return data
+    return data
 
 
 def char_sub_str(arr):
@@ -291,7 +359,7 @@ def char_sub_str(arr):
         The error induced character substitution list.
     """
     characters = 'qwertyuioplkjhgfdsazxcvbnm'
-
+    arr_res = []
     for i in range(0, len(arr)):
         x = arr[i]
         # print x
@@ -304,8 +372,8 @@ def char_sub_str(arr):
             # print rndCharacter
             # x[rnd:rnd+1] = rndCharacter
             x = x[0:rnd] + rndCharacter + x[rnd + 1:]
-            arr[i] = x
-    return arr
+            arr_res.append(x)
+    return arr_res
 
 
 def char_omission(col_data):
@@ -315,6 +383,7 @@ def char_omission(col_data):
     Returns:
         The induced character omission error dataset.
     """
+    res_data = []
     for i in range(len(col_data)):
         c = col_data[i]
         # print "c: ",c
@@ -331,9 +400,9 @@ def char_omission(col_data):
         # print c[0:ind]
         # print c[(ind+1):]
         c = c[0:ind] + c[(ind + 1):]
-        col_data[i] = c
+        res_data.append(c)
         # print col_data[i]
-    return col_data
+    return res_data
 
 
 def char_sub_str(arr):
@@ -436,7 +505,7 @@ def char_transpo_date(col_date):
     print col_date
     for date in col_date:
         date = date.strftime('%Y/%m/%d')
-        print "Date before error: ", date
+        # print "Date before error: ", date
         year, month, day = date.split('/')
         # year=int(year[-2:])
         month = (month)
@@ -518,7 +587,8 @@ def char_insertion_str(arr):
                   "x": ["x","z","s","d","c"],
                   "y": ["y","t","g","h","u"],
                   "z": ["z","a","s","x"]}
-    print "insertion before", arr
+    # print "insertion before", arr
+    arr_res = []
     for i in range(0, len(arr)):
         x = arr[i].lower()
         # print x
@@ -528,14 +598,13 @@ def char_insertion_str(arr):
             if x[rnd].isalpha():
                 rnd_close_letter = random.choice(close_keys[x[rnd].lower()])
                 x = x[0:rnd] + rnd_close_letter + x[rnd:]
-                arr[i] = x
+                arr_res.append(x)
             else:
                 insertion = random.randint(0, len(characters))
                 rndCharacter = characters[insertion:insertion + 1]
                 x = x[0:rnd] + rndCharacter + x[rnd:]
-                arr[i] = x
-    print "insertion after: ", arr
-    return arr
-
+                arr_res.append(x)
+    # print "insertion after: ", arr_res
+    return arr_res
 
 
