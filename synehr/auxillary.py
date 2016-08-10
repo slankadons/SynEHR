@@ -53,37 +53,32 @@ def sum_num_terms_equals_total(num_terms, total):
     Each such list is equally likely to occur."""
 
     num = []
-    #suml = 0
+    if type(total) == float:
+        while (total >= 0):
+            term = round(random.uniform(0, total), 2)
+            # print term
+            num += [term]
+            total -= term
+            num_terms -= 1
+            # print "num_terms: ", num_terms
+            if (num_terms == 1):
+                num += [round(total, 2)]
+                break;
+        # print "num: ", num
 
-    for i in range(num_terms):
-        k = random.random()
-        while (k<=0):
-            k=random.random()
-        k = round(k, 2)
-        print "k: ",k
-        num+=[k]
-    suml=sum(num)
-    #print "suml: ",suml
-    #print "num before * total: ",num
-    for i in range(num_terms):
-        num[i] = (num[i] / suml)
-        num[i] *= total
-        num[i] = round(num[i], 2)
-    #print "num after *total: ",num
-    suml= sum(num)
 
-    #print "sum before rounding and correction: ",num.sum()
+    elif type(total) == int:
 
-    if(suml!=total):
-        k = random.choice(range(0, num_terms))
-        if suml>total:
-            rem=suml-total
-            num[k]-=rem
-        elif suml<total:
-            rem=total-suml
-            num[k]+=rem
-
-    #print "After correction: ",sum(num)
+        while (total >= 0):
+            term = np.random.randint(0, total)
+            print term
+            num += [term]
+            total -= term
+            num_terms -= 1
+            # print "num_terms: ", num_terms
+            if (num_terms == 1):
+                num += [total]
+                break;
     return num
 
 def genMPI(size):

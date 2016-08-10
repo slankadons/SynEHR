@@ -233,9 +233,15 @@ def mk_data(first_names_data, last_names_data, min_date, max_date, size,male_gen
 
     data.insert(0,'MPI',mpi)
 
-    print "Inducing error in Data..."
+    print "\n\nSize requested: ",size
 
-    error_index=npr.randint(0,size_records,size=error_rate)
+    print "\n\nNumber of records generated: ",size_records
+
+    print "\n\nInducing error in Data..."
+
+    error_index=npr.randint(0,size_records,size=(size-size_records))
+
+    print "\nerror_index length: ",len(error_index)
 
     data_err=data.iloc[error_index]
 
@@ -244,7 +250,7 @@ def mk_data(first_names_data, last_names_data, min_date, max_date, size,male_gen
 
     #data=pd.concat([data,data_err],axis=0,ignore_index=True)
 
-    data_err=gen_errors(error_rate,data_err)
+    data_err=gen_errors(size=len(data_err),data=data_err)
 
     #print data_err
 
