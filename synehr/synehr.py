@@ -1,3 +1,14 @@
+"""
+.. module:: synehr
+    :platform: Unix, Windows
+    :synopsis: Main Function.
+
+.. moduleauthor:: Shraddha Lanka, Tennyson Lee
+
+
+"""
+
+
 import numpy.random as npr
 import numpy as np
 import pandas as pd
@@ -14,6 +25,7 @@ def syn_ehr(size=1000, male_gender=None,asian=None, spanish=None, afr_amer=None,
             mixed=None, min_date="1916/01/01", max_date="2014/03/01"):
     """ Calculates the size of each race dataset to generate, then sends the calculations to the mk_data function to generate the
         synthetic health records.
+
         Args:
             size (int): The number of synthetic records to create. Default is 1000 records if not specified.
             male_gender (float): The percentage of synthetic male records to create. If not specified, a random percentage will be selected.
@@ -25,9 +37,10 @@ def syn_ehr(size=1000, male_gender=None,asian=None, spanish=None, afr_amer=None,
             mixed (float): The percentage of synthetic mixed-race records to create. If not specified, a random percentage will be selected.
             min_date (date): Default to 01/01/1916 for date of birth selection
             max_date (date): Default to 03/01/2014 for date of birth selection
+
         Returns:
             The synthetic data records.
-        """
+    """
     sum=0
     default={}
     listed={}
@@ -123,17 +136,14 @@ def syn_ehr(size=1000, male_gender=None,asian=None, spanish=None, afr_amer=None,
 #print '__name__'
 if __name__=='__main__':
 
-        size=1000
+        size=5000
         data=syn_ehr(size=size)
         while len(data)!= size:
              data = syn_ehr(size=size)
 
         print "data generated. first 5 rows:\n ",data.head()
         print "Number of records: ",len(data)
-        print "type", type(data)
-        #data.to_csv(encoding='utf-8')
-        data=pd.DataFrame(data)
-        data.to_csv(file='data.csv',encoding='utf-8')
+
         #print data.iloc[npr.randint(len(data),size=25)]
 
 

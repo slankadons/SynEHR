@@ -11,12 +11,12 @@ import datetime
 def gen_errors(size, data):
     """ A function to generate the different types of errors in the data
 
-    Args:
-        size (int): The number of randomly selected records to induce errors to.
-        data (pandas dataframe): The generated synthetic data records.
+        Args:
+            size (int): The number of randomly selected records to induce errors to.
+            data (pandas dataframe): The generated synthetic data records.
 
-    Returns:
-        The error induced synthetic data.
+        Returns:
+            The error induced synthetic data.
     """
     # initializing a dictionary of all the errors to be generated
     errors = {'insertion': 0, 'omission': 0, 'substitution': 0, 'transposition': 0, 'gender_mis': 0}
@@ -340,10 +340,12 @@ def gen_errors(size, data):
 
 def gender_misclassification(data):
     """ A function to induce gender misclassification errors on the synthetic data.
-    Args:
-        data (pandas dataframe): The generated synthetic data records.
-    Returns:
-        The induced gender misclassification errors dataset.
+
+        Args:
+            data (pandas dataframe): The generated synthetic data records.
+
+        Returns:
+            The induced gender misclassification errors dataset.
     """
     # print "Before swap: ",data['gender']
     data['gender'].replace('M', 'O', inplace=True)
@@ -355,10 +357,12 @@ def gender_misclassification(data):
 
 def char_sub_str(arr):
     """ A function to induce character substitution error in dataset records.
-    Args:
-        arr (array): The array of randomly selected synthetic records.
-    Returns:
-        The error induced character substitution list.
+
+        Args:
+            arr (array): The array of randomly selected synthetic records.
+
+        Returns:
+            The error induced character substitution list.
     """
     characters = 'qwertyuioplkjhgfdsazxcvbnm'
     arr_res = []
@@ -380,10 +384,12 @@ def char_sub_str(arr):
 
 def char_omission(col_data):
     """ A function to induce a random character omission.
-    Args:
-        col_data (pandas dataframe): The generated synthetic data records.
-    Returns:
-        The induced character omission error dataset.
+
+        Args:
+            col_data (pandas dataframe): The generated synthetic data records.
+
+        Returns:
+            The induced character omission error dataset.
     """
     res_data = []
     for i in range(len(col_data)):
@@ -409,10 +415,12 @@ def char_omission(col_data):
 
 def char_sub_str(arr):
     """ A function to induce character substitution error in dataset records.
-    Args:
-        arr (array): The array of randomly selected synthetic records.
-    Returns:
-        The error induced character substitution list.
+
+        Args:
+            arr (array): The array of randomly selected synthetic records.
+
+        Returns:
+            The error induced character substitution list.
     """
     characters = 'qwertyuioplkjhgfdsazxcvbnm'
 
@@ -434,10 +442,11 @@ def char_sub_str(arr):
 
 def char_sub_date(col_date):
     """ A function to induce character substitution error in a date column.
-    Args:
-        col_date (array): The array of randomly selected synthetic records.
-    Returns:
-        Returns the error induced character substitution array
+        Args:
+            col_date (array): The array of randomly selected synthetic records.
+
+        Returns:
+            Returns the error induced character substitution array
     """
     new_dates = []
     for date in col_date:
@@ -481,9 +490,13 @@ def char_sub_date(col_date):
 
 def char_transpo_str(col_data):
     """
-    Function to induce character transposition errors
-    :param col_data: list, column to induce errors in.
-    :return: col_data
+        Function to induce character transposition errors
+
+        Args:
+            col_data: list, column to induce errors in.
+        Returns:
+            col_data: list with errors induced.
+
     """
     new_col = []
     # print col_data
@@ -506,9 +519,14 @@ def char_transpo_str(col_data):
 
 def char_transpo_date(col_date):
     """
-    Function to randomly transpose date characters
-    :param col_date: list of dates
-    :return: new_date: list of error induced dates
+        Function to randomly transpose date characters
+
+        Args:
+            col_date: list of dates
+
+        Returns:
+            new_date: list of error induced dates
+
     """
     new_dates = []
     print col_date
@@ -563,11 +581,15 @@ def char_transpo_date(col_date):
 
 
 def char_insertion_str(arr):
-    """ A function that induces character insertion errors in dataset records.
-    Arg:
-        arr (array): The array of randomly selected synthetic records.
-    Returns:
-        Returns the error induced character insertion array
+    """
+        A function that induces character insertion errors in dataset records.
+
+        Args:
+            arr (array): The array of randomly selected synthetic records.
+
+        Returns:
+            Returns the error induced character insertion array
+
     """
     characters = 'qwertyuioplkjhgfdsazxcvbnm'
     close_keys = {"a": ["a","q","w","s","z","x"],

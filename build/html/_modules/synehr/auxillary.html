@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>synehr.auxillary &mdash; synehr 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="synehr 0.0.1 documentation" href="../../index.html" />
+    <link rel="up" title="Module code" href="../index.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for synehr.auxillary</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">faker</span>
+<span class="kn">import</span> <span class="nn">datetime</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">random</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy.random</span> <span class="kn">as</span> <span class="nn">npr</span>
+
+<div class="viewcode-block" id="readCSV"><a class="viewcode-back" href="../../code.html#synehr.auxillary.readCSV">[docs]</a><span class="k">def</span> <span class="nf">readCSV</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Read in master files to create first name and last name data frames.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">f_name</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span>
+        <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">__file__</span><span class="p">),</span> <span class="s1">&#39;data&#39;</span><span class="p">,</span> <span class="s1">&#39;Master_First_Names.csv&#39;</span><span class="p">)</span>
+    <span class="n">first_name_columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;first&#39;</span><span class="p">,</span> <span class="s1">&#39;gender&#39;</span><span class="p">,</span> <span class="s1">&#39;race&#39;</span><span class="p">,</span> <span class="s1">&#39;detailed_race&#39;</span><span class="p">]</span>
+    <span class="n">first_names</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">f_name</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+                     <span class="n">names</span><span class="o">=</span><span class="n">first_name_columns</span><span class="p">,</span> <span class="n">na_values</span><span class="o">=</span><span class="s1">&#39;?&#39;</span><span class="p">,</span><span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
+    <span class="n">f_name</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span>
+        <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">__file__</span><span class="p">),</span> <span class="s1">&#39;data&#39;</span><span class="p">,</span> <span class="s1">&#39;Master_Last_Names.csv&#39;</span><span class="p">)</span>
+    <span class="n">last_name_columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;last&#39;</span><span class="p">,</span> <span class="s1">&#39;race&#39;</span><span class="p">,</span> <span class="s1">&#39;detailed_race&#39;</span><span class="p">]</span>
+    <span class="n">last_names</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">f_name</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+                     <span class="n">names</span><span class="o">=</span><span class="n">last_name_columns</span><span class="p">,</span> <span class="n">na_values</span><span class="o">=</span><span class="s1">&#39;?&#39;</span><span class="p">,</span><span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">first_names</span><span class="p">,</span> <span class="n">last_names</span></div>
+
+<div class="viewcode-block" id="fake_factory"><a class="viewcode-back" href="../../code.html#synehr.auxillary.fake_factory">[docs]</a><span class="k">def</span> <span class="nf">fake_factory</span><span class="p">(</span><span class="n">size</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Function to generate fake addresses</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            param size (int): Number of fake addresses to generate</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            addresses (list): list of generated addresses.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1">#install(&#39;Faker&#39;)</span>
+    <span class="n">fake</span> <span class="o">=</span> <span class="n">faker</span><span class="o">.</span><span class="n">Faker</span><span class="p">()</span>
+    <span class="n">addresses</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">size</span><span class="p">):</span>
+        <span class="n">address</span> <span class="o">=</span> <span class="n">fake</span><span class="o">.</span><span class="n">address</span><span class="p">()</span>
+        <span class="n">addresses</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">address</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">addresses</span></div>
+
+<div class="viewcode-block" id="genDOB"><a class="viewcode-back" href="../../code.html#synehr.auxillary.genDOB">[docs]</a><span class="k">def</span> <span class="nf">genDOB</span><span class="p">(</span><span class="n">size</span><span class="p">,</span><span class="n">min_Date</span><span class="p">,</span><span class="n">max_Date</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Generates the DOB for patient records.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            size(int): Number of records to generate.</span>
+<span class="sd">            min_Date(Date): Minimum Date for DOB</span>
+<span class="sd">            max_Date (Date): Maximum Date for DOB</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">            dob (list): List of Date of Births</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">dob</span><span class="o">=</span><span class="p">[]</span>
+    <span class="c1"># How many seconds between [date] and [01/03/2014]? That will be maxSeconds</span>
+    <span class="n">minDate</span><span class="o">=</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">min_Date</span><span class="p">,</span><span class="s2">&quot;%Y/%m/</span><span class="si">%d</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="c1">#refDate = datetime.strptime(DateOfBirth.ToString(), &quot;%d/%m/%Y %H:%M:%S&quot;)</span>
+    <span class="c1"># In above, be careful that your locale is returning dates in a matching format</span>
+    <span class="n">maxDate</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">max_Date</span><span class="p">,</span> <span class="s2">&quot;%Y/%m/</span><span class="si">%d</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="c1"># Calculate the difference between the starting date and the maximum date</span>
+    <span class="n">timeDifference</span> <span class="o">=</span> <span class="n">maxDate</span> <span class="o">-</span> <span class="n">minDate</span>
+    <span class="n">maxSeconds</span> <span class="o">=</span> <span class="n">timeDifference</span><span class="o">.</span><span class="n">total_seconds</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">size</span><span class="p">):</span>
+
+        <span class="c1"># Choose a random number between 1 and secondsMax</span>
+        <span class="n">randSeconds</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randrange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">maxSeconds</span><span class="p">)</span>
+        <span class="c1"># Add the random number of seconds to the original date</span>
+        <span class="n">retDate</span> <span class="o">=</span> <span class="n">minDate</span> <span class="o">+</span> <span class="n">datetime</span><span class="o">.</span><span class="n">timedelta</span><span class="p">(</span><span class="n">seconds</span><span class="o">=</span><span class="n">randSeconds</span><span class="p">)</span>
+        <span class="n">dob</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">retDate</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">dob</span></div>
+
+<div class="viewcode-block" id="sum_num_terms_equals_total"><a class="viewcode-back" href="../../code.html#synehr.auxillary.sum_num_terms_equals_total">[docs]</a><span class="k">def</span> <span class="nf">sum_num_terms_equals_total</span><span class="p">(</span><span class="n">num_terms</span><span class="p">,</span> <span class="n">total</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Return a randomly chosen list of n positive integers summing to total.</span>
+<span class="sd">        Each such list is equally likely to occur.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            num_terms (int): Number of terms to generate</span>
+<span class="sd">            total (int/float): The sum total of the number of terms.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            num (list): A list of numbers generated.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">num</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">total</span><span class="p">)</span> <span class="o">==</span> <span class="nb">float</span><span class="p">:</span>
+        <span class="k">while</span> <span class="p">(</span><span class="n">total</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">):</span>
+            <span class="n">term</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">total</span><span class="p">),</span> <span class="mi">2</span><span class="p">)</span>
+            <span class="c1"># print term</span>
+            <span class="n">num</span> <span class="o">+=</span> <span class="p">[</span><span class="n">term</span><span class="p">]</span>
+            <span class="n">total</span> <span class="o">-=</span> <span class="n">term</span>
+            <span class="n">num_terms</span> <span class="o">-=</span> <span class="mi">1</span>
+            <span class="c1"># print &quot;num_terms: &quot;, num_terms</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">num_terms</span> <span class="o">==</span> <span class="mi">1</span><span class="p">):</span>
+                <span class="n">num</span> <span class="o">+=</span> <span class="p">[</span><span class="nb">round</span><span class="p">(</span><span class="n">total</span><span class="p">,</span> <span class="mi">2</span><span class="p">)]</span>
+                <span class="k">break</span><span class="p">;</span>
+        <span class="c1"># print &quot;num: &quot;, num</span>
+
+
+    <span class="k">elif</span> <span class="nb">type</span><span class="p">(</span><span class="n">total</span><span class="p">)</span> <span class="o">==</span> <span class="nb">int</span><span class="p">:</span>
+
+        <span class="k">while</span> <span class="p">(</span><span class="n">total</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">):</span>
+            <span class="n">term</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">total</span><span class="p">)</span>
+            <span class="k">print</span> <span class="n">term</span>
+            <span class="n">num</span> <span class="o">+=</span> <span class="p">[</span><span class="n">term</span><span class="p">]</span>
+            <span class="n">total</span> <span class="o">-=</span> <span class="n">term</span>
+            <span class="n">num_terms</span> <span class="o">-=</span> <span class="mi">1</span>
+            <span class="c1"># print &quot;num_terms: &quot;, num_terms</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">num_terms</span> <span class="o">==</span> <span class="mi">1</span><span class="p">):</span>
+                <span class="n">num</span> <span class="o">+=</span> <span class="p">[</span><span class="n">total</span><span class="p">]</span>
+                <span class="k">break</span><span class="p">;</span>
+    <span class="k">return</span> <span class="n">num</span></div>
+
+<span class="k">def</span> <span class="nf">genMPI</span><span class="p">(</span><span class="n">size</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Generates a Master Patient Index for the dataset</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            size(int): Number of records in the dataset.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            MPI: List of Master Patient Indices</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">hosp</span><span class="o">=</span><span class="s2">&quot;HOSP&quot;</span>
+    <span class="n">MPI</span><span class="o">=</span><span class="p">[]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">size</span><span class="p">):</span>
+        <span class="n">mpi</span><span class="o">=</span><span class="n">hosp</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+        <span class="n">MPI</span><span class="o">+=</span><span class="p">[</span><span class="n">mpi</span><span class="p">]</span>
+
+    <span class="k">return</span> <span class="n">MPI</span>
+
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="../index.html">Module code</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, Shraddha Lanka, Tennyson Lee.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>

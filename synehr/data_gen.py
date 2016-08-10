@@ -9,6 +9,18 @@ import random
 
 
 def data_gen(first_names_data,last_names_data,size,race_ratio,male_gender):
+    """
+        Generates data based on user preferences.
+        Args:
+        :param first_names_data: Pandas data frame to generate first names
+        :param last_names_data: Pandas data frame to generate last names
+        :param size(int) : Number of records to be generated.
+        :param race_ratio(dict) : A dictionary that contains the percentages of all races to be generated.
+        :param male_gender(float): Percentage of records generated to be male.
+
+        Returns:
+        data: Pandas Data Frame that returns the generated records.
+    """
     ### sizes for each race
 
     asian_size = int(size * race_ratio['asian'])
@@ -200,8 +212,23 @@ def data_gen(first_names_data,last_names_data,size,race_ratio,male_gender):
 
 def mk_data(first_names_data, last_names_data, min_date, max_date, size,male_gender, race_ratio):
     """
-    1. All races are inputted as integers to signify the percentages
-    2. Generates Dataset based on user preferences."""
+        1. All races are inputted as integers to signify the percentages
+        2. Generates Dataset based on user preferences.
+
+
+        Args:
+            first_names_data: A pandas data frame which contains first names.
+            last_names_data: A pandas data frame which contains last names.
+            min_date (date): Minimum Date to generate data.
+            max_date (date): Maximum Date to generate data.
+            size (int): Number of records to generate.
+            male_gender (float): Percentage records that need to be of the gender male.
+            race_ratio (dict): A dictionary that contains all the percentages of the various races to be generated.
+
+        Returns:
+            data: Pandas Data Frame that contains the generated records along with errors.
+
+    """
     # dataset list by race
 
     # data generator by race
@@ -241,22 +268,11 @@ def mk_data(first_names_data, last_names_data, min_date, max_date, size,male_gen
 
     error_index=npr.randint(0,size_records,size=(size-size_records))
 
-    print "\nerror_index length: ",len(error_index)
-
     data_err=data.iloc[error_index]
 
-
-    #data_err=gen_typo(data_err)
-
-    #data=pd.concat([data,data_err],axis=0,ignore_index=True)
-
     data_err=gen_errors(size=len(data_err),data=data_err)
-
-    #print data_err
 
     data = pd.concat([data, data_err], axis=0, ignore_index=True)
 
 
     return data
-
-

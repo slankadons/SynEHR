@@ -7,7 +7,9 @@ import pandas as pd
 import numpy.random as npr
 
 def readCSV():
-    """Read in master files for first name and last name"""
+    """
+        Read in master files to create first name and last name data frames.
+    """
     f_name = os.path.join(
         os.path.dirname(__file__), 'data', 'Master_First_Names.csv')
     first_name_columns = ['first', 'gender', 'race', 'detailed_race']
@@ -21,6 +23,16 @@ def readCSV():
     return first_names, last_names
 
 def fake_factory(size):
+    """
+        Function to generate fake addresses
+
+        Args:
+            param size (int): Number of fake addresses to generate
+
+        Returns:
+            addresses (list): list of generated addresses.
+
+    """
     #install('Faker')
     fake = faker.Faker()
     addresses = []
@@ -30,6 +42,17 @@ def fake_factory(size):
     return addresses
 
 def genDOB(size,min_Date,max_Date):
+    """
+        Generates the DOB for patient records.
+
+        Args:
+            size(int): Number of records to generate.
+            min_Date(Date): Minimum Date for DOB
+            max_Date (Date): Maximum Date for DOB
+
+        Returns
+            dob (list): List of Date of Births
+    """
     dob=[]
     # How many seconds between [date] and [01/03/2014]? That will be maxSeconds
     minDate=datetime.datetime.strptime(min_Date,"%Y/%m/%d")
@@ -49,8 +72,17 @@ def genDOB(size,min_Date,max_Date):
     return dob
 
 def sum_num_terms_equals_total(num_terms, total):
-    """Return a randomly chosen list of n positive integers summing to total.
-    Each such list is equally likely to occur."""
+    """
+        Return a randomly chosen list of n positive integers summing to total.
+        Each such list is equally likely to occur.
+
+        Args:
+            num_terms (int): Number of terms to generate
+            total (int/float): The sum total of the number of terms.
+
+        Returns:
+            num (list): A list of numbers generated.
+    """
 
     num = []
     if type(total) == float:
@@ -83,9 +115,14 @@ def sum_num_terms_equals_total(num_terms, total):
 
 def genMPI(size):
     """
-    Generates a Master Patient Index for the dataset
-    :param size:
-    :return: List of Master Patient Indices
+        Generates a Master Patient Index for the dataset
+
+        Args:
+            size(int): Number of records in the dataset.
+
+        Returns:
+            MPI: List of Master Patient Indices
+
     """
     hosp="HOSP"
     MPI=[]

@@ -1,0 +1,298 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>AN OVERVIEW OF FUNCTIONS &mdash; synehr 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="synehr 0.0.1 documentation" href="index.html" />
+    <link rel="prev" title="Installation" href="installation.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="an-overview-of-functions">
+<h1>AN OVERVIEW OF FUNCTIONS<a class="headerlink" href="#an-overview-of-functions" title="Permalink to this headline">¶</a></h1>
+<p>The package has two different sets of functions, one to generate the data and the other to induce errors generated in the data.</p>
+<span class="target" id="module-synehr"></span><p>A package to generate synthetic EHR data.</p>
+<div class="section" id="the-functions">
+<h2>The Functions<a class="headerlink" href="#the-functions" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="synehr.synehr.syn_ehr">
+<code class="descclassname">synehr.synehr.</code><code class="descname">syn_ehr</code><span class="sig-paren">(</span><em>size=1000</em>, <em>male_gender=None</em>, <em>asian=None</em>, <em>spanish=None</em>, <em>afr_amer=None</em>, <em>caucasian=None</em>, <em>native_amer_alaskan=None</em>, <em>mixed=None</em>, <em>min_date='1916/01/01'</em>, <em>max_date='2014/03/01'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/synehr/synehr.html#syn_ehr"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#synehr.synehr.syn_ehr" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculates the size of each race dataset to generate, then sends the calculations to the mk_data function to generate the
+synthetic health records.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>size (int): The number of synthetic records to create. Default is 1000 records if not specified.
+male_gender (float): The percentage of synthetic male records to create. If not specified, a random percentage will be selected.
+asian (float): The percentage of synthetic asian records to create. If not specified, a random percentage will be selected.
+spanish (float):  percentage of synthetic spanish records to create. If not specified, a random percentage will be selected.
+afr_amer (float): The percentage of synthetic african american records to create. If not specified, a random percentage will be selected.
+caucasian (float): The percentage of synthetic caucasian records to create. If not specified, a random percentage will be selected.
+native_amer_alaskan (float): The percentage of synthetic native american/ alaskan records to create. If not specified, a random percentage will be selected.
+mixed (float): The percentage of synthetic mixed-race records to create. If not specified, a random percentage will be selected.
+min_date (date): Default to 01/01/1916 for date of birth selection
+max_date (date): Default to 03/01/2014 for date of birth selection</dd>
+<dt>Returns:</dt>
+<dd>The synthetic data records.</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="synehr.data_gen.mk_data">
+<code class="descclassname">synehr.data_gen.</code><code class="descname">mk_data</code><span class="sig-paren">(</span><em>first_names_data</em>, <em>last_names_data</em>, <em>min_date</em>, <em>max_date</em>, <em>size</em>, <em>male_gender</em>, <em>race_ratio</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/synehr/data_gen.html#mk_data"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#synehr.data_gen.mk_data" title="Permalink to this definition">¶</a></dt>
+<dd><ol class="arabic simple">
+<li>All races are inputted as integers to signify the percentages</li>
+<li>Generates Dataset based on user preferences.</li>
+</ol>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>first_names_data: A pandas data frame which contains first names.
+last_names_data: A pandas data frame which contains last names.
+min_date (date): Minimum Date to generate data.
+max_date (date): Maximum Date to generate data.
+size (int): Number of records to generate.
+male_gender (float): Percentage records that need to be of the gender male.
+race_ratio (dict): A dictionary that contains all the percentages of the various races to be generated.</dd>
+<dt>Returns:</dt>
+<dd>data: Pandas Data Frame that contains the generated records along with errors.</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="synehr.data_gen.data_gen">
+<code class="descclassname">synehr.data_gen.</code><code class="descname">data_gen</code><span class="sig-paren">(</span><em>first_names_data</em>, <em>last_names_data</em>, <em>size</em>, <em>race_ratio</em>, <em>male_gender</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/synehr/data_gen.html#data_gen"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#synehr.data_gen.data_gen" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates data based on user preferences.
+Args:
+:param first_names_data: Pandas data frame to generate first names
+:param last_names_data: Pandas data frame to generate last names
+:param size(int) : Number of records to be generated.
+:param race_ratio(dict) : A dictionary that contains the percentages of all races to be generated.
+:param male_gender(float): Percentage of records generated to be male.</p>
+<p>Returns:
+data: Pandas Data Frame that returns the generated records.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="synehr.errors.gen_errors">
+<code class="descclassname">synehr.errors.</code><code class="descname">gen_errors</code><span class="sig-paren">(</span><em>size</em>, <em>data</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/synehr/errors.html#gen_errors"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#synehr.errors.gen_errors" title="Permalink to this definition">¶</a></dt>
+<dd><p>A function to generate the different types of errors in the data</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>size (int): The number of randomly selected records to induce errors to.
+data (pandas dataframe): The generated synthetic data records.</dd>
+<dt>Returns:</dt>
+<dd>The error induced synthetic data.</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="synehr.errors.char_transpo_str">
+<code class="descclassname">synehr.errors.</code><code class="descname">char_transpo_str</code><span class="sig-paren">(</span><em>col_data</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/synehr/errors.html#char_transpo_str"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#synehr.errors.char_transpo_str" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function to induce character transposition errors</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>col_data: list, column to induce errors in.</dd>
+<dt>Returns:</dt>
+<dd>col_data: list with errors induced.</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="synehr.errors.char_transpo_date">
+<code class="descclassname">synehr.errors.</code><code class="descname">char_transpo_date</code><span class="sig-paren">(</span><em>col_date</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/synehr/errors.html#char_transpo_date"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#synehr.errors.char_transpo_date" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function to randomly transpose date characters</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>col_date: list of dates</dd>
+<dt>Returns:</dt>
+<dd>new_date: list of error induced dates</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="synehr.errors.char_insertion_str">
+<code class="descclassname">synehr.errors.</code><code class="descname">char_insertion_str</code><span class="sig-paren">(</span><em>arr</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/synehr/errors.html#char_insertion_str"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#synehr.errors.char_insertion_str" title="Permalink to this definition">¶</a></dt>
+<dd><p>A function that induces character insertion errors in dataset records.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>arr (array): The array of randomly selected synthetic records.</dd>
+<dt>Returns:</dt>
+<dd>Returns the error induced character insertion array</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="synehr.errors.char_omission">
+<code class="descclassname">synehr.errors.</code><code class="descname">char_omission</code><span class="sig-paren">(</span><em>col_data</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/synehr/errors.html#char_omission"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#synehr.errors.char_omission" title="Permalink to this definition">¶</a></dt>
+<dd><p>A function to induce a random character omission.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>col_data (pandas dataframe): The generated synthetic data records.</dd>
+<dt>Returns:</dt>
+<dd>The induced character omission error dataset.</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="synehr.errors.char_sub_str">
+<code class="descclassname">synehr.errors.</code><code class="descname">char_sub_str</code><span class="sig-paren">(</span><em>arr</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/synehr/errors.html#char_sub_str"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#synehr.errors.char_sub_str" title="Permalink to this definition">¶</a></dt>
+<dd><p>A function to induce character substitution error in dataset records.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>arr (array): The array of randomly selected synthetic records.</dd>
+<dt>Returns:</dt>
+<dd>The error induced character substitution list.</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="synehr.errors.gender_misclassification">
+<code class="descclassname">synehr.errors.</code><code class="descname">gender_misclassification</code><span class="sig-paren">(</span><em>data</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/synehr/errors.html#gender_misclassification"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#synehr.errors.gender_misclassification" title="Permalink to this definition">¶</a></dt>
+<dd><p>A function to induce gender misclassification errors on the synthetic data.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>data (pandas dataframe): The generated synthetic data records.</dd>
+<dt>Returns:</dt>
+<dd>The induced gender misclassification errors dataset.</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="synehr.auxillary.readCSV">
+<code class="descclassname">synehr.auxillary.</code><code class="descname">readCSV</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/synehr/auxillary.html#readCSV"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#synehr.auxillary.readCSV" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read in master files to create first name and last name data frames.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="synehr.auxillary.fake_factory">
+<code class="descclassname">synehr.auxillary.</code><code class="descname">fake_factory</code><span class="sig-paren">(</span><em>size</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/synehr/auxillary.html#fake_factory"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#synehr.auxillary.fake_factory" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function to generate fake addresses</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>param size (int): Number of fake addresses to generate</dd>
+<dt>Returns:</dt>
+<dd>addresses (list): list of generated addresses.</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="synehr.auxillary.genDOB">
+<code class="descclassname">synehr.auxillary.</code><code class="descname">genDOB</code><span class="sig-paren">(</span><em>size</em>, <em>min_Date</em>, <em>max_Date</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/synehr/auxillary.html#genDOB"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#synehr.auxillary.genDOB" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates the DOB for patient records.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>size(int): Number of records to generate.
+min_Date(Date): Minimum Date for DOB
+max_Date (Date): Maximum Date for DOB</dd>
+<dt>Returns</dt>
+<dd>dob (list): List of Date of Births</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="synehr.auxillary.sum_num_terms_equals_total">
+<code class="descclassname">synehr.auxillary.</code><code class="descname">sum_num_terms_equals_total</code><span class="sig-paren">(</span><em>num_terms</em>, <em>total</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/synehr/auxillary.html#sum_num_terms_equals_total"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#synehr.auxillary.sum_num_terms_equals_total" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a randomly chosen list of n positive integers summing to total.
+Each such list is equally likely to occur.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>num_terms (int): Number of terms to generate
+total (int/float): The sum total of the number of terms.</dd>
+<dt>Returns:</dt>
+<dd>num (list): A list of numbers generated.</dd>
+</dl>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">AN OVERVIEW OF FUNCTIONS</a><ul>
+<li><a class="reference internal" href="#the-functions">The Functions</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="installation.html" title="previous chapter">Installation</a></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/code.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, Shraddha Lanka, Tennyson Lee.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
+      
+      |
+      <a href="_sources/code.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

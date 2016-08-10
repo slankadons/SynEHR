@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>synehr.synehr &mdash; synehr 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="synehr 0.0.1 documentation" href="../../index.html" />
+    <link rel="up" title="Module code" href="../index.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for synehr.synehr</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">.. module:: synehr</span>
+<span class="sd">    :platform: Unix, Windows</span>
+<span class="sd">    :synopsis: Main Function.</span>
+
+<span class="sd">.. moduleauthor:: Shraddha Lanka, Tennyson Lee</span>
+
+
+<span class="sd">&quot;&quot;&quot;</span>
+
+
+<span class="kn">import</span> <span class="nn">numpy.random</span> <span class="kn">as</span> <span class="nn">npr</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">random</span>
+<span class="kn">from</span> <span class="nn">Exceptions</span> <span class="kn">import</span> <span class="n">SizeValueError</span>
+<span class="kn">from</span> <span class="nn">Exceptions</span> <span class="kn">import</span> <span class="n">GenderValueError</span>
+<span class="kn">from</span> <span class="nn">auxillary</span> <span class="kn">import</span> <span class="n">readCSV</span>
+<span class="kn">from</span> <span class="nn">auxillary</span> <span class="kn">import</span> <span class="n">sum_num_terms_equals_total</span>
+<span class="kn">from</span> <span class="nn">data_gen</span> <span class="kn">import</span> <span class="n">mk_data</span>
+
+
+
+<div class="viewcode-block" id="syn_ehr"><a class="viewcode-back" href="../../code.html#synehr.synehr.syn_ehr">[docs]</a><span class="k">def</span> <span class="nf">syn_ehr</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">male_gender</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span><span class="n">asian</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">spanish</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">afr_amer</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">caucasian</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">native_amer_alaskan</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span>
+            <span class="n">mixed</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">min_date</span><span class="o">=</span><span class="s2">&quot;1916/01/01&quot;</span><span class="p">,</span> <span class="n">max_date</span><span class="o">=</span><span class="s2">&quot;2014/03/01&quot;</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Calculates the size of each race dataset to generate, then sends the calculations to the mk_data function to generate the</span>
+<span class="sd">        synthetic health records.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            size (int): The number of synthetic records to create. Default is 1000 records if not specified.</span>
+<span class="sd">            male_gender (float): The percentage of synthetic male records to create. If not specified, a random percentage will be selected.</span>
+<span class="sd">            asian (float): The percentage of synthetic asian records to create. If not specified, a random percentage will be selected.</span>
+<span class="sd">            spanish (float):  percentage of synthetic spanish records to create. If not specified, a random percentage will be selected.</span>
+<span class="sd">            afr_amer (float): The percentage of synthetic african american records to create. If not specified, a random percentage will be selected.</span>
+<span class="sd">            caucasian (float): The percentage of synthetic caucasian records to create. If not specified, a random percentage will be selected.</span>
+<span class="sd">            native_amer_alaskan (float): The percentage of synthetic native american/ alaskan records to create. If not specified, a random percentage will be selected.</span>
+<span class="sd">            mixed (float): The percentage of synthetic mixed-race records to create. If not specified, a random percentage will be selected.</span>
+<span class="sd">            min_date (date): Default to 01/01/1916 for date of birth selection</span>
+<span class="sd">            max_date (date): Default to 03/01/2014 for date of birth selection</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            The synthetic data records.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="nb">sum</span><span class="o">=</span><span class="mi">0</span>
+    <span class="n">default</span><span class="o">=</span><span class="p">{}</span>
+    <span class="n">listed</span><span class="o">=</span><span class="p">{}</span>
+    <span class="k">print</span> <span class="s2">&quot;In synehr&quot;</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="c1">#if no value is specified, add it to a list of defaults else add to another list</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">asian</span><span class="o">!=</span><span class="bp">None</span><span class="p">):</span>
+            <span class="k">if</span><span class="p">(</span><span class="n">asian</span><span class="o">&lt;</span><span class="mi">0</span><span class="p">):</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span>
+            <span class="nb">sum</span><span class="o">+=</span><span class="n">asian</span>
+            <span class="n">listed</span><span class="p">[</span><span class="s1">&#39;asian&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">asian</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">default</span><span class="p">[</span><span class="s1">&#39;asian&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">asian</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">spanish</span> <span class="o">!=</span> <span class="bp">None</span><span class="p">):</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">spanish</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">):</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span>
+            <span class="nb">sum</span> <span class="o">+=</span> <span class="n">spanish</span>
+            <span class="n">listed</span><span class="p">[</span><span class="s1">&#39;spanish&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">spanish</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">default</span><span class="p">[</span><span class="s1">&#39;spanish&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">spanish</span>
+
+        <span class="k">if</span> <span class="p">(</span><span class="n">afr_amer</span> <span class="o">!=</span> <span class="bp">None</span><span class="p">):</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">afr_amer</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">):</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span>
+            <span class="nb">sum</span> <span class="o">+=</span> <span class="n">afr_amer</span>
+            <span class="n">listed</span><span class="p">[</span><span class="s1">&#39;afr_amer&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">afr_amer</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">default</span><span class="p">[</span><span class="s1">&#39;afr_amer&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">afr_amer</span>
+
+        <span class="k">if</span> <span class="p">(</span><span class="n">caucasian</span> <span class="o">!=</span> <span class="bp">None</span><span class="p">):</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">caucasian</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">):</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span>
+            <span class="nb">sum</span> <span class="o">+=</span> <span class="n">caucasian</span>
+            <span class="n">listed</span><span class="p">[</span><span class="s1">&#39;caucasian&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">caucasian</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">default</span><span class="p">[</span><span class="s1">&#39;caucasian&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">caucasian</span>
+
+        <span class="k">if</span> <span class="p">(</span><span class="n">mixed</span> <span class="o">!=</span> <span class="bp">None</span><span class="p">):</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">mixed</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">):</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span>
+            <span class="nb">sum</span> <span class="o">+=</span> <span class="n">mixed</span>
+            <span class="n">listed</span><span class="p">[</span><span class="s1">&#39;mixed&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">mixed</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">default</span><span class="p">[</span><span class="s1">&#39;mixed&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">mixed</span>
+
+        <span class="k">if</span> <span class="p">(</span><span class="n">native_amer_alaskan</span> <span class="o">!=</span> <span class="bp">None</span><span class="p">):</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">native_amer_alaskan</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">):</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span>
+            <span class="nb">sum</span> <span class="o">+=</span> <span class="n">native_amer_alaskan</span>
+            <span class="n">listed</span><span class="p">[</span><span class="s1">&#39;native_amer_alaskan&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">native_amer_alaskan</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">default</span><span class="p">[</span><span class="s1">&#39;native_amer_alaskan&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">native_amer_alaskan</span>
+
+        <span class="k">if</span> <span class="nb">sum</span><span class="o">&gt;</span><span class="mi">1</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span>
+        <span class="k">if</span> <span class="mi">100</span> <span class="o">&gt;=</span> <span class="n">size</span> <span class="o">&gt;=</span> <span class="mi">1000000</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">SizeValueError</span>
+        <span class="k">if</span> <span class="mi">0</span> <span class="o">&gt;</span> <span class="n">male_gender</span> <span class="o">&gt;</span> <span class="mi">1</span> <span class="ow">or</span> <span class="n">male_gender</span><span class="o">!=</span><span class="bp">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">GenderValueError</span>
+    <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+        <span class="k">print</span> <span class="p">(</span><span class="s1">&#39;Sum of race values must be between 0 and 1, with each race more than 0 or None&#39;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">male_gender</span><span class="o">==</span><span class="bp">None</span><span class="p">):</span>
+            <span class="n">male_gender</span><span class="o">=</span><span class="n">npr</span><span class="o">.</span><span class="n">random</span><span class="p">()</span>
+            <span class="n">male_gender</span><span class="o">=</span><span class="nb">round</span><span class="p">(</span><span class="n">male_gender</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+            <span class="c1">#print male_gender</span>
+
+    <span class="c1">#default=[]</span>
+        <span class="c1">#print &quot;sum: &quot;,sum</span>
+        <span class="n">rem</span><span class="o">=</span><span class="mf">1.0</span><span class="o">-</span><span class="nb">sum</span>
+        <span class="n">n</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">default</span><span class="p">)</span>
+        <span class="c1">#Generate n random float numbers such that sum of n numbers equals rem.</span>
+        <span class="n">val</span><span class="o">=</span><span class="n">sum_num_terms_equals_total</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">rem</span><span class="p">)</span>
+        <span class="k">print</span> <span class="s2">&quot;val: &quot;</span> <span class="p">,</span><span class="n">val</span>
+        <span class="c1">#sumv=sum(val)</span>
+
+        <span class="n">i</span><span class="o">=</span><span class="mi">0</span>
+        <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">default</span><span class="p">:</span>
+            <span class="n">default</span><span class="p">[</span><span class="n">d</span><span class="p">]</span><span class="o">=</span><span class="n">val</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+            <span class="n">i</span><span class="o">+=</span><span class="mi">1</span>
+    <span class="n">default</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">listed</span><span class="p">)</span>
+    <span class="k">print</span> <span class="n">default</span>
+    <span class="k">print</span> <span class="s2">&quot;Reading From Database...&quot;</span>
+    <span class="n">first_names_data</span><span class="p">,</span> <span class="n">last_names_data</span> <span class="o">=</span> <span class="n">readCSV</span><span class="p">()</span>
+    <span class="n">last_names_data</span><span class="o">=</span><span class="n">last_names_data</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">how</span><span class="o">=</span><span class="s1">&#39;any&#39;</span><span class="p">)</span>
+    <span class="n">first_names_data</span><span class="o">=</span><span class="n">first_names_data</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">how</span><span class="o">=</span><span class="s1">&#39;any&#39;</span><span class="p">)</span>
+
+    <span class="k">print</span> <span class="s2">&quot;Read Successful...&quot;</span>
+
+    <span class="n">data</span><span class="o">=</span><span class="n">mk_data</span><span class="p">(</span><span class="n">first_names_data</span><span class="p">,</span> <span class="n">last_names_data</span><span class="p">,</span> <span class="n">min_date</span><span class="p">,</span> <span class="n">max_date</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="n">size</span><span class="p">,</span> <span class="n">male_gender</span><span class="o">=</span><span class="n">male_gender</span><span class="p">,</span><span class="n">race_ratio</span><span class="o">=</span><span class="n">default</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">data</span></div>
+<span class="c1">#print &#39;__name__&#39;</span>
+<span class="k">if</span> <span class="n">__name__</span><span class="o">==</span><span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+
+        <span class="n">size</span><span class="o">=</span><span class="mi">5000</span>
+        <span class="n">data</span><span class="o">=</span><span class="n">syn_ehr</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="n">size</span><span class="p">)</span>
+        <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span><span class="o">!=</span> <span class="n">size</span><span class="p">:</span>
+             <span class="n">data</span> <span class="o">=</span> <span class="n">syn_ehr</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="n">size</span><span class="p">)</span>
+
+        <span class="k">print</span> <span class="s2">&quot;data generated. first 5 rows:</span><span class="se">\n</span><span class="s2"> &quot;</span><span class="p">,</span><span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+        <span class="k">print</span> <span class="s2">&quot;Number of records: &quot;</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+
+        <span class="c1">#print data.iloc[npr.randint(len(data),size=25)]</span>
+
+
+
+
+
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="../index.html">Module code</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, Shraddha Lanka, Tennyson Lee.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>

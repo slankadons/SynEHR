@@ -1,0 +1,364 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>synehr.data_gen &mdash; synehr 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="synehr 0.0.1 documentation" href="../../index.html" />
+    <link rel="up" title="Module code" href="../index.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for synehr.data_gen</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">auxillary</span> <span class="kn">import</span> <span class="n">genDOB</span>
+<span class="kn">from</span> <span class="nn">auxillary</span> <span class="kn">import</span> <span class="n">genMPI</span>
+<span class="kn">from</span> <span class="nn">auxillary</span> <span class="kn">import</span> <span class="n">fake_factory</span>
+<span class="kn">from</span> <span class="nn">errors</span> <span class="kn">import</span> <span class="n">gen_errors</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy.random</span> <span class="kn">as</span> <span class="nn">npr</span>
+<span class="kn">import</span> <span class="nn">random</span>
+
+
+<div class="viewcode-block" id="data_gen"><a class="viewcode-back" href="../../code.html#synehr.data_gen.data_gen">[docs]</a><span class="k">def</span> <span class="nf">data_gen</span><span class="p">(</span><span class="n">first_names_data</span><span class="p">,</span><span class="n">last_names_data</span><span class="p">,</span><span class="n">size</span><span class="p">,</span><span class="n">race_ratio</span><span class="p">,</span><span class="n">male_gender</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Generates data based on user preferences.</span>
+<span class="sd">        Args:</span>
+<span class="sd">        :param first_names_data: Pandas data frame to generate first names</span>
+<span class="sd">        :param last_names_data: Pandas data frame to generate last names</span>
+<span class="sd">        :param size(int) : Number of records to be generated.</span>
+<span class="sd">        :param race_ratio(dict) : A dictionary that contains the percentages of all races to be generated.</span>
+<span class="sd">        :param male_gender(float): Percentage of records generated to be male.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">        data: Pandas Data Frame that returns the generated records.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1">### sizes for each race</span>
+
+    <span class="n">asian_size</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">size</span> <span class="o">*</span> <span class="n">race_ratio</span><span class="p">[</span><span class="s1">&#39;asian&#39;</span><span class="p">])</span>
+
+    <span class="c1">#print asian_size</span>
+    <span class="n">spanish_size</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">size</span> <span class="o">*</span> <span class="n">race_ratio</span><span class="p">[</span><span class="s1">&#39;spanish&#39;</span><span class="p">])</span>
+    <span class="c1">#print spanish_size</span>
+    <span class="n">afr_amer_size</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">size</span> <span class="o">*</span> <span class="n">race_ratio</span><span class="p">[</span><span class="s1">&#39;afr_amer&#39;</span><span class="p">])</span>
+    <span class="c1">#print afr_amer_size</span>
+    <span class="n">caucasian_size</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">size</span> <span class="o">*</span> <span class="n">race_ratio</span><span class="p">[</span><span class="s1">&#39;caucasian&#39;</span><span class="p">])</span>
+    <span class="c1">#print caucasian_size</span>
+    <span class="n">native_amer_alaskan_size</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">size</span> <span class="o">*</span> <span class="n">race_ratio</span><span class="p">[</span><span class="s1">&#39;native_amer_alaskan&#39;</span><span class="p">])</span>
+    <span class="c1">#print native_amer_alaskan_size</span>
+    <span class="n">mixed_size</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">size</span> <span class="o">*</span> <span class="n">race_ratio</span><span class="p">[</span><span class="s1">&#39;mixed&#39;</span><span class="p">])</span>
+    <span class="c1">#print mixed_size</span>
+
+
+    <span class="n">sizes</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;asian&#39;</span><span class="p">:</span><span class="n">asian_size</span><span class="p">,</span><span class="s1">&#39;spanish&#39;</span><span class="p">:</span><span class="n">spanish_size</span><span class="p">,</span><span class="s1">&#39;afr_amer&#39;</span><span class="p">:</span><span class="n">afr_amer_size</span><span class="p">,</span><span class="s1">&#39;caucasian&#39;</span><span class="p">:</span><span class="n">caucasian_size</span><span class="p">,</span>
+           <span class="s1">&#39;native_amer_alaskan&#39;</span><span class="p">:</span><span class="n">native_amer_alaskan_size</span><span class="p">,</span><span class="s1">&#39;mixed&#39;</span><span class="p">:</span><span class="n">mixed_size</span><span class="p">}</span>
+    <span class="k">print</span> <span class="n">sizes</span>
+
+
+
+
+
+
+    <span class="c1">### sizes for each race by gender</span>
+
+    <span class="n">asian_male_size</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">sizes</span><span class="p">[</span><span class="s1">&#39;asian&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">male_gender</span><span class="p">)</span>
+    <span class="n">asian_female_size</span> <span class="o">=</span> <span class="n">sizes</span><span class="p">[</span><span class="s1">&#39;asian&#39;</span><span class="p">]</span><span class="o">-</span><span class="n">asian_male_size</span>
+
+
+
+    <span class="n">spanish_male_size</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">sizes</span><span class="p">[</span><span class="s1">&#39;spanish&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">male_gender</span><span class="p">)</span>
+    <span class="n">spanish_female_size</span> <span class="o">=</span> <span class="n">sizes</span><span class="p">[</span><span class="s1">&#39;spanish&#39;</span><span class="p">]</span><span class="o">-</span><span class="n">spanish_male_size</span>
+
+
+    <span class="n">afr_amer_male_size</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">sizes</span><span class="p">[</span><span class="s1">&#39;afr_amer&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">male_gender</span><span class="p">)</span>
+    <span class="n">afr_amer_female_size</span> <span class="o">=</span> <span class="n">sizes</span><span class="p">[</span><span class="s1">&#39;afr_amer&#39;</span><span class="p">]</span><span class="o">-</span><span class="n">afr_amer_male_size</span>
+
+
+    <span class="n">caucasian_male_size</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">sizes</span><span class="p">[</span><span class="s1">&#39;caucasian&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">male_gender</span><span class="p">)</span>
+    <span class="n">caucasian_female_size</span> <span class="o">=</span> <span class="n">sizes</span><span class="p">[</span><span class="s1">&#39;caucasian&#39;</span><span class="p">]</span><span class="o">-</span><span class="n">caucasian_male_size</span>
+
+
+    <span class="n">native_amer_male_size</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">sizes</span><span class="p">[</span><span class="s1">&#39;native_amer_alaskan&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">male_gender</span><span class="p">)</span>
+    <span class="n">native_amer_female_size</span> <span class="o">=</span> <span class="n">sizes</span><span class="p">[</span><span class="s1">&#39;native_amer_alaskan&#39;</span><span class="p">]</span><span class="o">-</span><span class="n">native_amer_male_size</span>
+
+    <span class="n">mixed_male_size</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">sizes</span><span class="p">[</span><span class="s1">&#39;mixed&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">male_gender</span><span class="p">)</span>
+    <span class="n">mixed_female_size</span> <span class="o">=</span> <span class="n">sizes</span><span class="p">[</span><span class="s1">&#39;mixed&#39;</span><span class="p">]</span><span class="o">-</span><span class="n">mixed_male_size</span>
+
+
+    <span class="c1">#Collecting last names of different races and putting them in different tables</span>
+
+    <span class="n">asian_dataset_ln</span> <span class="o">=</span> <span class="n">last_names_data</span><span class="p">[</span><span class="n">last_names_data</span><span class="p">[</span><span class="s1">&#39;race&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Asian&#39;</span><span class="p">]</span>
+    <span class="n">spanish_dataset_ln</span> <span class="o">=</span> <span class="n">last_names_data</span><span class="p">[</span><span class="n">last_names_data</span><span class="p">[</span><span class="s1">&#39;race&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Spanish&#39;</span><span class="p">]</span>
+    <span class="n">afr_amer_dataset_ln</span> <span class="o">=</span> <span class="n">last_names_data</span><span class="p">[</span><span class="n">last_names_data</span><span class="p">[</span><span class="s1">&#39;race&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;African_American&#39;</span><span class="p">]</span>
+    <span class="n">caucasian_dataset_ln</span> <span class="o">=</span> <span class="n">last_names_data</span><span class="p">[</span><span class="n">last_names_data</span><span class="p">[</span><span class="s1">&#39;race&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Caucasian&#39;</span><span class="p">]</span>
+    <span class="n">native_amer_alaskan_dataset_ln</span> <span class="o">=</span> <span class="n">last_names_data</span><span class="p">[</span><span class="n">last_names_data</span><span class="p">[</span><span class="s1">&#39;race&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Native_American_Alaskan&#39;</span><span class="p">]</span>
+    <span class="n">mixed_dataset_ln</span> <span class="o">=</span> <span class="n">last_names_data</span><span class="p">[</span><span class="n">last_names_data</span><span class="p">[</span><span class="s1">&#39;race&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Mixed&#39;</span><span class="p">]</span>
+
+
+
+
+    <span class="n">asian_male_fn</span><span class="o">=</span><span class="n">first_names_data</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">first_names_data</span><span class="p">[</span><span class="s1">&#39;race&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;Asian&#39;</span><span class="p">)</span><span class="o">&amp;</span> <span class="p">(</span><span class="n">first_names_data</span><span class="p">[</span><span class="s1">&#39;gender&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;M&#39;</span><span class="p">),]</span>
+    <span class="n">asian_male_data</span><span class="o">=</span><span class="n">asian_male_fn</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="n">asian_male_size</span><span class="p">,</span><span class="n">replace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+    <span class="n">asian_female_fn</span><span class="o">=</span><span class="n">first_names_data</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">first_names_data</span><span class="p">[</span><span class="s1">&#39;race&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;Asian&#39;</span><span class="p">)</span><span class="o">&amp;</span> <span class="p">(</span><span class="n">first_names_data</span><span class="p">[</span><span class="s1">&#39;gender&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;F&#39;</span><span class="p">),]</span>
+    <span class="n">asian_female_data</span><span class="o">=</span><span class="n">asian_male_fn</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="n">asian_female_size</span><span class="p">,</span><span class="n">replace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+    <span class="n">asian_data_fn</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">asian_male_data</span><span class="p">,</span><span class="n">asian_female_data</span><span class="p">])</span>
+
+    <span class="n">asian_dataset_ln</span> <span class="o">=</span> <span class="n">last_names_data</span><span class="p">[</span><span class="n">last_names_data</span><span class="p">[</span><span class="s1">&#39;race&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Asian&#39;</span><span class="p">]</span>
+
+    <span class="c1">#Exract all chinese rows from data</span>
+    <span class="n">asian_chinese_fn</span><span class="o">=</span><span class="n">asian_data_fn</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">asian_data_fn</span><span class="p">[</span><span class="s1">&#39;detailed_race&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;Chinese&#39;</span><span class="p">)]</span>
+    <span class="c1">#Check how many records are there</span>
+    <span class="n">chinese_rows</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">asian_chinese_fn</span><span class="p">)</span>
+    <span class="c1">#Extract Chinese Last Names</span>
+    <span class="n">asian_chinese_ln</span><span class="o">=</span><span class="n">asian_dataset_ln</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">asian_dataset_ln</span><span class="p">[</span><span class="s1">&#39;detailed_race&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;Chinese&#39;</span><span class="p">)]</span>
+    <span class="c1">#Select as many Last names randomly as you need</span>
+    <span class="n">last_names</span><span class="o">=</span><span class="n">asian_chinese_ln</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="n">chinese_rows</span><span class="p">,</span><span class="n">replace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+
+    <span class="n">asian_chinese_fn</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;last&#39;</span><span class="p">,</span><span class="n">last_names</span><span class="p">[</span><span class="s1">&#39;last&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
+
+    <span class="n">chinese_rows</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">asian_chinese_fn</span><span class="p">)</span>
+
+
+
+
+    <span class="c1"># Exract all Indian rows from data</span>
+    <span class="n">asian_indian_fn</span> <span class="o">=</span> <span class="n">asian_data_fn</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">asian_data_fn</span><span class="p">[</span><span class="s1">&#39;detailed_race&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Indian&#39;</span><span class="p">)]</span>
+    <span class="c1"># Check how many records are there</span>
+    <span class="n">indian_rows</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">asian_indian_fn</span><span class="p">)</span>
+    <span class="c1">#print &quot;no of rows: &quot;,indian_rows</span>
+    <span class="c1"># Extract Indian Last Names</span>
+    <span class="n">asian_indian_ln</span> <span class="o">=</span> <span class="n">asian_dataset_ln</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">asian_dataset_ln</span><span class="p">[</span><span class="s1">&#39;detailed_race&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Indian&#39;</span><span class="p">)]</span>
+    <span class="c1"># Select as many Last names randomly as you need</span>
+    <span class="n">last_names</span> <span class="o">=</span> <span class="n">asian_indian_ln</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">n</span><span class="o">=</span> <span class="n">indian_rows</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+
+    <span class="n">asian_indian_fn</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;last&#39;</span><span class="p">,</span> <span class="n">last_names</span><span class="p">[</span><span class="s1">&#39;last&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
+
+
+
+    <span class="n">asian_data_fn</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">asian_indian_fn</span><span class="p">,</span><span class="n">asian_chinese_fn</span><span class="p">])</span>
+
+
+
+
+    <span class="n">spanish_male_fn</span> <span class="o">=</span> <span class="n">first_names_data</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">first_names_data</span><span class="p">[</span><span class="s1">&#39;race&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Spanish&#39;</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">first_names_data</span><span class="p">[</span><span class="s1">&#39;gender&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;M&#39;</span><span class="p">),]</span>
+    <span class="n">spanish_male_data</span> <span class="o">=</span> <span class="n">spanish_male_fn</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="n">spanish_male_size</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+
+    <span class="n">spanish_female_fn</span> <span class="o">=</span> <span class="n">first_names_data</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">first_names_data</span><span class="p">[</span><span class="s1">&#39;race&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Spanish&#39;</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">first_names_data</span><span class="p">[</span><span class="s1">&#39;gender&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;F&#39;</span><span class="p">),]</span>
+    <span class="n">spanish_female_data</span> <span class="o">=</span> <span class="n">spanish_female_fn</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="n">spanish_female_size</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+
+    <span class="n">spanish_data_fn</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">spanish_male_data</span><span class="p">,</span><span class="n">spanish_female_data</span><span class="p">])</span>
+
+    <span class="n">spanish_ln</span><span class="o">=</span><span class="n">spanish_dataset_ln</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="p">(</span><span class="n">spanish_male_size</span><span class="o">+</span><span class="n">spanish_female_size</span><span class="p">),</span> <span class="n">replace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+
+    <span class="n">spanish_data_fn</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;last&#39;</span><span class="p">,</span><span class="n">spanish_ln</span><span class="p">[</span><span class="s1">&#39;last&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
+    <span class="k">print</span> <span class="s2">&quot;spanish_data_fn: &quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">spanish_data_fn</span><span class="p">)</span>
+    <span class="k">print</span> <span class="n">spanish_data_fn</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">any</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+
+
+
+    <span class="n">afr_amer_male_fn</span> <span class="o">=</span> <span class="n">first_names_data</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">first_names_data</span><span class="p">[</span><span class="s1">&#39;race&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;African_American&#39;</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">first_names_data</span><span class="p">[</span><span class="s1">&#39;gender&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;M&#39;</span><span class="p">),]</span>
+
+    <span class="n">afr_amer_female_fn</span> <span class="o">=</span> <span class="n">first_names_data</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">first_names_data</span><span class="p">[</span><span class="s1">&#39;race&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;African_American&#39;</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">first_names_data</span><span class="p">[</span><span class="s1">&#39;gender&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;F&#39;</span><span class="p">),]</span>
+
+    <span class="n">afr_amer_male_data</span><span class="o">=</span><span class="n">afr_amer_male_fn</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="n">afr_amer_male_size</span><span class="p">,</span><span class="n">replace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+
+    <span class="n">afr_amer_female_data</span><span class="o">=</span><span class="n">afr_amer_female_fn</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="n">afr_amer_female_size</span><span class="p">,</span><span class="n">replace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+
+    <span class="n">afr_amer_data_fn</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">afr_amer_male_data</span><span class="p">,</span><span class="n">afr_amer_female_data</span><span class="p">])</span>
+
+    <span class="n">afr_amer_ln</span><span class="o">=</span><span class="n">afr_amer_dataset_ln</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="p">(</span><span class="n">afr_amer_male_size</span><span class="o">+</span><span class="n">afr_amer_female_size</span><span class="p">),</span> <span class="n">replace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+    <span class="n">afr_amer_data_fn</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;last&#39;</span><span class="p">,</span><span class="n">afr_amer_ln</span><span class="p">[</span><span class="s1">&#39;last&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
+
+    <span class="k">print</span> <span class="n">afr_amer_data_fn</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">any</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+
+
+
+    <span class="n">native_amer_male_fn</span><span class="o">=</span><span class="n">first_names_data</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">first_names_data</span><span class="p">[</span><span class="s1">&#39;race&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Native_American_Alaskan&#39;</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">first_names_data</span><span class="p">[</span><span class="s1">&#39;gender&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;M&#39;</span><span class="p">),]</span>
+    <span class="n">native_amer_female_fn</span> <span class="o">=</span> <span class="n">first_names_data</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">first_names_data</span><span class="p">[</span><span class="s1">&#39;race&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Native_American_Alaskan&#39;</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">first_names_data</span><span class="p">[</span><span class="s1">&#39;gender&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;F&#39;</span><span class="p">),]</span>
+    <span class="n">native_amer_male_data</span> <span class="o">=</span> <span class="n">native_amer_male_fn</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="n">native_amer_male_size</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+    <span class="n">native_amer_female_data</span> <span class="o">=</span> <span class="n">native_amer_female_fn</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="n">native_amer_female_size</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+    <span class="n">native_amer_data_fn</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">native_amer_male_data</span><span class="p">,</span> <span class="n">native_amer_female_data</span><span class="p">])</span>
+
+    <span class="n">native_ln</span> <span class="o">=</span> <span class="n">native_amer_alaskan_dataset_ln</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="p">(</span><span class="n">native_amer_male_size</span> <span class="o">+</span> <span class="n">native_amer_female_size</span><span class="p">),</span> <span class="n">replace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+
+    <span class="n">native_amer_data_fn</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;last&#39;</span><span class="p">,</span> <span class="n">native_ln</span><span class="p">[</span><span class="s1">&#39;last&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
+
+
+
+    <span class="n">caucasian_male_fn</span> <span class="o">=</span> <span class="n">first_names_data</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">first_names_data</span><span class="p">[</span><span class="s1">&#39;race&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Caucasian&#39;</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">first_names_data</span><span class="p">[</span><span class="s1">&#39;gender&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;M&#39;</span><span class="p">),]</span>
+    <span class="n">caucasian_female_fn</span> <span class="o">=</span> <span class="n">first_names_data</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">first_names_data</span><span class="p">[</span><span class="s1">&#39;race&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Caucasian&#39;</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">first_names_data</span><span class="p">[</span><span class="s1">&#39;gender&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;F&#39;</span><span class="p">),]</span>
+    <span class="n">caucasian_male_data</span> <span class="o">=</span> <span class="n">caucasian_male_fn</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="n">caucasian_male_size</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+    <span class="n">caucasian_female_data</span> <span class="o">=</span> <span class="n">caucasian_female_fn</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="n">caucasian_female_size</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+    <span class="n">caucasian_data_fn</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">caucasian_male_data</span><span class="p">,</span> <span class="n">caucasian_female_data</span><span class="p">])</span>
+
+    <span class="n">cauc_ln</span> <span class="o">=</span> <span class="n">caucasian_dataset_ln</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="p">(</span><span class="n">caucasian_male_size</span> <span class="o">+</span> <span class="n">caucasian_female_size</span><span class="p">),</span> <span class="n">replace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+    <span class="n">caucasian_data_fn</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;last&#39;</span><span class="p">,</span> <span class="n">cauc_ln</span><span class="p">[</span><span class="s1">&#39;last&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
+
+    <span class="n">mixed_dataset</span> <span class="o">=</span> <span class="n">first_names_data</span>
+    <span class="n">mixed_dataset</span><span class="p">[</span><span class="s1">&#39;race&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Mixed&quot;</span>
+    <span class="n">mixed_dataset</span><span class="p">[</span><span class="s1">&#39;detailed_race&#39;</span><span class="p">]</span><span class="o">=</span><span class="s2">&quot;None&quot;</span>
+
+    <span class="n">mixed_male_fn</span><span class="o">=</span><span class="n">mixed_dataset</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">mixed_dataset</span><span class="p">[</span><span class="s1">&#39;gender&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;M&#39;</span><span class="p">),]</span>
+    <span class="n">mixed_female_fn</span> <span class="o">=</span> <span class="n">mixed_dataset</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">mixed_dataset</span><span class="p">[</span><span class="s1">&#39;gender&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;F&#39;</span><span class="p">),]</span>
+    <span class="n">mixed_male_data</span> <span class="o">=</span> <span class="n">mixed_male_fn</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="n">mixed_male_size</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+
+    <span class="n">mixed_female_data</span> <span class="o">=</span> <span class="n">mixed_female_fn</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="n">mixed_female_size</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+    <span class="n">mixed_data_fn</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">mixed_male_data</span><span class="p">,</span> <span class="n">mixed_female_data</span><span class="p">])</span>
+
+    <span class="n">mixed_ln</span> <span class="o">=</span> <span class="n">mixed_dataset_ln</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="p">(</span><span class="n">mixed_male_size</span> <span class="o">+</span> <span class="n">mixed_female_size</span><span class="p">),</span> <span class="n">replace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+    <span class="n">mixed_data_fn</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;last&#39;</span><span class="p">,</span> <span class="n">mixed_ln</span><span class="p">[</span><span class="s1">&#39;last&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
+
+    <span class="n">Data</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">asian_data_fn</span><span class="p">,</span> <span class="n">spanish_data_fn</span><span class="p">,</span> <span class="n">afr_amer_data_fn</span><span class="p">,</span> <span class="n">caucasian_data_fn</span><span class="p">,</span>
+                     <span class="n">native_amer_data_fn</span><span class="p">,</span> <span class="n">mixed_data_fn</span><span class="p">],</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+
+    <span class="k">print</span> <span class="s2">&quot;Size of Data: &quot;</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">Data</span><span class="p">)</span>
+    <span class="k">print</span> <span class="s2">&quot;Name,race generated...&quot;</span>
+
+    <span class="c1">#print Data.tail()</span>
+
+
+    <span class="k">return</span> <span class="n">Data</span></div>
+
+<div class="viewcode-block" id="mk_data"><a class="viewcode-back" href="../../code.html#synehr.data_gen.mk_data">[docs]</a><span class="k">def</span> <span class="nf">mk_data</span><span class="p">(</span><span class="n">first_names_data</span><span class="p">,</span> <span class="n">last_names_data</span><span class="p">,</span> <span class="n">min_date</span><span class="p">,</span> <span class="n">max_date</span><span class="p">,</span> <span class="n">size</span><span class="p">,</span><span class="n">male_gender</span><span class="p">,</span> <span class="n">race_ratio</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        1. All races are inputted as integers to signify the percentages</span>
+<span class="sd">        2. Generates Dataset based on user preferences.</span>
+
+
+<span class="sd">        Args:</span>
+<span class="sd">            first_names_data: A pandas data frame which contains first names.</span>
+<span class="sd">            last_names_data: A pandas data frame which contains last names.</span>
+<span class="sd">            min_date (date): Minimum Date to generate data.</span>
+<span class="sd">            max_date (date): Maximum Date to generate data.</span>
+<span class="sd">            size (int): Number of records to generate.</span>
+<span class="sd">            male_gender (float): Percentage records that need to be of the gender male.</span>
+<span class="sd">            race_ratio (dict): A dictionary that contains all the percentages of the various races to be generated.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            data: Pandas Data Frame that contains the generated records along with errors.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># dataset list by race</span>
+
+    <span class="c1"># data generator by race</span>
+    <span class="n">error_rate</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="mf">0.1</span> <span class="o">*</span> <span class="n">size</span><span class="p">)</span>
+    <span class="n">size_new</span><span class="o">=</span><span class="n">size</span><span class="o">-</span><span class="n">error_rate</span>
+    <span class="k">print</span> <span class="s2">&quot;Calling the data generator function...&quot;</span>
+
+
+    <span class="n">data</span> <span class="o">=</span> <span class="n">data_gen</span><span class="p">(</span><span class="n">first_names_data</span><span class="p">,</span> <span class="n">last_names_data</span><span class="p">,</span> <span class="n">size_new</span><span class="p">,</span><span class="n">race_ratio</span><span class="p">,</span><span class="n">male_gender</span><span class="p">)</span>
+
+    <span class="k">print</span> <span class="s2">&quot;Generating address...&quot;</span>
+    <span class="c1"># fake factory</span>
+    <span class="n">size_records</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+    <span class="n">addresses</span> <span class="o">=</span> <span class="n">fake_factory</span><span class="p">(</span><span class="n">size_records</span><span class="p">)</span>
+
+
+    <span class="n">data</span><span class="p">[</span><span class="s1">&#39;address&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">addresses</span>
+
+
+    <span class="k">print</span> <span class="s2">&quot;Generate DOB...&quot;</span>
+    <span class="n">dates</span><span class="o">=</span><span class="n">genDOB</span><span class="p">(</span><span class="n">size_records</span><span class="p">,</span><span class="n">min_date</span><span class="p">,</span><span class="n">max_date</span><span class="p">)</span>
+
+
+    <span class="n">data</span><span class="p">[</span><span class="s1">&#39;DOB&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">dates</span>
+
+    <span class="k">print</span> <span class="s2">&quot;Generate Master Patient Index...&quot;</span>
+    <span class="n">mpi</span><span class="o">=</span><span class="n">genMPI</span><span class="p">(</span><span class="n">size_records</span><span class="p">)</span>
+
+
+    <span class="n">data</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="s1">&#39;MPI&#39;</span><span class="p">,</span><span class="n">mpi</span><span class="p">)</span>
+
+    <span class="k">print</span> <span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">Size requested: &quot;</span><span class="p">,</span><span class="n">size</span>
+
+    <span class="k">print</span> <span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">Number of records generated: &quot;</span><span class="p">,</span><span class="n">size_records</span>
+
+    <span class="k">print</span> <span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">Inducing error in Data...&quot;</span>
+
+    <span class="n">error_index</span><span class="o">=</span><span class="n">npr</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">size_records</span><span class="p">,</span><span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="n">size</span><span class="o">-</span><span class="n">size_records</span><span class="p">))</span>
+
+    <span class="n">data_err</span><span class="o">=</span><span class="n">data</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">error_index</span><span class="p">]</span>
+
+    <span class="n">data_err</span><span class="o">=</span><span class="n">gen_errors</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">data_err</span><span class="p">),</span><span class="n">data</span><span class="o">=</span><span class="n">data_err</span><span class="p">)</span>
+
+    <span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">data</span><span class="p">,</span> <span class="n">data_err</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">ignore_index</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+
+
+    <span class="k">return</span> <span class="n">data</span></div>
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="../index.html">Module code</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, Shraddha Lanka, Tennyson Lee.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>
