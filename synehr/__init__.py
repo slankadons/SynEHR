@@ -1,1 +1,1 @@
-from .functions import mk_data
+from .synehr import syn_ehr
