@@ -106,7 +106,7 @@ def syn_ehr(size=1000, male_gender=None,asian=None, spanish=None, afr_amer=None,
 
         i=0
         for d in default:
-            default[d]=round(val[i],2)
+            default[d]=val[i]
             i+=1
     default.update(listed)
     print default
@@ -123,9 +123,17 @@ def syn_ehr(size=1000, male_gender=None,asian=None, spanish=None, afr_amer=None,
 #print '__name__'
 if __name__=='__main__':
 
-        data=syn_ehr(size=500)
-        print "data generated. first 5 rows:\n ",data.head(n=1)
+        size=1000
+        data=syn_ehr(size=size)
+        while len(data)!= size:
+             data = syn_ehr(size=size)
+
+        print "data generated. first 5 rows:\n ",data.head()
         print "Number of records: ",len(data)
+        print "type", type(data)
+        #data.to_csv(encoding='utf-8')
+        data=pd.DataFrame(data)
+        data.to_csv(file='data.csv',encoding='utf-8')
         #print data.iloc[npr.randint(len(data),size=25)]
 
 

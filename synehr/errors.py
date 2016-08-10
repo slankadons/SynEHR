@@ -51,25 +51,27 @@ def gen_errors(size, data):
         insertion_index = np.random.randint(low=0, high=len(data), size=errors['insertion'])
         insertion_data = data.iloc[insertion_index]
         insertion_err = {'first': 0, 'last': 0, 'address': 0}
-        val = sum_num_terms_equals_total(4, len(insertion_data))
+        val = sum_num_terms_equals_total(3, len(insertion_data))
 
         i = 0
         for item in insertion_err:
-            insertion_err[item] = int(val[i])
+            insertion_err[item] = val[i]
             i += 1
-        # print "inserton_err: ",insertion_err
+        print "inserton_err: ",insertion_err
         flag_first = False
         flag_last = False
         flag_address = False
         if insertion_err['first'] > 0:
             insertion_first = insertion_data.sample(n=insertion_err['first'])
             col_first = insertion_first['first'].tolist()
+            print "len of col first: ",len(col_first)
             insertion_first['first'] = char_insertion_str(col_first)
             flag_first = True
 
         if insertion_err['last'] > 0:
             insertion_last = insertion_data.sample(n=insertion_err['last'])
             col_last = insertion_last['last'].tolist()
+            print "len of col last: ",len(col_last)
             insertion_last['last'] = char_insertion_str(col_last)
             flag_last = True
 
@@ -455,7 +457,14 @@ def char_sub_date(col_date):
             year = ''.join(year)
             # print "Error induced year: ",year
         elif choice == 1:
-            month = str(random.randint(1, 12))
+            if int(day) == 31:
+                months_with_31_days = ["1", "3", "5", "7", "8", "10", "12"]
+                month = str(random.choice(months_with_31_days))
+            elif int(day) == 30 or int(day) == 29:
+                months_with_30_days = ["1", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"]
+                month = str(random.choice(months_with_30_days))
+            else:
+                month = str(random.randint(1, 12))
             # print "error induced month: ",month
         elif choice == 2:
             if int(month) in [1, 3, 5, 7, 8, 10, 12]:
@@ -587,12 +596,12 @@ def char_insertion_str(arr):
                   "x": ["x","z","s","d","c"],
                   "y": ["y","t","g","h","u"],
                   "z": ["z","a","s","x"]}
-    # print "insertion before", arr
+    print "insertion before", arr
     arr_res = []
     for i in range(0, len(arr)):
         x = arr[i].lower()
-        # print x
-        # print len(x)
+        print x
+        print len(x)
         if len(x) > 3:
             rnd = random.randint(1, len(x) - 1)
             if x[rnd].isalpha():
@@ -604,7 +613,9 @@ def char_insertion_str(arr):
                 rndCharacter = characters[insertion:insertion + 1]
                 x = x[0:rnd] + rndCharacter + x[rnd:]
                 arr_res.append(x)
-    # print "insertion after: ", arr_res
+        else:
+            arr_res.append(x)
+    print "insertion after: ", arr_res
     return arr_res
 
 
